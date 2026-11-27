@@ -1,0 +1,352 @@
+{
+ "narration_offset": 0.2,
+ "lead": 0.2,
+ "tail": 2.2,
+ "music": "assets/stock/audio/music-pop-track-03-lily-j-mixkit-729-48k.wav",
+ "music_start": 0.0,
+ "music_note": "Pop Track 03 (Mixkit #729, Lily J): phần mở đầu nhẹ tới 4,45 s rồi vào nhịp (khoảng 109 BPM); canh 4,45 s vào chữ 'chạy' của câu móc (B1S1), lúc biểu tượng ứng dụng hiện ra. Chưa nghe bằng tai.",
+ "music_bed_lufs": -24.0,
+ "duck_db": -8.0,
+ "music_fade_in": 0.05,
+ "music_fade_out": 2.0,
+ "scenes": [
+  {
+   "id": "01-hook",
+   "sentences": [
+    "B1S1"
+   ],
+   "transition_in": "none",
+   "sfx": [
+    {
+     "match": "",
+     "at": 0.0,
+     "file": "assets/audio/ambience-room-tone.wav",
+     "gain_db": -10,
+     "why_note": "tiếng nền phòng"
+    },
+    {
+     "match": "",
+     "at": 0.05,
+     "file": "assets/stock/audio/sfx-typing-laptop-keyboard-mixkit-2531-48k.wav",
+     "gain_db": -30,
+     "trim": 0.9,
+     "fade_out": 0.25,
+     "why_note": "lời nhắn hiện như đang gõ"
+    },
+    {
+     "match": "",
+     "sid": "B1S1",
+     "tu": "chạy",
+     "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+     "gain_db": -26,
+     "why_note": "phóng xuyên qua quả địa cầu sang cảnh máy vừa cài ứng dụng (đỉnh tệp 0,16 s rơi giữa cú phóng; QA 25/11: tệp whoosh dài có đỉnh ở 1,06 s nên bản trước kêu muộn, đè chữ 'máy tính')",
+     "shift": -0.53
+    },
+    {
+     "match": "",
+     "sid": "B1S1",
+     "tu": "chạy",
+     "file": "assets/stock/audio/sfx-pop-whoosh-light-mixkit-3005-48k.wav",
+     "gain_db": -16,
+     "why_note": "biểu tượng ứng dụng hiện ra (chữ 'chạy'), cùng lúc nhạc vào nhịp",
+     "shift": -0.02
+    },
+    {
+     "match": "",
+     "sid": "B1S1",
+     "tu": "chạy",
+     "file": "assets/stock/audio/sfx-ui-software-start-mixkit-2574-48k.wav",
+     "gain_db": -27,
+     "why_note": "lớp nền cho tiếng biểu tượng hiện"
+    }
+   ]
+  },
+  {
+   "id": "02-cai-dat",
+   "sentences": [
+    "B2S1",
+    "B2S2"
+   ],
+   "transition_in": "zoom",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B2S1",
+     "tu": "cài",
+     "file": "assets/stock/audio/sfx-click-interface-tone-mixkit-2568-48k.wav",
+     "gain_db": -18,
+     "why_note": "chọn mục Install as app",
+     "shift": -0.05
+    },
+    {
+     "match": "",
+     "sid": "B2S2",
+     "w": 0,
+     "shift": -0.2,
+     "file": "assets/stock/audio/sfx-click-select-mixkit-1109-48k.wav",
+     "gain_db": -20,
+     "why_note": "bấm nút Install trong hộp thoại"
+    },
+    {
+     "match": "",
+     "sid": "B2S2",
+     "w": 0,
+     "shift": 0.0,
+     "file": "assets/stock/audio/sfx-pop-hard-click-mixkit-2364-48k.wav",
+     "gain_db": -24,
+     "why_note": "ứng dụng mở trong cửa sổ riêng"
+    }
+   ]
+  },
+  {
+   "id": "03-vi-du",
+   "sentences": [
+    "B3S1"
+   ],
+   "transition_in": "expand",
+   "expand_from": [
+    40,
+    300,
+    1000,
+    615
+   ],
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B3S1",
+     "tu": "sửa ảnh",
+     "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+     "gain_db": -27,
+     "why_note": "cửa sổ Linnet",
+     "shift": -0.12
+    },
+    {
+     "match": "",
+     "sid": "B3S1",
+     "tu": "quản lý",
+     "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+     "gain_db": -27,
+     "why_note": "cửa sổ Phosphor",
+     "shift": -0.12
+    },
+    {
+     "match": "",
+     "sid": "B3S1",
+     "tu": "bản đồ",
+     "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+     "gain_db": -27,
+     "why_note": "cửa sổ Marrow (cùng tiếng coin như hai cửa sổ trước; tiếng unlock cũ chìm dưới giọng)",
+     "shift": -0.12
+    }
+   ]
+  },
+  {
+   "id": "04-khong-dong-goi",
+   "sentences": [
+    "B4S1"
+   ],
+   "transition_in": "push",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B4S1",
+     "tu": "đóng gói",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -26,
+     "why_note": "gạch dòng đóng gói"
+    },
+    {
+     "match": "",
+     "sid": "B4S1",
+     "tu": "ký số",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -26,
+     "why_note": "gạch dòng ký số"
+    },
+    {
+     "match": "",
+     "sid": "B4S1",
+     "tu": "tạo khóa",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -26,
+     "why_note": "gạch dòng khóa API"
+    },
+    {
+     "match": "",
+     "sid": "B4S1",
+     "tu": "tài khoản",
+     "file": "assets/stock/audio/sfx-correct-tone-mixkit-2870-48k.wav",
+     "gain_db": -27,
+     "why_note": "thẻ tài khoản Claude là đủ"
+    }
+   ]
+  },
+  {
+   "id": "05-lam-duoc-gi",
+   "sentences": [
+    "B5S1",
+    "B5S2",
+    "B5S3"
+   ],
+   "transition_in": "light",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B5S1",
+     "tu": "lịch",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -28,
+     "why_note": "viên Lịch"
+    },
+    {
+     "match": "",
+     "sid": "B5S1",
+     "tu": "email",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -28,
+     "why_note": "viên Email"
+    },
+    {
+     "match": "",
+     "sid": "B5S2",
+     "tu": "gửi",
+     "file": "assets/stock/audio/sfx-notify-message-pop-mixkit-2354-48k.wav",
+     "gain_db": -22,
+     "why_note": "thông báo"
+    },
+    {
+     "match": "",
+     "sid": "B5S3",
+     "tu": "gửi",
+     "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+     "gain_db": -27,
+     "why_note": "gửi link"
+    }
+   ]
+  },
+  {
+   "id": "06-dieu-kien",
+   "sentences": [
+    "B6S1",
+    "B6S2"
+   ],
+   "transition_in": "push",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B6S2",
+     "tu": "Claud",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -27,
+     "why_note": "lượt dùng Claude thứ nhất"
+    },
+    {
+     "match": "",
+     "sid": "B6S2",
+     "tu": "Claud",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -27,
+     "why_note": "lượt thứ hai",
+     "shift": 0.32
+    },
+    {
+     "match": "",
+     "sid": "B6S2",
+     "tu": "Claud",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -27,
+     "why_note": "lượt thứ ba",
+     "shift": 0.64
+    }
+   ]
+  },
+  {
+   "id": "07-quyen",
+   "sentences": [
+    "B7S1",
+    "B7S2",
+    "B7S3"
+   ],
+   "transition_in": "light",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B7S2",
+     "tu": "toàn quyền",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -26,
+     "why_note": "mức toàn quyền sáng lên"
+    },
+    {
+     "match": "",
+     "sid": "B7S3",
+     "tu": "không duyệt",
+     "file": "assets/stock/audio/sfx-impact-big-cinematic-boom-mixkit-788-48k.wav",
+     "gain_db": -30,
+     "why_note": "con dấu Anthropic không duyệt (tệp im 0,94 s đầu, tiếng nổ ở 2,18 s; lệch -2,03 s để nổ đúng lúc dấu chạm, chữ + 0,15 s)",
+     "shift": -2.03
+    },
+    {
+     "match": "",
+     "sid": "B7S3",
+     "tu": "không duyệt",
+     "file": "assets/stock/audio/sfx-pop-hard-click-mixkit-2364-48k.wav",
+     "gain_db": -18,
+     "shift": 0.11,
+     "why_note": "con dấu chạm: tiếng dải trung cho loa điện thoại (tiếng nổ trầm chìm dưới giọng, soát bản dựng 3)"
+    }
+   ]
+  },
+  {
+   "id": "08-ket",
+   "sentences": [
+    "B8S1",
+    "B8S2"
+   ],
+   "transition_in": "blur",
+   "sfx": [
+    {
+     "match": "",
+     "sid": "B8S1",
+     "tu": "không",
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -27,
+     "why_note": "hai lựa chọn Có, Không"
+    },
+    {
+     "match": "",
+     "sid": "B8S2",
+     "w": 0,
+     "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+     "gain_db": -26,
+     "why_note": "viên Bình luận"
+    },
+    {
+     "match": "",
+     "sid": "B8S2",
+     "w": 6,
+     "shift": 1.4,
+     "file": "assets/stock/audio/sfx-sparkle-bright-shimmer-pixabay-48k.wav",
+     "gain_db": -27,
+     "why_note": "ngôi sao logo lóe (hết câu cuối + 1,1 s)"
+    }
+   ]
+  }
+ ],
+ "music_dips": [
+  {
+   "before": "B2S2",
+   "dur": 1.0,
+   "db": -14,
+   "why": "nhạc lùi khi hộp thoại cài đặt hiện, khớp khoảng nghỉ trước B2S2"
+  }
+ ],
+ "music_hit_source_s": 4.45,
+ "music_hit_scene": "01-hook",
+ "music_hit_local": 0.0,
+ "music_hit_anchor": {
+  "sid": "B1S1",
+  "tu": "chạy",
+  "plus": 0.0
+ }
+}

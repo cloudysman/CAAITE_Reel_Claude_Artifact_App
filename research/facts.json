@@ -1,0 +1,193 @@
+{
+  "nguon": {
+    "A": {
+      "ten": "Anthropic, \"Turn artifacts into Mac and Windows apps\", claude.com/resources/articles/install-as-app",
+      "ngay": "24/11/2026",
+      "doc": "25/11/2026 qua trình duyệt"
+    },
+    "X1": {
+      "ten": "@ClaudeDevs trên X, bài 1 của chuỗi",
+      "url": "https://x.com/ClaudeDevs/status/2125315491522650299",
+      "ngay": "2026-11-24T19:47:54Z (02:47 ngày 25/11/2026 giờ Việt Nam)",
+      "so_lieu_luc_doc": "10:08 ngày 25/11/2026: 3.906.556 lượt xem, 41.888 lượt thích, 4.208 lượt đăng lại, 796 trả lời, 24.369 lượt lưu"
+    },
+    "X2": {
+      "ten": "@ClaudeDevs trên X, bài 2 của chuỗi",
+      "ngay": "2026-11-24T19:47:54Z"
+    },
+    "V": {
+      "ten": "Video demo trong bài X1, 27,6 s, 3840x2160, không có tiếng",
+      "tep": "tu_lieu_tai_ve/x/demo_claudedevs_4k.mp4"
+    },
+    "F": {
+      "ten": "Felix's Demo Apps, claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ (Felix, kỹ sư làm Claude; bài A dẫn tới trang này)",
+      "doc": "25/11/2026, Playwright không đăng nhập"
+    },
+    "E": {
+      "ten": "Bài của EZAI người dùng dán ngày 25/11/2026",
+      "vai_tro": "điểm xuất phát, không dùng làm nguồn số liệu"
+    }
+  },
+  "du_kien": [
+    {
+      "id": "F01",
+      "noi_dung": "Từ 24/11/2026, artifact của Claude cài được thành ứng dụng trên Mac và Windows; tính năng tên Install as app, đang thử nghiệm (beta), mở dần.",
+      "nguon": "A, X1",
+      "cau_goc": [
+        "Starting today, you can use Claude artifacts to create, run, and share desktop apps. The \"Install as app\" feature is rolling out in beta in Claude for Mac and Windows.",
+        "You can now install Claude artifacts as desktop apps on Mac and Windows."
+      ]
+    },
+    {
+      "id": "F02",
+      "noi_dung": "Cách làm: mô tả ứng dụng cho Claude, thử nó dưới dạng artifact, rồi chọn Install as app (trong menu của artifact); máy hỏi xác nhận rồi cài.",
+      "nguon": "A, X1, V",
+      "cau_goc": [
+        "Describe your app to Claude, try it as an artifact, and then click \"Install as app.\"",
+        "choose \"Install as app\" from the Share menu.",
+        "Video V giây 2-6: menu của artifact có mục Install as app (Beta), hộp thoại Install ... as an app? với nút Cancel, Install"
+      ]
+    },
+    {
+      "id": "F03",
+      "noi_dung": "Ứng dụng đã cài có biểu tượng riêng, mở trong cửa sổ riêng thay vì bên trong Claude, mở như mọi ứng dụng khác.",
+      "nguon": "A, X1, V",
+      "cau_goc": [
+        "it gets its own icon and opens in its own window instead of inside Claude",
+        "open it like any other app"
+      ]
+    },
+    {
+      "id": "F04",
+      "noi_dung": "Không phải đóng gói, không phải ký ứng dụng, không cần khóa API hay đăng nhập riêng, vì ứng dụng dùng tài khoản Claude của người dùng.",
+      "nguon": "A, X2",
+      "cau_goc": [
+        "You don't have to package or sign it, and it uses your Claude account, so there's no API key or separate login.",
+        "You don't have to package or sign the app, or set up an API key."
+      ]
+    },
+    {
+      "id": "F05",
+      "noi_dung": "Ứng dụng dùng được Claude và các connector (kết nối) của người dùng; ví dụ bài A nêu: trang chuẩn bị họp lấy dữ liệu từ lịch và email.",
+      "nguon": "A, X1",
+      "cau_goc": [
+        "Each app can use Claude and your connectors",
+        "like a meeting prep page that regularly pulls from their calendar and email"
+      ]
+    },
+    {
+      "id": "F06",
+      "noi_dung": "Nếu người dùng cho phép, ứng dụng gửi được thông báo, thêm mục vào thanh menu (Mac) hoặc khay hệ thống (Windows).",
+      "nguon": "A, X1",
+      "cau_goc": [
+        "Installed apps can send notifications or add items to your menu bar or system tray.",
+        "if you allow it, send notifications or add a menu bar item"
+      ]
+    },
+    {
+      "id": "F07",
+      "noi_dung": "Ứng dụng tự cập nhật khi artifact gốc được sửa; chia sẻ được cho người khác (Felix: gửi đường link).",
+      "nguon": "A, F",
+      "cau_goc": [
+        "it updates automatically when the underlying artifact is edited",
+        "You can share it with others",
+        "To share it with friends and colleagues, send them a link."
+      ]
+    },
+    {
+      "id": "F08",
+      "noi_dung": "Ba mức quyền: mặc định chỉ làm được như trong trình duyệt; quyền ứng dụng (cửa sổ luôn nổi trên cùng, phím tắt toàn hệ thống, thông báo); toàn quyền máy tính (chạy chương trình, đọc, sửa, xóa tệp mà không hỏi lại mỗi lần).",
+      "nguon": "A",
+      "cau_goc": [
+        "Default: Installed apps can only do what they'd be able to do in a browser.",
+        "App permissions: Apps can ask to use common features that Claude can tightly control, like creating always-on-top windows, listening for global shortcuts, or sending notifications.",
+        "Full computer access: Apps can ask to run programs and read, change, or delete your files without asking each time."
+      ]
+    },
+    {
+      "id": "F09",
+      "noi_dung": "Quyền chỉ áp dụng cho phiên bản hiện tại; sau mỗi lần cập nhật (kể cả do chính mình sửa) Claude hỏi lại. Phần lấy từ trang web khác có thể đổi mà không hỏi lại.",
+      "nguon": "A",
+      "cau_goc": [
+        "Your permission only covers the current version of the app, so Claude asks again after every update, even your own edits. If part of an app comes from another website, that part can change without Claude asking you again."
+      ]
+    },
+    {
+      "id": "F10",
+      "noi_dung": "Chỉ cấp toàn quyền được cho ứng dụng do mình làm (Team, Enterprise: thêm ứng dụng do người trong tổ chức làm). Anthropic không duyệt ứng dụng trước khi cài, nên chỉ cấp toàn quyền cho ứng dụng mình tin.",
+      "nguon": "A",
+      "cau_goc": [
+        "You can only give full access to apps you made or, on Team and Enterprise, apps made by people in your organization. Anthropic doesn't review apps before you install them, so only give full access to apps you trust."
+      ]
+    },
+    {
+      "id": "F11",
+      "noi_dung": "Hộp thoại cài trong video: ứng dụng thành chương trình độc lập, có cửa sổ và biểu tượng riêng, không chạm được tệp hay chạy chương trình nếu người dùng không cho phép.",
+      "nguon": "V giây 4",
+      "cau_goc": [
+        "If you continue, \"Debris Space Tracker\" will be installed as a standalone program and get its own windows and icons. It can't reach your files or run programs unless you allow it."
+      ]
+    },
+    {
+      "id": "F12",
+      "noi_dung": "Mở dần ở mọi gói, bản thử nghiệm, trong Claude Desktop. Team: bật sẵn, toàn quyền tắt. Enterprise: tắt cho tới khi owner (chủ sở hữu tổ chức) bật. Tổ chức HIPAA-ready và bản triển khai hybrid không dùng được. Admin của Team, Enterprise bật tắt được quyền ứng dụng và toàn quyền cho tổ chức.",
+      "nguon": "A, X2",
+      "cau_goc": [
+        "Install as app is rolling out in beta on all plans. HIPAA-ready organizations and hybrid deployments can't use it. It's on by default for Team, with full access off. On Enterprise, it's off until an owner turns it on.",
+        "It's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first).",
+        "Team and Enterprise admins can turn app permissions and full access on or off for their organization."
+      ]
+    },
+    {
+      "id": "F13",
+      "noi_dung": "Việc làm ứng dụng và mọi lượt ứng dụng gọi Claude đều tính vào hạn mức sử dụng của gói.",
+      "nguon": "A, X2",
+      "cau_goc": [
+        "Requests the app makes to Claude count toward your plan's usage limits.",
+        "Building the app and any calls it makes to Claude count toward your usage limits."
+      ]
+    },
+    {
+      "id": "F14",
+      "noi_dung": "Phải trực tuyến và đăng nhập Claude mới mở được ứng dụng; Claude Docs, Slides, Sheets là các artifact không cài được.",
+      "nguon": "A",
+      "cau_goc": [
+        "You need to be online and signed in to Claude to open an app. Some artifacts can't be installed, including Claude Docs, Slides, and Sheets."
+      ]
+    },
+    {
+      "id": "F15",
+      "noi_dung": "Người ở Anthropic đã làm: Linnet (sửa ảnh nhiều lớp), Phosphor (quản lý tệp), Sift (quy tắc thư mục, dùng Claude sắp xếp), Tern (cửa sổ dòng lệnh có Claude), Vitals (xem hiệu năng máy trên thanh menu, khay hệ thống). Trang của Felix thêm Marrow (bản đồ cơ thể), Debris (theo dõi rác vũ trụ), Bonsai (nhắc nghỉ), Alcove, Footprint, Tally; ghi rõ không phải sản phẩm chính thức của Anthropic.",
+      "nguon": "A, F",
+      "cau_goc": [
+        "Linnet, a full layered image editor",
+        "Phosphor, a file manager that looks made for a movie set",
+        "Sift, which sets up folder rules and uses Claude to keep your stuff organized",
+        "Tern, a terminal with Claude by your side to help and explain",
+        "Vitals, a menu bar and tray app for peeking at your computer's performance",
+        "They're not official Anthropic products."
+      ]
+    },
+    {
+      "id": "F16",
+      "noi_dung": "Felix viết người dùng không cần biết lập trình.",
+      "nguon": "F",
+      "cau_goc": [
+        "You, dear reader, need zero programming skills"
+      ]
+    },
+    {
+      "id": "F17",
+      "noi_dung": "Video demo: lời nhắn \"Build me an app that tracks every piece of space junk in orbit.\"; ứng dụng Debris Space Tracker được cài, biểu tượng quả địa cầu hiện ở thanh Dock; sau đó là các ứng dụng mẫu khác: Imre's plate 14 (đĩa nuôi tinh thể), Ravi's night at the dome (điều khiển kính thiên văn, bản đồ sao), mực nước, bản vẽ ổ trục, bản đồ nhiệt gen (Priya's third notebook), mặt tiền phố (Edith's Main Street), nhật ký rang cà phê (Mateo's roast log), hải đồ; khung chữ \"Build, run, and share desktop apps with Claude\", \"Now available in beta in Claude for macOS & Windows\".",
+      "nguon": "V"
+    }
+  ],
+  "khac_bai_ezai": [
+    "EZAI viết \"chỉ bằng một cú nhấp chuột\": video cho thấy phải mở menu, chọn Install as app rồi bấm Install trong hộp thoại xác nhận; reel không nói \"một cú nhấp\".",
+    "EZAI viết \"quản trị viên cần bật\" ở Enterprise: nguồn ghi owner (chủ sở hữu tổ chức) phải bật; admin chỉ bật tắt quyền ứng dụng và toàn quyền.",
+    "EZAI viết \"có trên tất cả các gói\": nguồn ghi đang mở dần (rolling out) ở mọi gói, trừ tổ chức HIPAA-ready và bản triển khai hybrid.",
+    "EZAI viết \"việc sử dụng các ứng dụng\" tính vào hạn mức: nguồn ghi cả việc làm ứng dụng lẫn mọi lượt ứng dụng gọi Claude.",
+    "EZAI không nói về ba mức quyền, việc Anthropic không duyệt ứng dụng, tự cập nhật, chia sẻ, điều kiện trực tuyến và loại artifact không cài được.",
+    "EZAI nêu ứng dụng thiên văn học: đúng, ở giây 12,4 của video là \"Ravi's night at the dome\" (điều khiển kính thiên văn)."
+  ]
+}

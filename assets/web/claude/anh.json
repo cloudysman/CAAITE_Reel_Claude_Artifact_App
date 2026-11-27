@@ -1,0 +1,31 @@
+{
+ "hop_thoai": {
+  "tep": "assets/web/claude/hop_thoai_cai.png",
+  "w": 2028,
+  "h": 710,
+  "to_sang": [
+   [
+    1105,
+    306,
+    1816,
+    359,
+    0
+   ],
+   [
+    79,
+    375,
+    755,
+    436,
+    0
+   ],
+   [
+    1714,
+    525,
+    1950,
+    630,
+    1
+   ]
+  ],
+  "nguon": "Khung 4,6 s của video demo @ClaudeDevs (3840x2160), cắt hộp thoại Install as app"
+ }
+}

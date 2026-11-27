@@ -1,0 +1,482 @@
+{
+ "mau": {
+  "ma": "A",
+  "text": "Và các công ty như Google đang đưa phỏng vấn trực tiếp quay trở lại, vì AI đang che ranh giới giữa kỹ năng thật và output được trợ giúp."
+ },
+ "quy_ve": [
+  [
+   "(?<![a-z])ây pi ai(?![a-z])",
+   "api"
+  ],
+  [
+   "(?<![a-z])cloud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])claud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])mác ô ét(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])mac os(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])khoá(?![a-z])",
+   "khóa"
+  ],
+  [
+   "(?<![a-z])kí(?![a-z])",
+   "ký"
+  ],
+  [
+   "(?<![a-z])lí(?![a-z])",
+   "lý"
+  ]
+ ],
+ "regex_vi": {
+  "Anthropic": "anthropic",
+  "Windows": "windows",
+  "email": "email",
+  "menu": "menu",
+  "link": "link"
+ },
+ "cau": [
+  {
+   "id": "B1S1",
+   "beat": "B1",
+   "show": "Một lời nhắn, Claude làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính.",
+   "tts": "Một lời nhắn, Claud làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính.",
+   "chunks": [
+    {
+     "show": "Một lời nhắn,",
+     "tts": "Một lời nhắn,",
+     "am_tiet": 3
+    },
+    {
+     "show": "Claude làm ra ứng dụng",
+     "tts": "Claud làm ra ứng dụng",
+     "am_tiet": 5
+    },
+    {
+     "show": "theo dõi rác vũ trụ chạy trên máy tính.",
+     "tts": "theo dõi rác vũ trụ chạy trên máy tính.",
+     "am_tiet": 9
+    }
+   ],
+   "am_tiet": 17,
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "tu_tu": 3,
+     "den_tu": 3,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    }
+   ]
+  },
+  {
+   "id": "B2S1",
+   "beat": "B2",
+   "show": "Bạn bảo Claude bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng.",
+   "tts": "Bạn bảo Claud bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng.",
+   "chunks": [
+    {
+     "show": "Bạn bảo Claude bản máy tính",
+     "tts": "Bạn bảo Claud bản máy tính",
+     "am_tiet": 6
+    },
+    {
+     "show": "làm ra một artifact,",
+     "tts": "làm ra một artifact,",
+     "am_tiet": 6
+    },
+    {
+     "show": "rồi chọn mục cài thành ứng dụng.",
+     "tts": "rồi chọn mục cài thành ứng dụng.",
+     "am_tiet": 7
+    }
+   ],
+   "am_tiet": 19,
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "tu_tu": 2,
+     "den_tu": 2,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    },
+    {
+     "tu": "artifact",
+     "tu_tu": 9,
+     "den_tu": 9,
+     "regex_en": "\\bartifacts?\\b|\\bartefacts?\\b"
+    }
+   ]
+  },
+  {
+   "id": "B2S2",
+   "beat": "B2",
+   "show": "Cài xong, ứng dụng có biểu tượng và cửa sổ riêng trên macOS hay Windows.",
+   "tts": "Cài xong, ứng dụng có biểu tượng và cửa sổ riêng trên mác ô ét hay Windows.",
+   "chunks": [
+    {
+     "show": "Cài xong, ứng dụng có biểu tượng",
+     "tts": "Cài xong, ứng dụng có biểu tượng",
+     "am_tiet": 7
+    },
+    {
+     "show": "và cửa sổ riêng",
+     "tts": "và cửa sổ riêng",
+     "am_tiet": 4
+    },
+    {
+     "show": "trên macOS hay Windows.",
+     "tts": "trên mác ô ét hay Windows.",
+     "am_tiet": 7
+    }
+   ],
+   "am_tiet": 18,
+   "tu_anh": [
+    {
+     "tu": "Windows",
+     "tu_tu": 16,
+     "den_tu": 16,
+     "regex_en": "\\bwindows?\\b"
+    }
+   ]
+  },
+  {
+   "id": "B3S1",
+   "beat": "B3",
+   "show": "Một kỹ sư Anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người.",
+   "tts": "Một kỹ sư Anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người.",
+   "chunks": [
+    {
+     "show": "Một kỹ sư Anthropic đã làm thử",
+     "tts": "Một kỹ sư Anthropic đã làm thử",
+     "am_tiet": 9
+    },
+    {
+     "show": "trình sửa ảnh, trình quản lý tệp",
+     "tts": "trình sửa ảnh, trình quản lý tệp",
+     "am_tiet": 7
+    },
+    {
+     "show": "và bản đồ cơ thể người.",
+     "tts": "và bản đồ cơ thể người.",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 22,
+   "tu_anh": [
+    {
+     "tu": "Anthropic",
+     "tu_tu": 3,
+     "den_tu": 3,
+     "regex_en": "\\banthropic\\b"
+    }
+   ]
+  },
+  {
+   "id": "B4S1",
+   "beat": "B4",
+   "show": "Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API, tài khoản Claude của bạn là đủ.",
+   "tts": "Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa ây pi ai, tài khoản Claud của bạn là đủ.",
+   "chunks": [
+    {
+     "show": "Bạn không phải đóng gói,",
+     "tts": "Bạn không phải đóng gói,",
+     "am_tiet": 5
+    },
+    {
+     "show": "ký số ứng dụng hay tạo khóa API,",
+     "tts": "ký số ứng dụng hay tạo khóa ây pi ai,",
+     "am_tiet": 10
+    },
+    {
+     "show": "tài khoản Claude của bạn là đủ.",
+     "tts": "tài khoản Claud của bạn là đủ.",
+     "am_tiet": 7
+    }
+   ],
+   "am_tiet": 22,
+   "tu_anh": [
+    {
+     "tu": "API",
+     "tu_tu": 12,
+     "den_tu": 14,
+     "regex_en": "\\ba\\W?p\\W?i\\b"
+    },
+    {
+     "tu": "Claude",
+     "tu_tu": 17,
+     "den_tu": 17,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    }
+   ]
+  },
+  {
+   "id": "B5S1",
+   "beat": "B5",
+   "show": "Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch, email.",
+   "tts": "Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch, email.",
+   "chunks": [
+    {
+     "show": "Ứng dụng dùng được các dịch vụ",
+     "tts": "Ứng dụng dùng được các dịch vụ",
+     "am_tiet": 7
+    },
+    {
+     "show": "bạn đã kết nối như lịch, email.",
+     "tts": "bạn đã kết nối như lịch, email.",
+     "am_tiet": 8
+    }
+   ],
+   "am_tiet": 15,
+   "tu_anh": [
+    {
+     "tu": "email",
+     "tu_tu": 13,
+     "den_tu": 13,
+     "regex_en": "\\be-?mails?\\b"
+    }
+   ]
+  },
+  {
+   "id": "B5S2",
+   "beat": "B5",
+   "show": "Nếu bạn cho phép, nó gửi được thông báo, hiện trên thanh menu hay khay hệ thống.",
+   "tts": "Nếu bạn cho phép, nó gửi được thông báo, hiện trên thanh menu hay khay hệ thống.",
+   "chunks": [
+    {
+     "show": "Nếu bạn cho phép,",
+     "tts": "Nếu bạn cho phép,",
+     "am_tiet": 4
+    },
+    {
+     "show": "nó gửi được thông báo,",
+     "tts": "nó gửi được thông báo,",
+     "am_tiet": 5
+    },
+    {
+     "show": "hiện trên thanh menu hay khay hệ thống.",
+     "tts": "hiện trên thanh menu hay khay hệ thống.",
+     "am_tiet": 9
+    }
+   ],
+   "am_tiet": 18,
+   "tu_anh": [
+    {
+     "tu": "menu",
+     "tu_tu": 12,
+     "den_tu": 12,
+     "regex_en": "\\bmenus?\\b"
+    }
+   ]
+  },
+  {
+   "id": "B5S3",
+   "beat": "B5",
+   "show": "Bạn sửa artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link.",
+   "tts": "Bạn sửa artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link.",
+   "chunks": [
+    {
+     "show": "Bạn sửa artifact",
+     "tts": "Bạn sửa artifact",
+     "am_tiet": 5
+    },
+    {
+     "show": "thì ứng dụng tự cập nhật,",
+     "tts": "thì ứng dụng tự cập nhật,",
+     "am_tiet": 6
+    },
+    {
+     "show": "muốn chia sẻ thì gửi link.",
+     "tts": "muốn chia sẻ thì gửi link.",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 17,
+   "tu_anh": [
+    {
+     "tu": "artifact",
+     "tu_tu": 2,
+     "den_tu": 2,
+     "regex_en": "\\bartifacts?\\b|\\bartefacts?\\b"
+    },
+    {
+     "tu": "link",
+     "tu_tu": 14,
+     "den_tu": 14,
+     "regex_en": "\\blinks?\\b"
+    }
+   ]
+  },
+  {
+   "id": "B6S1",
+   "beat": "B6",
+   "show": "Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói.",
+   "tts": "Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói.",
+   "chunks": [
+    {
+     "show": "Tính năng đang ở bản thử nghiệm,",
+     "tts": "Tính năng đang ở bản thử nghiệm,",
+     "am_tiet": 7
+    },
+    {
+     "show": "triển khai dần cho mọi gói.",
+     "tts": "triển khai dần cho mọi gói.",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 13,
+   "tu_anh": []
+  },
+  {
+   "id": "B6S2",
+   "beat": "B6",
+   "show": "Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt Claude làm việc cho nó.",
+   "tts": "Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt Claud làm việc cho nó.",
+   "chunks": [
+    {
+     "show": "Hạn mức sử dụng tính cả lúc làm ứng dụng",
+     "tts": "Hạn mức sử dụng tính cả lúc làm ứng dụng",
+     "am_tiet": 10
+    },
+    {
+     "show": "và mỗi lượt Claude làm việc cho nó.",
+     "tts": "và mỗi lượt Claud làm việc cho nó.",
+     "am_tiet": 8
+    }
+   ],
+   "am_tiet": 18,
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "tu_tu": 13,
+     "den_tu": 13,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    }
+   ]
+  },
+  {
+   "id": "B7S1",
+   "beat": "B7",
+   "show": "Mặc định, ứng dụng chỉ có quyền như khi chạy trong trình duyệt.",
+   "tts": "Mặc định, ứng dụng chỉ có quyền như khi chạy trong trình duyệt.",
+   "chunks": [
+    {
+     "show": "Mặc định, ứng dụng chỉ có quyền",
+     "tts": "Mặc định, ứng dụng chỉ có quyền",
+     "am_tiet": 7
+    },
+    {
+     "show": "như khi chạy trong trình duyệt.",
+     "tts": "như khi chạy trong trình duyệt.",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 13,
+   "tu_anh": []
+  },
+  {
+   "id": "B7S2",
+   "beat": "B7",
+   "show": "Muốn chạy chương trình khác hay sửa, xóa tệp, nó phải xin toàn quyền.",
+   "tts": "Muốn chạy chương trình khác hay sửa, xóa tệp, nó phải xin toàn quyền.",
+   "chunks": [
+    {
+     "show": "Muốn chạy chương trình khác",
+     "tts": "Muốn chạy chương trình khác",
+     "am_tiet": 5
+    },
+    {
+     "show": "hay sửa, xóa tệp,",
+     "tts": "hay sửa, xóa tệp,",
+     "am_tiet": 4
+    },
+    {
+     "show": "nó phải xin toàn quyền.",
+     "tts": "nó phải xin toàn quyền.",
+     "am_tiet": 5
+    }
+   ],
+   "am_tiet": 14,
+   "tu_anh": []
+  },
+  {
+   "id": "B7S3",
+   "beat": "B7",
+   "show": "Vì Anthropic không duyệt ứng dụng trước khi cài, chỉ nên cấp toàn quyền cho ứng dụng mà bạn tin.",
+   "tts": "Vì Anthropic không duyệt ứng dụng trước khi cài, chỉ nên cấp toàn quyền cho ứng dụng mà bạn tin.",
+   "chunks": [
+    {
+     "show": "Vì Anthropic không duyệt ứng dụng",
+     "tts": "Vì Anthropic không duyệt ứng dụng",
+     "am_tiet": 8
+    },
+    {
+     "show": "trước khi cài,",
+     "tts": "trước khi cài,",
+     "am_tiet": 3
+    },
+    {
+     "show": "chỉ nên cấp toàn quyền",
+     "tts": "chỉ nên cấp toàn quyền",
+     "am_tiet": 5
+    },
+    {
+     "show": "cho ứng dụng mà bạn tin.",
+     "tts": "cho ứng dụng mà bạn tin.",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 22,
+   "tu_anh": [
+    {
+     "tu": "Anthropic",
+     "tu_tu": 1,
+     "den_tu": 1,
+     "regex_en": "\\banthropic\\b"
+    }
+   ]
+  },
+  {
+   "id": "B8S1",
+   "beat": "B8",
+   "show": "Bạn có cấp toàn quyền cho ứng dụng mình làm không?",
+   "tts": "Bạn có cấp toàn quyền cho ứng dụng mình làm không?",
+   "chunks": [
+    {
+     "show": "Bạn có cấp toàn quyền",
+     "tts": "Bạn có cấp toàn quyền",
+     "am_tiet": 5
+    },
+    {
+     "show": "cho ứng dụng mình làm không?",
+     "tts": "cho ứng dụng mình làm không?",
+     "am_tiet": 6
+    }
+   ],
+   "am_tiet": 11,
+   "tu_anh": []
+  },
+  {
+   "id": "B8S2",
+   "beat": "B8",
+   "show": "Bình luận cho trung tâm biết nhé.",
+   "tts": "Bình luận cho trung tâm biết nhé.",
+   "chunks": [
+    {
+     "show": "Bình luận cho trung tâm biết nhé.",
+     "tts": "Bình luận cho trung tâm biết nhé.",
+     "am_tiet": 7
+    }
+   ],
+   "am_tiet": 7,
+   "tu_anh": []
+  }
+ ]
+}

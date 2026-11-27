@@ -1,0 +1,12 @@
+# Ảnh chụp các lượt kiểm tra và tư liệu tải gốc: để ở máy, không cần để dựng lại
+refs/qa/
+refs/demo_khung/
+tu_lieu_tai_ve/
+# Bản sao video đăng (trùng tệp ở thư mục gốc)
+DANG_BAI/*.mp4
+*.tar
+__pycache__/
+node_modules/
+renders/
+.DS_Store
+Thumbs.db

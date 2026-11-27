@@ -1,0 +1,202 @@
+<!doctype html>
+<!--
+  Ảnh bìa dọc 1080x1920 cho reel "Claude: cài artifact thành ứng dụng trên máy tính", cùng loạt với ảnh bìa các reel trước.
+  Không dùng logo công ty; chữ tự dựng; hình là khung thật của video demo @ClaudeDevs (Anthropic) và trang demo của Felix.
+  Mọi chữ chính nằm trong dải x 60-1020, y 420-1280.
+  Phương án: v1 "Artifact / thành ứng dụng" trên nền quả địa cầu của ứng dụng Debris (bản chính, khớp khung đầu video),
+  v2 "Một lời nhắn / thành ứng dụng" trên màn hình pixel của trang Felix (bản phụ).
+  Render: python -I -X utf8 src_build/render_thumbnail.py v1 v2 --final v1 --alt v2
+-->
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>Ảnh bìa Claude Install as app</title>
+<style>
+  @font-face { font-family: "Lexend"; src: url("../assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+
+  html, body { margin: 0; padding: 0; }
+  body { width: 1080px; height: 1920px; overflow: hidden; background: #12143a; }
+  #canvas { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Lexend", sans-serif; color: #ffffff; }
+  #canvas *, #canvas *::before, #canvas *::after { box-sizing: border-box; }
+
+  /* Nền chung của loạt: gradient thương hiệu + tấm kính soft-light + hạt + bóng tối nhẹ ở dưới */
+  .bg { position: absolute; inset: 0; }
+  .bg-grad { background: linear-gradient(160deg, #5154f5 0%, #4878eb 50%, #3ca7de 100%); }
+  .bg-plate { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; mix-blend-mode: soft-light; opacity: 0.22; }
+  .bg-grain { background: url("../assets/brand/grain-512.png") repeat; background-size: 512px 512px; mix-blend-mode: soft-light; opacity: 0.04; }
+  .bg-shade { background: linear-gradient(180deg, rgba(18, 20, 58, 0) 40%, rgba(18, 20, 58, 0.22) 100%); }
+  /* bóng chàm nhẹ sau tiêu đề: làm nền dưới chữ vàng cam tối đi một chút cho đủ tương phản (bản quầng cam đo được 3,01) */
+  .bg-warm { position: absolute; left: -260px; top: 380px; width: 1300px; height: 820px; background: radial-gradient(closest-side, rgba(28, 30, 120, 0.34), rgba(28, 30, 120, 0)); }
+  .logo-wm { position: absolute; left: 400px; top: 1420px; width: 1150px; opacity: 0.16; }
+  .bg-photo { position: absolute; inset: 0; width: 1080px; height: 1920px; object-fit: cover; }
+  .bg-dim { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8, 9, 30, 0.88) 0%, rgba(8, 9, 30, 0.62) 38%, rgba(8, 9, 30, 0.5) 62%, rgba(8, 9, 30, 0.9) 100%); }
+  .t-b.claude { color: #ffc3a8; }
+  .hdr, .kicker, .wm { z-index: 5; }
+  .fig.ui { background: transparent; box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45); border: 3px solid rgba(255, 255, 255, 0.85); }
+  .xchip { position: absolute; left: 72px; display: flex; align-items: center; gap: 16px; padding: 10px 24px 11px 12px; border-radius: 999px; background: rgba(22, 25, 80, 0.8); border: 2px solid rgba(255, 255, 255, 0.55); font-size: 30px; font-weight: 500; color: #ffffff; white-space: nowrap; }
+  .xchip b { font-weight: 700; color: #ffc3a8; }
+  .logo-wm img { display: block; width: 100%; height: auto; }
+
+  /* Nhãn trung tâm ở y 178: không bị mép ô 2:3 của YouTube (y 150) xén ngang; ô TikTok (từ y 240) bỏ hẳn nó */
+  .hdr { position: absolute; left: 72px; top: 178px; height: 58px; display: flex; align-items: center; gap: 20px; }
+  .hdr-label { font-size: 28px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.96); white-space: nowrap; }
+  .hdr-pill { font-size: 26px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 18px 7px; border-radius: 999px; border: 2px solid rgba(255, 255, 255, 0.78); background: rgba(18, 20, 58, 0.16); color: #ffffff; white-space: nowrap; }
+
+  .variant { position: absolute; inset: 0; display: none; }
+  body[data-v="v1"] #v1, body[data-v="v2"] #v2 { display: block; }
+
+  /* Watermark: viên logo CAAITE giống hệt watermark của video, đặt cuối hàng kicker: y 420-476, mép phải x 1008 */
+  .wm { position: absolute; right: 72px; top: 420px; height: 56px; display: flex; align-items: center; gap: 12px; padding: 0 20px 0 16px;
+        border-radius: 999px; background: rgba(18, 20, 58, 0.58); border: 2px solid rgba(255, 255, 255, 0.5); opacity: 0.94; }
+  .wm img { display: block; height: 34px; width: auto; }
+  .wm-text { font-size: 24px; font-weight: 600; letter-spacing: 0.12em; margin-right: -0.12em; color: #ffffff; }
+
+  .kicker { position: absolute; left: 72px; top: 428px; font-size: 38px; font-weight: 600; letter-spacing: 0.02em; color: #ffffff; white-space: nowrap; }
+
+  /* Tiêu đề hai dòng: dòng trên trắng, dòng dưới màu nhấn có ngôi sao; dòng dưới co vừa 944 px, dòng trên lấy cùng cỡ */
+  .title { position: absolute; left: 64px; white-space: nowrap; line-height: 1; letter-spacing: -0.02em; font-weight: 700; font-size: 200px; }
+  .t-a { color: #ffffff; }
+  .t-b { position: relative; display: inline-block; color: #a4e9ec; text-shadow: 0 4px 22px rgba(18, 20, 58, 0.34); }
+  .star { position: absolute; width: 0.36em; height: 0.366em; right: -0.46em; top: 0; color: #ffffff; filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.85)); }
+  .star svg { display: block; width: 100%; height: 100%; }
+
+  /* Thẻ kính trải hết bề ngang */
+  .pcard { position: absolute; left: 72px; width: 936px; padding: 26px 40px 28px; border-radius: 40px; background: rgba(24, 27, 102, 0.46); border: 2px solid rgba(255, 255, 255, 0.5); box-shadow: 0 30px 60px rgba(18, 20, 58, 0.22); }
+  .p-note { font-size: 28px; font-weight: 500; color: #ffffff; line-height: 1.3; margin-top: 18px; white-space: nowrap; }
+  .p-lead { font-size: 44px; font-weight: 600; color: #ffffff; line-height: 1.15; white-space: nowrap; }
+
+  /* Thanh chi phí một câu (v1): nhãn và số trên một dòng, thanh bên dưới, thang từ 0 */
+  .crow { margin-top: 16px; }
+  .crow-top { display: flex; justify-content: space-between; align-items: baseline; font-size: 36px; font-weight: 600; white-space: nowrap; }
+  .crow-top .cv { color: #ffffff; }
+  .crow .ct { position: relative; height: 30px; margin-top: 10px; border-radius: 999px; background: rgba(255, 255, 255, 0.16); overflow: hidden; }
+  .crow .cf { position: absolute; left: 0; top: 0; bottom: 0; border-radius: 999px; background: rgba(255, 255, 255, 0.85); }
+  .crow.on .cf { background: #a4e9ec; box-shadow: 0 0 14px rgba(164, 233, 236, 0.9); }
+  /* Dòng kể (v2): mỗi dòng một ý, số tô mint */
+  .p-li { font-size: 44px; font-weight: 500; line-height: 1.25; white-space: nowrap; margin-top: 14px; }
+  .p-li b { font-weight: 700; color: #a4e9ec; }
+
+  /* Thẻ đoạn cắt báo cáo, dưới thẻ chữ; nguồn đã ghi ở dòng p-note. Phần dưới y 1285 có thể bị dải tối của YouTube phủ */
+  .fig { position: absolute; left: 72px; width: 936px; border-radius: 28px; overflow: hidden; background: #ffffff; box-shadow: 0 30px 60px rgba(18, 20, 58, 0.25); }
+  .fig img { display: block; width: 100%; height: auto; }
+
+  /* Chế độ đo tương phản: ẩn nét chữ, giữ nguyên nền và thẻ */
+  body.no-text [data-key], body.no-text [data-key] * { color: transparent !important; text-shadow: none !important; filter: none !important; }
+  .ink-hide, .ink-hide * { color: transparent !important; text-shadow: none !important; filter: none !important; }
+</style>
+</head>
+<body data-v="v1">
+<div id="canvas">
+  <div class="bg bg-grad"></div>
+  <img class="bg-plate" src="../assets/plates/deep-v.jpg" alt="" />
+  <div class="bg bg-grain"></div>
+  <div class="bg-warm"></div>
+  <div class="bg bg-shade"></div>
+  <div class="logo-wm"><img src="../assets/brand/caaite-logo-white.svg" alt="" /></div>
+
+  <div class="hdr"><span class="hdr-label" data-key="hdr-label">Trung tâm Đào tạo AI Chuyên sâu</span><span class="hdr-pill" data-key="hdr-pill">Tin AI</span></div>
+
+  <div class="kicker" data-key="kicker">Tính năng mới của Claude</div>
+  <div class="wm" data-key="wm"><img src="../assets/brand/caaite-logo-white.svg" alt="CAAITE" /><span class="wm-text">CAAITE</span></div>
+
+  <!-- V1 (bản chính): khớp khung đầu của video (quả địa cầu của ứng dụng Debris Space Tracker) -->
+  <div class="variant" id="v1">
+    <img class="bg-photo" src="../assets/web/claude/khung_globe.jpg" alt="" />
+    <div class="bg-dim"></div>
+    <div class="title" data-key="title" data-fit="900" style="top: 520px;"><span class="t-a">Artifact</span></div>
+    <div class="title" data-key="title-b" data-fit="900" style="top: 690px;"><span class="t-b claude">thành ứng dụng<span class="star">%%STAR%%</span></span></div>
+    <div class="pcard" data-key="pcard" style="top: 900px;">
+      <div class="p-li" data-key="p-row" data-fit="852">Cài lên máy chạy <b>macOS, Windows</b></div>
+      <div class="p-note" data-key="p-note" data-fit="852">Bản thử nghiệm, Anthropic công bố 24/11/2026</div>
+    </div>
+    <div class="fig ui" style="top: 1112px;"><img src="../assets/web/claude/menu_install.png" alt="" /></div>
+  </div>
+
+  <!-- V2 (bản phụ): màn hình pixel của trang Felix, khớp cảnh 03 của video -->
+  <div class="variant" id="v2">
+    <img class="bg-photo" src="../assets/web/claude/hero_pixel.jpg" alt="" style="object-position: 74% 50%; filter: blur(1.5px);" />
+    <div class="bg-dim"></div>
+    <div class="title" data-key="title" data-fit="900" style="top: 520px;"><span class="t-a">Một lời nhắn</span></div>
+    <div class="title" data-key="title-b" data-fit="900" style="top: 690px;"><span class="t-b claude">thành ứng dụng<span class="star">%%STAR%%</span></span></div>
+    <div class="pcard" data-key="pcard" style="top: 900px;">
+      <div class="p-li" data-key="p-row" data-fit="852">Claude làm, bạn <b>cài lên máy tính</b></div>
+      <div class="p-note" data-key="p-note" data-fit="852">Ảnh: bài công bố của Anthropic, 24/11/2026</div>
+    </div>
+    <div class="xchip" data-key="p-note-2" style="top: 1128px;"><span>Bài công bố trên X: <b>3,9 triệu</b> lượt xem sau 7 giờ</span></div>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var STAR = '<svg viewBox="248600 63500 76000 77200"><path fill="currentColor" d="M286385 63629 C286385 63629 290830 84627 297942 91626 C304673 98371 324485 101934 324485 101934 C324485 101934 304927 106515 298196 113387 C291338 120387 286766 140621 286766 140621 C286766 140621 283083 119750 276098 112751 C269113 105752 248666 102189 248666 102189 C248666 102189 269113 98498 275971 91499 C282829 84500 286385 63502 286385 63502 Z"/></svg>';
+    document.querySelectorAll(".star").forEach(function (el) { el.innerHTML = STAR; });
+    var v = new URLSearchParams(location.search).get("v") || (location.hash || "#v1").slice(1);
+    document.body.setAttribute("data-v", v);
+
+    // các phần tử thuộc phương án đang xem: phần chung (ngoài .variant) + phương án v
+    function scope(sel) {
+      var out = [];
+      document.querySelectorAll("#canvas " + sel).forEach(function (el) {
+        var vEl = el.closest(".variant");
+        if ((!vEl || vEl.id === v) && getComputedStyle(el).display !== "none") out.push(el);
+      });
+      return out;
+    }
+
+    // Co chữ cho vừa bề ngang cho phép (data-fit, px); đo bề rộng thật của chữ (Range), kể cả ngôi sao.
+    // data-fit-from: dùng đúng cỡ chữ cuối của khối khác (dòng trên cùng cỡ với dòng dưới)
+    function textWidth(el) {
+      var range = document.createRange(); range.selectNodeContents(el);
+      var rr = range.getBoundingClientRect();
+      var right = rr.right, left = rr.left;
+      el.querySelectorAll(".star").forEach(function (s) { var sr = s.getBoundingClientRect(); right = Math.max(right, sr.right); });
+      return right - left;
+    }
+    function fitAll() {
+      scope("[data-fit]").forEach(function (el) {
+        var maxW = parseFloat(el.getAttribute("data-fit"));
+        var fs = parseFloat(getComputedStyle(el).fontSize);
+        var guard = 0;
+        while (textWidth(el) > maxW && fs > 12 && guard++ < 400) { fs -= 1; el.style.fontSize = fs + "px"; }
+        el.setAttribute("data-fit-final", String(fs));
+      });
+      scope("[data-fit-from]").forEach(function (el) {
+        var vEl = el.closest(".variant");
+        var src = (vEl || document).querySelector('[data-key="' + el.getAttribute("data-fit-from") + '"]');
+        if (src) { el.style.fontSize = getComputedStyle(src).fontSize; el.setAttribute("data-fit-final", parseFloat(getComputedStyle(src).fontSize)); }
+      });
+    }
+
+    window.__metrics = function () {
+      return scope("[data-key]").map(function (el) {
+        var r = el.getBoundingClientRect();
+        var cs = getComputedStyle(el);
+        var glyphs = [];
+        var walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+        var n;
+        while ((n = walker.nextNode())) {
+          if (!n.textContent.trim()) continue;
+          var range = document.createRange(); range.selectNodeContents(n);
+          var rr = range.getBoundingClientRect();
+          glyphs.push({ text: n.textContent, x: rr.left, y: rr.top, w: rr.width, h: rr.height, color: getComputedStyle(n.parentElement).color, size: parseFloat(getComputedStyle(n.parentElement).fontSize) });
+        }
+        var ix0 = Infinity, iy0 = Infinity, ix1 = -Infinity, iy1 = -Infinity;
+        glyphs.forEach(function (g) { ix0 = Math.min(ix0, g.x); iy0 = Math.min(iy0, g.y); ix1 = Math.max(ix1, g.x + g.w); iy1 = Math.max(iy1, g.y + g.h); });
+        var extras = [];
+        el.querySelectorAll(".star").forEach(function (s) { var sr = s.getBoundingClientRect(); extras.push([sr.left, sr.top, sr.right, sr.bottom]); ix0 = Math.min(ix0, sr.left); iy0 = Math.min(iy0, sr.top); ix1 = Math.max(ix1, sr.right); iy1 = Math.max(iy1, sr.bottom); });
+        if (!isFinite(ix0)) { ix0 = r.left; iy0 = r.top; ix1 = r.right; iy1 = r.bottom; }
+        return { key: el.getAttribute("data-key"), text: el.textContent.trim(), x: ix0, y: iy0, w: ix1 - ix0, h: iy1 - iy0, box: [r.left, r.top, r.width, r.height], fontSize: parseFloat(cs.fontSize), fit: el.getAttribute("data-fit-final"), glyphs: glyphs, extras: extras };
+      });
+    };
+
+    window.__ready = false;
+    Promise.all([
+      document.fonts.ready,
+      Promise.all(Array.prototype.map.call(document.images, function (img) {
+        return img.complete && img.naturalWidth ? Promise.resolve() : new Promise(function (res) { img.onload = res; img.onerror = res; });
+      }))
+    ]).then(function () { fitAll(); window.__ready = true; });
+  })();
+</script>
+</body>
+</html>

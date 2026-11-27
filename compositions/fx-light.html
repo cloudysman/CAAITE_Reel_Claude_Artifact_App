@@ -1,0 +1,56 @@
+<!doctype html>
+<!--
+  fx-light: vệt sáng chéo theo dải sáng của template CAAITE + quầng ngôi sao, dùng cho chuyển cảnh "light".
+  TỆP SINH TỰ ĐỘNG bởi src_build/build_index.py. Dài 1,2 s; host đặt data-start = mốc cắt - 0,25 s.
+-->
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>fx-light</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        #fxl-root {
+          position: absolute;
+          inset: 0;
+          overflow: hidden;
+          pointer-events: none;
+        }
+        #fxl-band {
+          position: absolute;
+          left: -420px;
+          top: 420px;
+          width: 2600px;
+          height: 1460px;
+          mix-blend-mode: screen;
+          opacity: 0;
+        }
+        #fxl-bloom {
+          position: absolute;
+          left: 90px;
+          top: 510px;
+          width: 900px;
+          height: 900px;
+          mix-blend-mode: screen;
+          opacity: 0;
+        }
+      </style>
+      <div id="fxl-root" data-composition-id="fx-light" data-width="1080" data-height="1920" data-duration="1.2">
+        <img id="fxl-band" src="assets/derived/light-band.png" alt="" />
+        <img id="fxl-bloom" src="assets/derived/star-bloom-900.png" alt="" />
+      </div>
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+          tl.fromTo("#fxl-band", { x: -1400, y: 520, rotation: -28 }, { x: 900, y: -260, rotation: -28, duration: 1.0, ease: "power2.inOut" }, 0);
+          tl.fromTo("#fxl-band", { opacity: 0 }, { opacity: 1, duration: 0.3, ease: "power1.out", immediateRender: false }, 0);
+          tl.to("#fxl-band", { opacity: 0, duration: 0.3, ease: "power1.in" }, 0.72);
+          tl.fromTo("#fxl-bloom", { scale: 0.3, opacity: 0 }, { scale: 1.25, opacity: 0.9, duration: 0.28, ease: "power2.out" }, 0.2);
+          tl.to("#fxl-bloom", { scale: 1.6, opacity: 0, duration: 0.45, ease: "power2.in" }, 0.5);
+          window.__timelines["fx-light"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

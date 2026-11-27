@@ -1,0 +1,12 @@
+[
+ ["claude", "Giờ đây, chỉ cần mô tả ý tưởng, {X} làm ra ứng dụng để bạn cài lên máy tính.", ["Claude", "Clốt", "Claud"], "\\bclaude?s?\\b|\\bclod\\b|\\bclaud\\b"],
+ ["artifact", "Bạn nhờ Claude làm một {X}, rồi chọn mục cài thành ứng dụng.", ["artifact", "a ti phác", "ác ti phác", "a ti phắc"], "\\bartifacts?\\b|\\bartefacts?\\b"],
+ ["windows", "Ứng dụng có biểu tượng, cửa sổ riêng trên Mac hay {X}, mở như mọi ứng dụng khác.", ["Windows", "Uyn đâu", "Guyn đâu"], "\\bwindows?\\b"],
+ ["mac", "Ứng dụng có biểu tượng, cửa sổ riêng trên {X} hay Windows, mở như mọi ứng dụng khác.", ["Mac", "Mác", "Mắc"], "\\bmac\\b|\\bmack\\b|\\bmacs\\b"],
+ ["enterprise", "Tính năng đang thử nghiệm, mở dần ở mọi gói, riêng {X} phải chờ chủ sở hữu bật.", ["Enterprise", "En tơ prai", "En tơ prai dơ"], "\\benterprises?\\b"],
+ ["anthropic", "Kỹ sư {X} đã làm thử trình sửa ảnh, trình quản lý tệp, cả bản đồ cơ thể người.", ["Anthropic", "An thờ róp pích"], "\\banthropic\\b"],
+ ["email", "Ứng dụng dùng được Claude và các kết nối của bạn, như lịch và {X}.", ["email", "i meo", "i mêu"], "\\be-?mails?\\b"],
+ ["api", "Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa {X}, vì nó dùng tài khoản Claude của bạn.", ["ây pi ai", "Ây Pi Ai"], "\\ba\\W?p\\W?i\\b"],
+ ["menu", "Nếu bạn cho phép, nó còn gửi thông báo và hiện trên thanh {X}.", ["menu", "mê nu"], "\\bmenus?\\b"],
+ ["link", "Sửa artifact là ứng dụng tự cập nhật, và gửi được cho người khác qua đường {X}.", ["link", "linh"], "\\blinks?\\b"]
+]

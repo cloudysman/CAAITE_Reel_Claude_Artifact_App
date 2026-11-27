@@ -1,0 +1,102 @@
+{
+ "ghi_chu": "Cách viết cho máy đọc trong reel Claude cài artifact thành ứng dụng, đo 25/11/2026 bằng voice/src/c2_giong_mau.py (tu_vong1.json, tu_vong2.json), giọng mẫu A: artifact, Anthropic, email, menu, link, ây pi ai đạt 2/2 ở tai tiếng Anh; Claude viết Claud (4/11, chữ gốc 2/11); macOS viết mác ô ét (2/3; Mac 0/9 ở mọi cách viết khác); Windows giữ chữ gốc (2/5). Claude và API chỉ tính đạt theo tai tiếng Anh.",
+ "mau": {
+  "ma": "A",
+  "text": "Và các công ty như Google đang đưa phỏng vấn trực tiếp quay trở lại, vì AI đang che ranh giới giữa kỹ năng thật và output được trợ giúp."
+ },
+ "tu": [
+  {
+   "goc": "API",
+   "doc": "ây pi ai",
+   "regex_en": "\\ba\\W?p\\W?i\\b"
+  },
+  {
+   "goc": "Claude",
+   "doc": "Claud",
+   "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+  },
+  {
+   "goc": "Anthropic",
+   "doc": "Anthropic",
+   "regex_en": "\\banthropic\\b",
+   "regex_vi": "anthropic"
+  },
+  {
+   "goc": "artifact",
+   "doc": "artifact",
+   "regex_en": "\\bartifacts?\\b|\\bartefacts?\\b"
+  },
+  {
+   "goc": "Windows",
+   "doc": "Windows",
+   "regex_en": "\\bwindows?\\b",
+   "regex_vi": "windows"
+  },
+  {
+   "goc": "email",
+   "doc": "email",
+   "regex_en": "\\be-?mails?\\b",
+   "regex_vi": "email"
+  },
+  {
+   "goc": "menu",
+   "doc": "menu",
+   "regex_en": "\\bmenus?\\b",
+   "regex_vi": "menu"
+  },
+  {
+   "goc": "link",
+   "doc": "link",
+   "regex_en": "\\blinks?\\b",
+   "regex_vi": "link"
+  }
+ ],
+ "khong_doc": {
+  "Install as app": "để trên hình, lời đọc nói 'mục cài thành ứng dụng'",
+  "Enterprise": "để trên hình (chờ chủ sở hữu bật)"
+ },
+ "quy_ve": [
+  [
+   "(?<![a-z])ây pi ai(?![a-z])",
+   "api"
+  ],
+  [
+   "(?<![a-z])cloud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])claud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])mác ô ét(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])mac os(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])khoá(?![a-z])",
+   "khóa"
+  ],
+  [
+   "(?<![a-z])kí(?![a-z])",
+   "ký"
+  ],
+  [
+   "(?<![a-z])lí(?![a-z])",
+   "lý"
+  ]
+ ],
+ "am_tiet_tu_anh": {
+  "claud": 1,
+  "claude": 1,
+  "anthropic": 3,
+  "artifact": 3,
+  "windows": 2,
+  "email": 2,
+  "menu": 2,
+  "link": 1
+ }
+}

@@ -1,0 +1,22 @@
+== Chuỗi bài @ClaudeDevs trên X (https://x.com/ClaudeDevs/status/2125315491522650299), đăng 2026-11-24T19:47:54Z = 02:47 ngày 25/11/2026 giờ Việt Nam ==
+Bài 1: "You can now install Claude artifacts as desktop apps on Mac and Windows.
+Ask Claude to build an artifact, click "Install as app", and open it like any other app. It can use your connectors and, if you allow it, send notifications or add a menu bar item." (kèm video demo 27,6 s)
+Số liệu lúc đọc (10:08 ngày 25/11/2026 giờ Việt Nam): 3.906.556 lượt xem, 41.888 lượt thích, 4.208 lượt đăng lại, 796 trả lời, 24.369 lượt lưu.
+Bài 2: "You don't have to package or sign the app, or set up an API key. Building the app and any calls it makes to Claude count toward your usage limits.
+It's in beta on all plans in Claude Desktop (on Enterprise, an owner needs to switch it on first)." (kèm thẻ link "Turn artifacts into Mac and Windows apps", claude.com)
+
+== Trang "Felix's Demo Apps" (https://claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ), đọc 25/11/2026, trang ghi "Content is user-generated and unverified." ==
+Cửa sổ Welcome: "Claude can now make desktop apps. Hi, I'm Felix, and I work on Claude. I'm excited about a new feature we've been working on: You can now create, run, and share powerful desktop apps. You, dear reader, need zero programming skills - but even if you have some, you might find this way of building apps delightful.
+To create an app, just tell Claude about your idea. To share it with friends and colleagues, send them a link. Once installed, apps get their own icon and window. They can use Claude, your connectors, and, with your permission, even native macOS and Windows APIs to do things only desktop apps can. Under the hood, apps are artifacts (our hosted interactive pages) with additional capabilities.
+Here, I'm sharing some of my demo apps: an image editor, a terminal, a menu bar break reminder, and many more. I made them to inspire you with what's possible. They're not official Anthropic products."
+Biểu tượng trên màn hình: Bonsai (Break Reminder), Debris (Space Junk Tracker), Marrow (Body Atlas), Linnet (Image Editor), Alcove (Apartment Planner), Footprint (Disk Space Explorer), Tern (Terminal), Phosphor (File Manager), Sift (Folder Automations), Tally (Todo App), Vitals (System Monitor).
+Cửa sổ Marrow: "Take the human body apart and see how each piece works." Cửa sổ Tern: "A terminal with Claude by your side to help and explain." Cửa sổ Linnet: "A full layered image editor."
+Trang Phosphor (claude.ai/artifact/UtJhPrH24ejRTTWRtohwbx): "This app was made with Claude's new 'artifact apps' feature, which lets you make, run, and share desktop apps." và "These demo apps are not official Anthropic products."
+
+== Video demo trong bài 1 (27,6 s, 3840x2160, không có tiếng), mô tả theo khung hình ==
+0-1 s: cửa sổ Claude Desktop, lời nhắn "Build me an app that tracks every piece of space junk in orbit.", trả lời "Here's your space junk tracker.", artifact "Debris Space Tracker" (quả địa cầu, 33.319 vật thể).
+2-3 s: menu của artifact: Share, Export, Pop out, Open in web, Unpin, Install as app (Beta), Rename, Duplicate, Move to..., Refresh, Permissions, Give feedback, Related artifacts, Close tab, Delete.
+4 s: hộp thoại "Install "Debris Space Tracker" as an app? (Beta) If you continue, "Debris Space Tracker" will be installed as a standalone program and get its own windows and icons. It can't reach your files or run programs unless you allow it." nút Cancel, Install.
+7-9 s: cửa sổ thu nhỏ, biểu tượng quả địa cầu hiện ở thanh Dock của macOS; ứng dụng mở trong cửa sổ riêng.
+10-18 s: các ứng dụng mẫu khác: Imre's plate 14 (đĩa nuôi tinh thể), Ravi's night at the dome (điều khiển kính thiên văn, bản đồ sao, chế độ đỏ), mực nước "2.41 m, rising", bản vẽ ổ trục "Front bearing", Priya's third notebook (bản đồ nhiệt gen), Edith's Main Street (mặt tiền nhà), Mateo's roast log (rang cà phê, "First crack 9:12"), Time's crossing (hải đồ).
+19-23 s: chữ "Build, run, and share desktop apps with Claude" / "Now available in beta in Claude for macOS & Windows". 24-27 s: logo Claude.

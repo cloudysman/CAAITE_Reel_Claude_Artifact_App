@@ -1,0 +1,34 @@
+ĐĂNG TIKTOK: reel Claude cài artifact thành ứng dụng trên máy tính
+
+Tệp cần tải lên (cùng thư mục này)
+- Video: CAAITE-reel-Claude-artifact-app.mp4
+- Ảnh bìa: anh-bia-TikTok.jpg
+
+
+Tiêu đề (chỉ dùng nếu ứng dụng có ô "Tiêu đề"; không có thì bỏ qua)
+
+Một lời nhắn, Claude làm ứng dụng chạy trên máy tính
+
+
+Mô tả (dán nguyên phần giữa hai dòng gạch)
+----------------------------------------
+Một lời nhắn, Claude làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính. Tính năng Install as app cài artifact thành ứng dụng có biểu tượng và cửa sổ riêng trên macOS, Windows. Anthropic công bố bản thử nghiệm ngày 24/11/2026, đang triển khai dần. Bạn không phải đóng gói, ký số hay tạo khóa API. Ứng dụng dùng được Claude và các dịch vụ bạn đã kết nối, gửi được thông báo nếu bạn cho phép. Anthropic không duyệt ứng dụng trước khi cài, nên chỉ cấp toàn quyền cho ứng dụng bạn tin.
+
+Bạn có cấp toàn quyền cho ứng dụng mình làm không? Bình luận cho trung tâm biết nhé.
+
+Nguồn: Anthropic (claude.com, 24/11/2026), bài và video của @ClaudeDevs trên X, trang demo của Felix, kỹ sư Anthropic (claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ). Bản tin gốc: EZAI. Giọng đọc được tạo bằng AI.
+Trung tâm Đào tạo AI Chuyên sâu (CAAITE), Khoa Trí tuệ nhân tạo, PTIT · ptitai.org
+
+#Claude #Anthropic #TinAI #AI #CAAITE
+----------------------------------------
+
+
+Các bước (TikTok Studio trên máy tính; trên điện thoại các mục tương tự)
+
+1. TikTok Studio > Tải lên > chọn CAAITE-reel-Claude-artifact-app.mp4.
+2. Ô Mô tả: dán phần mô tả ở trên.
+3. Ảnh bìa: Chỉnh sửa ảnh bìa > Tải ảnh bìa lên > chọn anh-bia-TikTok.jpg. Nếu công cụ hiện khung cắt 3:4 thì để khung ở giữa.
+4. Cài đặt khác: bật nhãn "Nội dung do AI tạo" (giọng đọc là giọng nhân bản bằng AI); Ai có thể xem: Mọi người; cho phép bình luận.
+5. Bấm Đăng.
+
+Lưu ý trước khi đăng: giọng mẫu thuộc kênh "AI News - Tin tức AI" (@ainius.net), cần xin phép chủ giọng trước khi đăng công khai. Video dùng đoạn ngắn video demo của @ClaudeDevs (Anthropic) và ảnh chụp trang demo của Felix để đưa tin, đã ghi nguồn trên hình và trong mô tả.

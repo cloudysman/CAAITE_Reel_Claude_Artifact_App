@@ -1,0 +1,7 @@
+[
+ ["claude_b1", "Giờ đây, chỉ cần mô tả ý tưởng, {X} làm ra ứng dụng để bạn cài lên máy tính.", ["Claude", "Claud", "Clod", "Clôd", "Clo"], "\\bclaude?s?\\b|\\bclod\\b|\\bclaud\\b"],
+ ["claude_b2", "Bạn nhờ {X} làm một artifact, rồi chọn mục cài thành ứng dụng.", ["Claude", "Claud", "Clod", "Clôd", "Clo"], "\\bclaude?s?\\b|\\bclod\\b|\\bclaud\\b"],
+ ["claude_b3", "Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa ây pi ai, vì nó dùng tài khoản {X} của bạn.", ["Claude", "Claud", "Clod", "Clôd", "Clo"], "\\bclaude?s?\\b|\\bclod\\b|\\bclaud\\b"],
+ ["mac", "Ứng dụng có biểu tượng, cửa sổ riêng trên {X} hay Windows, mở như mọi ứng dụng khác.", ["Méc", "Mẹc", "mác ô ét", "méc ô ét", "macOS"], "\\bmac\\b|\\bmack\\b|\\bmacs\\b|\\bmac\\s?os\\b|\\bmacos\\b"],
+ ["windows", "Ứng dụng có biểu tượng, cửa sổ riêng trên Mac hay {X}, mở như mọi ứng dụng khác.", ["Windows", "Uyn đâu", "Uyn đâu xơ"], "\\bwindows?\\b"]
+]

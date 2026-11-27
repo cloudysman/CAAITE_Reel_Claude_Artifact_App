@@ -1,0 +1,15 @@
+Một lời nhắn, Claude làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính.
+Bạn bảo Claude bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng.
+Cài xong, ứng dụng có biểu tượng và cửa sổ riêng trên macOS hay Windows.
+Một kỹ sư Anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người.
+Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API, tài khoản Claude của bạn là đủ.
+Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch, email.
+Nếu bạn cho phép, nó gửi được thông báo, hiện trên thanh menu hay khay hệ thống.
+Bạn sửa artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link.
+Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói.
+Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt Claude làm việc cho nó.
+Mặc định, ứng dụng chỉ có quyền như khi chạy trong trình duyệt.
+Muốn chạy chương trình khác hay sửa, xóa tệp, nó phải xin toàn quyền.
+Vì Anthropic không duyệt ứng dụng trước khi cài, chỉ nên cấp toàn quyền cho ứng dụng mà bạn tin.
+Bạn có cấp toàn quyền cho ứng dụng mình làm không?
+Bình luận cho trung tâm biết nhé.

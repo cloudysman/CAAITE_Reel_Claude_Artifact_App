@@ -1,0 +1,38 @@
+ĐĂNG YOUTUBE SHORTS: reel Claude cài artifact thành ứng dụng trên máy tính
+
+Tệp cần tải lên (cùng thư mục này)
+- Video: CAAITE-reel-Claude-artifact-app.mp4
+- Ảnh bìa: anh-bia-YouTube.jpg (đi cùng tiêu đề khuyên dùng bên dưới)
+
+
+Tiêu đề (khuyên dùng)
+
+%%TIEU_DE_1%%
+
+Tiêu đề này đã nêu tên tính năng, nên ảnh bìa YouTube là bản phụ ("Một lời nhắn / thành ứng dụng") để hai thứ không lặp nhau.
+Nếu muốn đổi tiêu đề:
+- %%TIEU_DE_2%% (đổi ảnh bìa thành anh-bia-YouTube-ban-khac.jpg, ảnh "Artifact / thành ứng dụng")
+- %%TIEU_DE_3%% (giữ ảnh bìa anh-bia-YouTube.jpg)
+
+
+Mô tả (dán nguyên phần giữa hai dòng gạch)
+----------------------------------------
+%%MO_TA%%
+----------------------------------------
+
+
+Thẻ (dán vào ô "Thẻ")
+
+%%THE%%
+
+
+Các bước (YouTube Studio trên máy tính)
+
+1. Tạo > Tải video lên > chọn CAAITE-reel-Claude-artifact-app.mp4.
+2. Tiêu đề, Mô tả: dán hai phần ở trên.
+3. Hình thu nhỏ: chỉ kênh thuộc Chương trình Đối tác YouTube (YPP) có tài khoản đã xác minh mới tải được ảnh riêng cho Shorts. Có nút Tải tệp lên thì chọn anh-bia-YouTube.jpg (có thể làm sau khi đăng: Nội dung > tab Shorts > biểu tượng bút chì > Hình thu nhỏ > Tải tệp lên > Lưu). Không có nút đó thì trong ứng dụng YouTube trên điện thoại, chọn khung hình %%KHUNG_DU_PHONG%%. Không chèn ảnh bìa vào đầu video vì sẽ làm hỏng câu mở đầu 3 giây.
+4. Đối tượng người xem: "Không, nội dung này không dành cho trẻ em".
+5. Hiện thêm > Nội dung đã bị thay đổi hoặc nội dung tổng hợp: chọn "Có" (giọng đọc là giọng nhân bản bằng AI). Thẻ: dán phần thẻ ở trên. Ngôn ngữ video: Tiếng Việt. Danh mục: Khoa học và công nghệ.
+6. Chế độ hiển thị: Công khai > Xuất bản.
+
+Lưu ý trước khi đăng: giọng mẫu thuộc kênh "AI News - Tin tức AI" (@ainius.net), cần xin phép chủ giọng trước khi đăng công khai.

@@ -1,0 +1,61 @@
+{
+  "file": "assets/stock/audio/sfx-riser-trailer-short-mixkit-790-48k.wav",
+  "kind": "sfx",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-sound-effects/riser/",
+  "download_url": "https://assets.mixkit.co/active_storage/sfx/790/790.wav",
+  "license_name": "Mixkit Sound Effects Free License",
+  "license_url": "https://mixkit.co/license/#sfxFree",
+  "license_note": "Mixkit Sound Effects Free License (text read at https://mixkit.co/license/ modal 'sfxFree', 29/09/2026): free for commercial and non-commercial projects incl. YouTube, educational use, broadcast; may modify; may not redistribute the item on its own or as stock/template. No attribution required.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "Cinematic trailer riser",
+  "description": "\"Cinematic trailer riser\" (Mixkit SFX #790). Short, quiet trailer riser (2.6 s) climbing steadily to its end at ~2.5 s. Measured: 2.58 s, RMS -24.8 dBFS, -22.3 LUFS, onset 0.84 s, loudest at 2.49 s, audible to 2.57 s, brightness centroid 1550 Hz.",
+  "fit_score": 7,
+  "suggested_use": "Short tension lift before a title card or the final hit; ends exactly where the next event should land.",
+  "duration_s": 2.575,
+  "measurements": {
+    "duration_s": 2.575,
+    "rms_dbfs": -24.8,
+    "peak_dbfs": -5.4,
+    "integrated_lufs": -22.3,
+    "loudness_range_lu": 0.0,
+    "true_peak_dbfs": -6.3,
+    "bpm_estimate": null,
+    "bpm_confidence": null,
+    "strongest_hits": [
+      {
+        "t_s": 1.88,
+        "rel_strength": 0.18
+      },
+      {
+        "t_s": 2.21,
+        "rel_strength": 0.49
+      },
+      {
+        "t_s": 2.46,
+        "rel_strength": 1.0
+      }
+    ],
+    "brightness_centroid_hz": 1550,
+    "strongest_hits_s": [
+      1.88,
+      2.21,
+      2.46
+    ],
+    "onset_s": 0.84,
+    "loudest_10ms_at_s": 2.49,
+    "audible_end_s_minus45db": 2.57
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 2.575,
+    "size_bytes": 494514
+  },
+  "derived_from": "assets/stock/audio/sfx-riser-trailer-short-mixkit-790.wav",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak -6.28 dBFS; gain applied 0.0 dB"
+}

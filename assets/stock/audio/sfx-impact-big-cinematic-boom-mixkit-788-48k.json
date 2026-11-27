@@ -1,0 +1,61 @@
+{
+  "file": "assets/stock/audio/sfx-impact-big-cinematic-boom-mixkit-788-48k.wav",
+  "kind": "sfx",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-sound-effects/impact/",
+  "download_url": "https://assets.mixkit.co/active_storage/sfx/788/788.mp3",
+  "license_name": "Mixkit Sound Effects Free License",
+  "license_url": "https://mixkit.co/license/#sfxFree",
+  "license_note": "Mixkit Sound Effects Free License (text read at https://mixkit.co/license/ modal 'sfxFree', 29/09/2026): free for commercial and non-commercial projects incl. YouTube, educational use, broadcast; may modify; may not redistribute the item on its own or as stock/template. No attribution required.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "Big cinematic impact",
+  "description": "\"Big cinematic impact\" (Mixkit SFX #788). Deep cinematic boom (7.9 s) with a short air swell (from ~0.9 s) into the hit at ~2.18 s and a long low tail. Measured: 7.94 s, RMS -19.1 dBFS, -15.8 LUFS, onset 0.88 s, loudest at 2.18 s, audible to 6.49 s, brightness centroid 242 Hz.",
+  "fit_score": 7,
+  "suggested_use": "Logo lock-up hit: start the file 2.18 s before the logo lands. Keep it 6-10 dB under a full-scale mix so it adds weight, not darkness.",
+  "duration_s": 7.941,
+  "measurements": {
+    "duration_s": 7.941,
+    "rms_dbfs": -19.1,
+    "peak_dbfs": 2.5,
+    "integrated_lufs": -15.8,
+    "loudness_range_lu": 19.6,
+    "true_peak_dbfs": -0.4,
+    "bpm_estimate": 96.8,
+    "bpm_confidence": 0.133,
+    "strongest_hits": [
+      {
+        "t_s": 0.91,
+        "rel_strength": 0.07
+      },
+      {
+        "t_s": 2.11,
+        "rel_strength": 1.0
+      },
+      {
+        "t_s": 3.25,
+        "rel_strength": 0.08
+      }
+    ],
+    "brightness_centroid_hz": 242,
+    "strongest_hits_s": [
+      0.91,
+      2.11,
+      3.25
+    ],
+    "onset_s": 0.88,
+    "loudest_10ms_at_s": 2.18,
+    "audible_end_s_minus45db": 6.49
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 7.941,
+    "size_bytes": 1524794
+  },
+  "derived_from": "assets/stock/audio/sfx-impact-big-cinematic-boom-mixkit-788.mp3",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak -0.4 dBFS; gain applied 0.0 dB"
+}

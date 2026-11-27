@@ -1,0 +1,56 @@
+{
+  "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+  "kind": "sfx",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-sound-effects/click/",
+  "download_url": "https://assets.mixkit.co/active_storage/sfx/3124/3124.wav",
+  "license_name": "Mixkit Sound Effects Free License",
+  "license_url": "https://mixkit.co/license/#sfxFree",
+  "license_note": "Mixkit Sound Effects Free License (text read at https://mixkit.co/license/ modal 'sfxFree', 29/09/2026): free for commercial and non-commercial projects incl. YouTube, educational use, broadcast; may modify; may not redistribute the item on its own or as stock/template. No attribution required.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "Modern technology select",
+  "description": "\"Modern technology select\" (Mixkit SFX #3124). Tiny, crisp UI tick (0.5 s file, transient ~20 ms). Measured: 0.50 s, RMS -25.5 dBFS, -22.2 LUFS, onset 0.0 s, loudest at 0.01 s, audible to 0.02 s, brightness centroid 2608 Hz.",
+  "fit_score": 7,
+  "suggested_use": "Numbers '01 02 03', divider lines drawing in, small label pops.",
+  "duration_s": 0.5,
+  "measurements": {
+    "duration_s": 0.5,
+    "rms_dbfs": -25.5,
+    "peak_dbfs": -1.8,
+    "integrated_lufs": -22.2,
+    "loudness_range_lu": 0.0,
+    "true_peak_dbfs": -4.1,
+    "bpm_estimate": null,
+    "bpm_confidence": null,
+    "strongest_hits": [
+      {
+        "t_s": 0.14,
+        "rel_strength": 0.0
+      },
+      {
+        "t_s": 0.39,
+        "rel_strength": 0.0
+      }
+    ],
+    "brightness_centroid_hz": 2608,
+    "strongest_hits_s": [
+      0.14,
+      0.39
+    ],
+    "onset_s": 0.0,
+    "loudest_10ms_at_s": 0.01,
+    "audible_end_s_minus45db": 0.02
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 0.5,
+    "size_bytes": 96118
+  },
+  "derived_from": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124.wav",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak -4.17 dBFS; gain applied 0.0 dB"
+}

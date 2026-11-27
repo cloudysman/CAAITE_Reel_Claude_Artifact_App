@@ -1,0 +1,81 @@
+{
+  "file": "assets/stock/audio/music-ramp-it-up-corporate-tech-mixkit-69.mp3",
+  "kind": "music",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-stock-music/tag/technology/?page=2",
+  "download_url": "https://assets.mixkit.co/music/69/69.mp3",
+  "license_name": "Mixkit Stock Music Free License",
+  "license_url": "https://mixkit.co/license/#musicFree",
+  "license_note": "Mixkit Stock Music Free License (text read at https://mixkit.co/license/ modal 'musicFree', 29/09/2026): free for commercial and non-commercial projects; allowed: YouTube videos, social media, online ads, educational purposes, podcasts, internet VOD; NOT allowed: CDs/DVDs, TV & radio broadcast, video games; may not be remixed into a music-only track, redistributed alone, or registered with a rights-management (Content ID) service. No attribution required. Mixkit asks that any YouTube claim be forwarded to team@mixkit.co.",
+  "attribution_required": false,
+  "author": "Ahjay Stelino",
+  "title": "Ramp It Up",
+  "description": "\"Ramp It Up\" by Ahjay Stelino (Mixkit #69; tags: Rhythmic Underscore, Corporate Music, Positive, Futuristic, Bass, Drums, Industry, Technology). Bright (highest spectral brightness of all candidates), steady ~120 BPM corporate/tech underscore. Opens with a sustained pad bed (0-16 s), the full groove enters at 16.06 s; at 50-64 s a breakdown steps up and swells into a strong hit at 64.06 s. Measured: duration 102.1 s; RMS -10.5 dBFS; integrated -10.4 LUFS; ~120 BPM (auto estimate 119.9); 3 strongest transients at 64.06, 68.31, 70.31 s; section entries at 16.06, 56.09, 64.06 s.",
+  "fit_score": 8,
+  "suggested_use": "First choice. Cut 54.0-66.0 s so the build carries the logo assembly and the 64.06 s hit lands on the logo lock-up at ~10 s; fade out over the last 1-1.5 s.",
+  "duration_s": 102.125,
+  "measurements": {
+    "duration_s": 102.125,
+    "rms_dbfs": -10.5,
+    "peak_dbfs": 3.1,
+    "integrated_lufs": -10.4,
+    "loudness_range_lu": 12.9,
+    "true_peak_dbfs": 0.5,
+    "bpm_estimate": 119.9,
+    "bpm_confidence": 0.523,
+    "strongest_hits": [
+      {
+        "t_s": 64.06,
+        "rel_strength": 0.98
+      },
+      {
+        "t_s": 68.31,
+        "rel_strength": 0.99
+      },
+      {
+        "t_s": 70.31,
+        "rel_strength": 1.0
+      }
+    ],
+    "brightness_centroid_hz": 3080,
+    "strongest_hits_s": [
+      64.06,
+      68.31,
+      70.31
+    ],
+    "bpm_checked": 120,
+    "bpm_note": "onset-envelope autocorrelation with a 115-BPM prior; cross-checked with a comb (1-4x lag) autocorrelation on the full-energy section, octave-corrected",
+    "section_entries_s": [
+      16.06,
+      56.09,
+      64.06
+    ],
+    "section_entries_note": "largest rises of 2-s RMS (build resolving into a hit), refined to the nearest onset peak",
+    "suggested_cuts": [
+      {
+        "start_s": 54.0,
+        "end_s": 66.0,
+        "why": "breakdown and swell into a full hit at 64.06 s (10.06 s into the cut)",
+        "integrated_lufs": -12.8,
+        "rms_dbfs": -11.8
+      },
+      {
+        "start_s": 6.0,
+        "end_s": 18.0,
+        "why": "sustained pad bed swelling into the full groove entry at 16.06 s (10.06 s into the cut)",
+        "integrated_lufs": -17.4,
+        "rms_dbfs": -18.8
+      }
+    ]
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "mp3",
+    "sample_rate": 44100,
+    "channels": 2,
+    "duration_s": 102.125,
+    "size_bytes": 3270283
+  },
+  "wav_48k": "assets/stock/audio/music-ramp-it-up-corporate-tech-mixkit-69-48k.wav"
+}

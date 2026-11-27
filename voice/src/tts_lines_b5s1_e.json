@@ -1,0 +1,87 @@
+{
+ "mau": {
+  "ma": "A",
+  "text": "Và các công ty như Google đang đưa phỏng vấn trực tiếp quay trở lại, vì AI đang che ranh giới giữa kỹ năng thật và output được trợ giúp."
+ },
+ "quy_ve": [
+  [
+   "(?<![a-z])ây pi ai(?![a-z])",
+   "api"
+  ],
+  [
+   "(?<![a-z])cloud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])claud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])mác ô ét(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])mac os(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])khoá(?![a-z])",
+   "khóa"
+  ],
+  [
+   "(?<![a-z])kí(?![a-z])",
+   "ký"
+  ],
+  [
+   "(?<![a-z])lí(?![a-z])",
+   "lý"
+  ]
+ ],
+ "regex_vi": {
+  "Anthropic": "anthropic",
+  "Windows": "windows",
+  "email": "email",
+  "menu": "menu",
+  "link": "link"
+ },
+ "cau": [
+  {
+   "id": "B5S1",
+   "beat": "B5",
+   "show": "Ứng dụng dùng được Claude cùng các dịch vụ bạn đã kết nối như lịch, email.",
+   "tts": "Ứng dụng dùng được Claud cùng các dịch vụ bạn đã kết nối như lịch, email.",
+   "chunks": [
+    {
+     "show": "Ứng dụng dùng được Claude",
+     "tts": "Ứng dụng dùng được Claud",
+     "am_tiet": 5
+    },
+    {
+     "show": "cùng các dịch vụ bạn đã kết nối",
+     "tts": "cùng các dịch vụ bạn đã kết nối",
+     "am_tiet": 8
+    },
+    {
+     "show": "như lịch, email.",
+     "tts": "như lịch, email.",
+     "am_tiet": 4
+    }
+   ],
+   "am_tiet": 17,
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "tu_tu": 4,
+     "den_tu": 4,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    },
+    {
+     "tu": "email",
+     "tu_tu": 15,
+     "den_tu": 15,
+     "regex_en": "\\be-?mails?\\b"
+    }
+   ]
+  }
+ ]
+}

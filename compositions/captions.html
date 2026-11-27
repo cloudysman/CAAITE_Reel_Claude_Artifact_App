@@ -1,0 +1,129 @@
+<!doctype html>
+<!--
+  captions: phụ đề chạy theo cụm chữ cho reel bản tin Claude cài artifact thành ứng dụng. TỆP SINH TỰ ĐỘNG bởi src_build/build_captions.py
+  từ voice/narration_timing.json; sửa bộ dựng rồi chạy lại, đừng sửa tay.
+  Vùng phụ đề: viên canh giữa, rộng tối đa 780 px (x 150-930, chừa cột nút của nền tảng ở mép phải), đỉnh 1268 px.
+-->
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>captions</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face {
+          font-family: "Lexend";
+          src: url("assets/fonts/Lexend-Variable.ttf") format("truetype");
+          font-weight: 100 900;
+          font-style: normal;
+          font-display: block;
+        }
+        #captions-root {
+          position: absolute;
+          inset: 0;
+          pointer-events: none;
+          font-family: "Lexend", sans-serif;
+        }
+        #captions-root .cg {
+          position: absolute;
+          left: 0;
+          width: 1080px;
+          top: 1268px;
+          height: 180px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          opacity: 0;
+          overflow: visible;
+        }
+        #captions-root .cg-pill {
+          display: block;
+          max-width: 780px;
+          box-sizing: border-box;
+          padding: 14px 30px 18px;
+          border-radius: 30px;
+          background: rgba(24, 27, 102, 0.9);
+          border: 2px solid rgba(255, 255, 255, 0.28);
+          box-shadow: 0 18px 40px rgba(18, 20, 58, 0.28);
+          text-align: center;
+          line-height: 1.22;
+          text-wrap: balance;
+        }
+        #captions-root .cw {
+          display: inline-block;
+          margin: 0 0.2em;
+          font-size: 54px;
+          font-weight: 600;
+          letter-spacing: -0.005em;
+          color: #ffffff;
+          opacity: 0.58;
+          transform-origin: 50% 70%;
+          /* cụm dài hơn một dòng tự xuống dòng bên trong viên: chia hai dòng đều nhau, không để một chữ mồ côi */
+          text-wrap: balance;
+        }
+        #captions-root .nb {
+          white-space: nowrap;
+        }
+        /* màu nhấn chữ số trong phụ đề (trên nền xanh đậm), giữ như các reel trước */
+        #captions-root .cw .em {
+          color: #ffd98a;
+        }
+      </style>
+
+      <div id="captions-root" data-composition-id="captions" data-width="1080" data-height="1920" data-duration="57.253">
+        <div class="cg" id="captions-g0"><div class="cg-pill"><span class="cw" id="captions-w0-0">Một lời nhắn,</span><span class="cw" id="captions-w0-1">Claude làm ra <span class="nb">ứng dụng</span></span></div></div>
+        <div class="cg" id="captions-g1"><div class="cg-pill"><span class="cw" id="captions-w1-0">theo dõi rác vũ trụ chạy trên <span class="nb">máy tính</span>.</span></div></div>
+        <div class="cg" id="captions-g2"><div class="cg-pill"><span class="cw" id="captions-w2-0">Bạn bảo<br>Claude bản <span class="nb">máy tính</span></span></div></div>
+        <div class="cg" id="captions-g3"><div class="cg-pill"><span class="cw" id="captions-w3-0">làm ra một artifact,</span></div></div>
+        <div class="cg" id="captions-g4"><div class="cg-pill"><span class="cw" id="captions-w4-0">rồi chọn mục<br>cài thành <span class="nb">ứng dụng</span>.</span></div></div>
+        <div class="cg" id="captions-g5"><div class="cg-pill"><span class="cw" id="captions-w5-0">Cài xong,<br><span class="nb">ứng dụng</span> có <span class="nb">biểu tượng</span></span></div></div>
+        <div class="cg" id="captions-g6"><div class="cg-pill"><span class="cw" id="captions-w6-0">và <span class="nb">cửa sổ</span> riêng</span></div></div>
+        <div class="cg" id="captions-g7"><div class="cg-pill"><span class="cw" id="captions-w7-0">trên macOS hay Windows.</span></div></div>
+        <div class="cg" id="captions-g8"><div class="cg-pill"><span class="cw" id="captions-w8-0">Một <span class="nb">kỹ sư</span> Anthropic đã làm thử</span></div></div>
+        <div class="cg" id="captions-g9"><div class="cg-pill"><span class="cw" id="captions-w9-0">trình <span class="nb">sửa ảnh</span>, trình <span class="nb">quản lý tệp</span></span></div></div>
+        <div class="cg" id="captions-g10"><div class="cg-pill"><span class="cw" id="captions-w10-0">và <span class="nb">bản đồ</span> <span class="nb">cơ thể người</span>.</span></div></div>
+        <div class="cg" id="captions-g11"><div class="cg-pill"><span class="cw" id="captions-w11-0">Ứng dụng dùng được<br>các dịch vụ</span></div></div>
+        <div class="cg" id="captions-g12"><div class="cg-pill"><span class="cw" id="captions-w12-0">bạn đã <span class="nb">kết nối</span><br>như lịch, email.</span></div></div>
+        <div class="cg" id="captions-g13"><div class="cg-pill"><span class="cw" id="captions-w13-0">Nếu bạn cho phép,</span></div></div>
+        <div class="cg" id="captions-g14"><div class="cg-pill"><span class="cw" id="captions-w14-0">nó gửi được <span class="nb">thông báo</span>,</span></div></div>
+        <div class="cg" id="captions-g15"><div class="cg-pill"><span class="cw" id="captions-w15-0">hiện trên <span class="nb">thanh menu</span><br>hay khay hệ thống.</span></div></div>
+        <div class="cg" id="captions-g16"><div class="cg-pill"><span class="cw" id="captions-w16-0">Bạn sửa artifact</span></div></div>
+        <div class="cg" id="captions-g17"><div class="cg-pill"><span class="cw" id="captions-w17-0">thì <span class="nb">ứng dụng</span> tự <span class="nb">cập nhật</span>,</span></div></div>
+        <div class="cg" id="captions-g18"><div class="cg-pill"><span class="cw" id="captions-w18-0">muốn chia sẻ thì gửi link.</span></div></div>
+        <div class="cg" id="captions-g19"><div class="cg-pill"><span class="cw" id="captions-w19-0">Hạn mức <span class="nb">sử dụng</span><br>tính cả lúc làm <span class="nb">ứng dụng</span></span></div></div>
+        <div class="cg" id="captions-g20"><div class="cg-pill"><span class="cw" id="captions-w20-0">và mỗi lượt Claude làm việc cho nó.</span></div></div>
+        <div class="cg" id="captions-g21"><div class="cg-pill"><span class="cw" id="captions-w21-0">Muốn chạy <span class="nb">chương trình</span> khác</span></div></div>
+        <div class="cg" id="captions-g22"><div class="cg-pill"><span class="cw" id="captions-w22-0">hay sửa, xóa tệp,</span></div></div>
+        <div class="cg" id="captions-g23"><div class="cg-pill"><span class="cw" id="captions-w23-0">nó phải xin <span class="nb">toàn quyền</span>.</span></div></div>
+        <div class="cg" id="captions-g24"><div class="cg-pill"><span class="cw" id="captions-w24-0">Vì Anthropic<br>không duyệt <span class="nb">ứng dụng</span></span></div></div>
+        <div class="cg" id="captions-g25"><div class="cg-pill"><span class="cw" id="captions-w25-0">trước khi cài,</span><span class="cw" id="captions-w25-1">chỉ nên cấp <span class="nb">toàn quyền</span></span></div></div>
+        <div class="cg" id="captions-g26"><div class="cg-pill"><span class="cw" id="captions-w26-0">cho <span class="nb">ứng dụng</span> mà bạn tin.</span></div></div>
+        <div class="cg" id="captions-g27"><div class="cg-pill"><span class="cw" id="captions-w27-0">Bình luận<br>cho <span class="nb">trung tâm</span> biết nhé.</span></div></div>
+      </div>
+
+      <script>
+        (function () {
+          // Chỉ dùng chuỗi bộ chọn (GSAP tự tìm phần tử lúc tween chạy): khi script của composition con
+          // chạy, các phần tử có thể chưa gắn vào trang nên getElementById trả về null.
+          var PLAN = [{"start": 0.264, "end": 2.005, "words": [{"t": "Một lời nhắn,", "s": 0.324, "e": 0.777, "em": false}, {"t": "Claude làm ra ứng dụng", "s": 1.101, "e": 2.046, "em": false}]}, {"start": 2.005, "end": 4.24, "words": [{"t": "theo dõi rác vũ trụ chạy trên máy tính.", "s": 2.065, "e": 3.56, "em": false}]}, {"start": 4.24, "end": 5.356, "words": [{"t": "Bạn bảo Claude bản máy tính", "s": 4.3, "e": 5.416, "em": false}]}, {"start": 5.356, "end": 6.773, "words": [{"t": "làm ra một artifact,", "s": 5.416, "e": 6.467, "em": false}]}, {"start": 6.773, "end": 8.485, "words": [{"t": "rồi chọn mục cài thành ứng dụng.", "s": 6.833, "e": 8.205, "em": false}]}, {"start": 9.557, "end": 11.155, "words": [{"t": "Cài xong, ứng dụng có biểu tượng", "s": 9.617, "e": 11.134, "em": false}]}, {"start": 11.155, "end": 12.011, "words": [{"t": "và cửa sổ riêng", "s": 11.215, "e": 12.01, "em": false}]}, {"start": 12.011, "end": 13.693, "words": [{"t": "trên macOS hay Windows.", "s": 12.071, "e": 13.192, "em": false}]}, {"start": 13.693, "end": 15.296, "words": [{"t": "Một kỹ sư Anthropic đã làm thử", "s": 13.753, "e": 15.251, "em": false}]}, {"start": 15.296, "end": 17.174, "words": [{"t": "trình sửa ảnh, trình quản lý tệp", "s": 15.356, "e": 17.149, "em": false}]}, {"start": 17.174, "end": 18.527, "words": [{"t": "và bản đồ cơ thể người.", "s": 17.234, "e": 18.247, "em": false}]}, {"start": 24.061, "end": 25.266, "words": [{"t": "Ứng dụng dùng được các dịch vụ", "s": 24.121, "e": 25.249, "em": false}]}, {"start": 25.266, "end": 27.326, "words": [{"t": "bạn đã kết nối như lịch, email.", "s": 25.326, "e": 26.852, "em": false}]}, {"start": 27.326, "end": 28.103, "words": [{"t": "Nếu bạn cho phép,", "s": 27.386, "e": 27.974, "em": false}]}, {"start": 28.103, "end": 29.089, "words": [{"t": "nó gửi được thông báo,", "s": 28.163, "e": 28.902, "em": false}]}, {"start": 29.089, "end": 31.19, "words": [{"t": "hiện trên thanh menu hay khay hệ thống.", "s": 29.149, "e": 30.684, "em": false}]}, {"start": 31.19, "end": 32.136, "words": [{"t": "Bạn sửa artifact", "s": 31.25, "e": 32.152, "em": false}]}, {"start": 32.136, "end": 33.388, "words": [{"t": "thì ứng dụng tự cập nhật,", "s": 32.196, "e": 33.14, "em": false}]}, {"start": 33.388, "end": 34.981, "words": [{"t": "muốn chia sẻ thì gửi link.", "s": 33.448, "e": 34.701, "em": false}]}, {"start": 38.236, "end": 40.1, "words": [{"t": "Hạn mức sử dụng tính cả lúc làm ứng dụng", "s": 38.296, "e": 40.057, "em": false}]}, {"start": 40.1, "end": 41.787, "words": [{"t": "và mỗi lượt Claude làm việc cho nó.", "s": 40.16, "e": 41.507, "em": false}]}, {"start": 45.121, "end": 45.942, "words": [{"t": "Muốn chạy chương trình khác", "s": 45.181, "e": 45.982, "em": false}]}, {"start": 45.942, "end": 46.874, "words": [{"t": "hay sửa, xóa tệp,", "s": 46.002, "e": 46.748, "em": false}]}, {"start": 46.874, "end": 48.291, "words": [{"t": "nó phải xin toàn quyền.", "s": 46.934, "e": 47.737, "em": false}]}, {"start": 48.291, "end": 49.632, "words": [{"t": "Vì Anthropic không duyệt ứng dụng", "s": 48.351, "e": 49.65, "em": false}]}, {"start": 49.632, "end": 51.612, "words": [{"t": "trước khi cài,", "s": 49.692, "e": 50.246, "em": false}, {"t": "chỉ nên cấp toàn quyền", "s": 50.544, "e": 51.63, "em": false}]}, {"start": 51.612, "end": 52.911, "words": [{"t": "cho ứng dụng mà bạn tin.", "s": 51.672, "e": 52.631, "em": false}]}, {"start": 55.763, "end": 57.253, "words": [{"t": "Bình luận cho trung tâm biết nhé.", "s": 55.823, "e": 56.973, "em": false}]}];
+          var tl = gsap.timeline({ paused: true });
+          PLAN.forEach(function (g, gi) {
+            var el = "#captions-g" + gi;
+            tl.fromTo(el, { opacity: 0, y: 26 }, { opacity: 1, y: 0, duration: 0.16, ease: "power3.out", immediateRender: false }, g.start);
+            g.words.forEach(function (w, wi) {
+              var span = "#captions-w" + gi + "-" + wi;
+              var on = Math.max(g.start, w.s - 0.03);
+              tl.fromTo(span, { opacity: 0.58, scale: 1 }, { opacity: 1, scale: w.em ? 1.05 : 1.03, duration: 0.12, ease: "power2.out", immediateRender: false }, on);
+              tl.to(span, { scale: 1, duration: 0.18, ease: "power2.inOut" }, on + 0.12);
+            });
+            var fadeAt = Math.max(g.start + 0.2, g.end - 0.1);
+            tl.to(el, { opacity: 0, y: -10, duration: 0.1, ease: "power2.in" }, fadeAt);
+            tl.set(el, { opacity: 0, visibility: "hidden" }, g.end);
+          });
+          window.__timelines["captions"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

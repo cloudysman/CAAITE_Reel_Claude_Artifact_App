@@ -1,0 +1,116 @@
+<template>
+  <style>
+    @font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Lexend", sans-serif; --hy: #5154f5; --hy-ink: #2f33c9; --mint: #a4e9ec;
+            --ink: #12143a; --claude: #d97757; --claude-hi: #ffc3a8; --claude-ink: #a3401f; --warn: #b4530a; }
+    #root[data-theme="light"] { --fg: #12143a; --fg-soft: rgba(18, 20, 58, 0.78); --accent: #2f55d4; color: var(--fg); }
+    #root[data-theme="brand"], #root[data-theme="dark"], #root[data-theme="pixel"] { --fg: #ffffff; --fg-soft: rgba(255, 255, 255, 0.94); --accent: #a4e9ec; color: var(--fg); }
+    #root .k-bg { position: absolute; inset: 0; overflow: hidden; }
+    #root .k-bg-grad { position: absolute; inset: 0; background: linear-gradient(160deg, #5154f5 0%, #4878eb 50%, #3ca7de 100%); }
+    #root .k-bg-paper { position: absolute; inset: 0; background: #f9f9ff; }
+    #root .k-bg-dark { position: absolute; inset: 0; background:
+        radial-gradient(900px 760px at 12% 8%, rgba(81, 84, 245, 0.42), rgba(81, 84, 245, 0) 70%),
+        radial-gradient(900px 800px at 92% 92%, rgba(217, 119, 87, 0.34), rgba(217, 119, 87, 0) 70%), #0b0d26; }
+    #root .k-bg-pixel { position: absolute; left: 0; top: 0; width: 3562px; height: 1920px; }
+    #root .k-bg-plate { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+    #root .k-bg-arc { mix-blend-mode: soft-light; opacity: 0.22; }
+    #root .k-bg-silk { opacity: 0.55; }
+    #root .k-bg-grain { position: absolute; inset: 0; background: url("assets/brand/grain-512.png") repeat; background-size: 512px 512px; mix-blend-mode: soft-light; opacity: 0.05; }
+    #root .k-shade { position: absolute; left: 0; width: 1080px; pointer-events: none; }
+    #root .k-shade-top { top: 0; height: 620px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.55) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-shade-bot { top: 1060px; height: 860px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.5) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-hdr { position: absolute; left: 72px; right: 72px; top: 150px; height: 48px; display: flex; align-items: center; gap: 18px; }
+    #root .k-hdr-label { font-size: 22px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-soft); white-space: nowrap; }
+    #root .k-hdr-pill { font-size: 22px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 16px 5px; border-radius: 999px; border: 2px solid var(--accent); color: var(--accent); white-space: nowrap; }
+    #root[data-theme="brand"] .k-hdr-pill, #root[data-theme="dark"] .k-hdr-pill, #root[data-theme="pixel"] .k-hdr-pill { color: #ffffff; border-color: rgba(255, 255, 255, 0.8); background: rgba(18, 20, 58, 0.28); }
+    #root[data-theme="pixel"] .k-hdr-label, #root[data-theme="dark"] .k-hdr-label { color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+    #root .k-src { position: absolute; left: 72px; top: 1182px; font-size: 22px; font-weight: 500; letter-spacing: 0.04em; color: var(--fg-soft); white-space: nowrap; }
+    #root[data-theme="brand"] .k-src, #root[data-theme="dark"] .k-src, #root[data-theme="pixel"] .k-src { color: #ffffff; background: rgba(12, 13, 40, 0.62); padding: 5px 14px 6px; border-radius: 999px; }
+    #root .k-src.k-cr { left: auto; right: 72px; top: 1132px; font-size: 20px; }
+    #root[data-theme="brand"] .k-glass, #root[data-theme="dark"] .k-glass, #root[data-theme="pixel"] .k-glass { background: rgba(22, 25, 80, 0.62); border: 2px solid rgba(255, 255, 255, 0.4); border-radius: 32px; box-shadow: 0 30px 60px rgba(8, 9, 30, 0.3); }
+    #root[data-theme="light"] .k-glass { background: rgba(255, 255, 255, 0.95); border: 2px solid #dee0fd; border-radius: 32px; box-shadow: 0 30px 60px rgba(81, 84, 245, 0.14); }
+    #root .k-kicker { position: absolute; left: 72px; top: 246px; font-size: 32px; font-weight: 500; letter-spacing: 0.02em; color: var(--accent); white-space: nowrap; }
+    #root[data-theme="light"] .k-kicker { color: #1e2a8a; }
+    #root .k-chip { display: inline-flex; align-items: center; gap: 14px; padding: 12px 28px; border-radius: 999px; font-size: 34px; font-weight: 500; white-space: nowrap; }
+    #root[data-theme="light"] .k-chip { background: #ffffff; border: 2px solid #dee0fd; color: var(--fg); }
+    #root[data-theme="brand"] .k-chip, #root[data-theme="dark"] .k-chip, #root[data-theme="pixel"] .k-chip { background: rgba(22, 25, 80, 0.72); border: 2px solid rgba(255, 255, 255, 0.55); color: #ffffff; }
+    #root .k-tag { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 24px 12px; border-radius: 999px; background: #ffffff; color: var(--ink);
+                   font-size: 32px; font-weight: 600; white-space: nowrap; box-shadow: 0 14px 30px rgba(8, 9, 30, 0.35); }
+    #root .k-ring { position: absolute; border: 6px solid var(--mint); border-radius: 22px; box-shadow: 0 0 26px rgba(164, 233, 236, 0.95), inset 0 0 16px rgba(164, 233, 236, 0.45); }
+    #root .k-win { position: absolute; border-radius: 24px; overflow: hidden; background: #0f1024; box-shadow: 0 40px 80px rgba(8, 9, 30, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.16); }
+    #root .k-win-bar { position: absolute; left: 0; top: 0; right: 0; height: 52px; background: rgba(248, 248, 252, 0.97); display: flex; align-items: center; gap: 10px; padding: 0 20px;
+                       font-size: 28px; font-weight: 600; color: #12143a; white-space: nowrap; }
+    #root .k-dot { width: 15px; height: 15px; border-radius: 50%; flex: none; }
+    #root .k-win img, #root .k-win video { position: absolute; left: 0; display: block; object-fit: cover; }
+    #root .k-paper { position: absolute; background: #ffffff; border-radius: 26px; overflow: hidden; box-shadow: 0 24px 48px rgba(18, 20, 58, 0.22); }
+    #root .k-paper img { position: absolute; left: 0; top: 0; display: block; }
+    #root .k-hl { position: absolute; border-radius: 8px; background: rgba(255, 196, 90, 0.62); mix-blend-mode: multiply; transform-origin: 0% 50%; }
+    #root .k-hl.k-hl-1 { background: rgba(110, 220, 226, 0.6); }
+
+
+    #root .f06-r { position: absolute; left: 72px; height: 82px; box-sizing: border-box; font-size: 32px; padding: 0 30px 0 16px; }
+    #root .f06-ic { flex: none; width: 50px; height: 50px; }
+    #root .f06-ic svg { width: 50px; height: 50px; }
+    #root .f06-ok .f06-ic { color: #a4e9ec; }
+    #root .f06-cho .f06-ic { color: #ffd98a; }
+    #root .f06-khong .f06-ic { color: #ffb39a; }
+    #root #f06-meter { position: absolute; left: 72px; top: 830px; width: 936px; height: 156px; box-sizing: border-box; padding: 24px 34px; }
+    #root .f06-mt { font-size: 34px; font-weight: 600; line-height: 44px; color: #ffffff; white-space: nowrap; }
+    #root .f06-tr { position: relative; margin-top: 22px; width: 868px; height: 40px; border-radius: 20px; background: rgba(255, 255, 255, 0.18); overflow: hidden; }
+    #root #f06-fill { position: absolute; left: 0; top: 0; width: 868px; height: 40px; border-radius: 20px; background: linear-gradient(90deg, #a4e9ec, #ffffff); transform-origin: 0% 50%; transform: scaleX(0.18); }
+    #root .f06-plus { position: absolute; top: 918px; padding: 0 14px; border-radius: 999px; background: #12143a; font-size: 28px; font-weight: 700; line-height: 44px;
+                      color: #ffd98a; opacity: 0; white-space: nowrap; box-shadow: 0 6px 16px rgba(8, 9, 30, 0.35); }
+    #root #f06-p1 { left: 560px; }
+    #root #f06-p2 { left: 699px; }
+    #root #f06-p3 { left: 838px; }
+    #root #f06-foot { position: absolute; left: 72px; top: 1012px; width: 936px; font-size: 30px; font-weight: 500; line-height: 40px; color: #ffffff; }
+
+  </style>
+
+  <div id="root" data-composition-id="06-dieu-kien" data-theme="brand" data-width="1080" data-height="1920" data-duration="7.691" data-fill-d>
+    <div id="f06-bg" class="k-bg clip" data-start="0" data-duration="7.691" data-fill-d data-track-index="0"><div class="k-bg-grad" id="f06-grad"></div><img id="f06-plate" class="k-bg-plate k-bg-arc" src="assets/plates/deep-v.jpg" alt="" /><div class="k-bg-grain"></div></div>
+
+
+    <div class="k-kicker" id="f06-k" data-layout-allow-overlap>Ai dùng được</div>
+    <div class="k-chip f06-r f06-ok" id="f06-a" style="top:330px;" data-layout-allow-overlap><span class="f06-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7 12.5 L10.5 16 L17 8.5" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Bản thử nghiệm trong Claude bản máy tính</span></div><div class="k-chip f06-r f06-ok" id="f06-b" style="top:430px;" data-layout-allow-overlap><span class="f06-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7 12.5 L10.5 16 L17 8.5" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Mọi gói: đang triển khai dần</span></div><div class="k-chip f06-r f06-ok" id="f06-c" style="top:530px;" data-layout-allow-overlap><span class="f06-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M7 12.5 L10.5 16 L17 8.5" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Team: bật sẵn, riêng toàn quyền máy tính bị tắt</span></div><div class="k-chip f06-r f06-cho" id="f06-d" style="top:630px;" data-layout-allow-overlap><span class="f06-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7 V12 L15.5 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span><span>Enterprise: chờ chủ sở hữu tổ chức bật</span></div><div class="k-chip f06-r f06-khong" id="f06-e" style="top:730px;" data-layout-allow-overlap><span class="f06-ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M8 8 L16 16 M16 8 L8 16" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/></svg></span><span>Trừ tổ chức HIPAA-ready và bản triển khai hybrid</span></div>
+    <div class="k-glass" id="f06-meter" data-layout-allow-overlap><div class="f06-mt">Hạn mức sử dụng của gói</div><div class="f06-tr"><div id="f06-fill"></div></div></div>
+    <div class="f06-plus" id="f06-p1" data-layout-allow-overlap>+1</div><div class="f06-plus" id="f06-p2" data-layout-allow-overlap>+1</div><div class="f06-plus" id="f06-p3" data-layout-allow-overlap>+1</div>
+    <div id="f06-foot" data-layout-allow-overlap>Cần có mạng và đăng nhập Claude để mở ứng dụng.<br>Không cài được Claude Docs, Slides, Sheets.</div>
+    <div class="k-src" id="f06-src" data-layout-allow-overlap>Nguồn: claude.com, 24/11/2026; @ClaudeDevs trên X</div>
+
+    <div class="k-hdr" id="f06-hdr"><span class="k-hdr-label" data-layout-allow-overlap>Trung tâm Đào tạo AI Chuyên sâu</span><span class="k-hdr-pill" data-layout-allow-overlap>Tin AI</span></div>
+  </div>
+
+  <script>
+    (function () {
+      var CUE = /*CUE*/{"D": 7.691, "S": {"B6S1": {"t0": 0.2, "t1": 2.981, "c": [0.291, 1.656], "e": [1.435, 2.8], "w": [0.291, 0.451, 0.612, 0.813, 0.893, 1.074, 1.214, 1.656, 1.877, 2.077, 2.298, 2.419, 2.579]}, "B6S2": {"t0": 3.231, "t1": 6.841, "c": [3.373, 5.237], "e": [5.134, 6.584], "w": [3.373, 3.539, 3.704, 3.87, 4.056, 4.284, 4.45, 4.595, 4.782, 4.968, 5.237, 5.382, 5.548, 5.734, 6.003, 6.149, 6.335, 6.501]}}}/*END_CUE*/;
+      var D = CUE.D;
+      var S1 = CUE.S["B6S1"];
+      var S2 = CUE.S["B6S2"];
+      function wt(S, i, n) { return S.w && S.w[i] != null ? S.w[i] : S.t0 + (S.t1 - S.t0) * i / n; }
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo("#f06-plate", { x: 0, y: -16 }, { x: -16, y: 16, duration: D, ease: "none" }, 0);
+
+      tl.fromTo("#f06-k, #f06-src", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3 }, 0.05);
+      tl.fromTo("#f06-a", { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "power3.out" }, Math.max(0.12, wt(S1, 5, 13) - 0.1));
+      tl.fromTo("#f06-b", { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "power3.out" }, Math.max(0.12, wt(S1, 7, 13) - 0.1));
+      tl.fromTo("#f06-c", { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "power3.out" }, Math.max(0.12, wt(S1, 10, 13) - 0.1));
+      tl.fromTo("#f06-d", { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "power3.out" }, Math.max(0.12, wt(S1, 11, 13) - 0.1));
+      tl.fromTo("#f06-e", { autoAlpha: 0, x: -30 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "power3.out" }, Math.max(0.12, wt(S1, 12, 13) - 0.1));
+      // B6S2: thanh hạn mức đầy dần, lúc làm ứng dụng rồi theo từng lượt ứng dụng dùng Claude (câu viết "Claude làm việc cho nó": ở "dùng Claude đều" tai tiếng Anh nghe "Cloud" 18/18 bản)
+      tl.fromTo("#f06-meter", { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.36, ease: "power3.out" }, S2.t0 - 0.15);
+      var tg = wt(S2, 13, 18);
+      tl.to("#f06-fill", { scaleX: 0.40, duration: 0.3, ease: "back.out(2)", immediateRender: false }, wt(S2, 7, 18));
+      [0, 1, 2].forEach(function (k) {
+        tl.to("#f06-fill", { scaleX: 0.40 + 0.16 * (k + 1), duration: 0.22, ease: "back.out(2)", immediateRender: false }, tg + k * 0.32);
+        tl.fromTo("#f06-p" + (k + 1), { autoAlpha: 0, scale: 0.4, y: 0 }, { autoAlpha: 1, scale: 1, y: -6, duration: 0.25, ease: "back.out(2.4)", immediateRender: false }, tg + k * 0.32);
+        tl.to("#f06-p" + (k + 1), { autoAlpha: 0, duration: 0.25, immediateRender: false }, tg + k * 0.32 + 0.4);
+      });
+      tl.fromTo("#f06-foot", { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 0.3 }, S2.t0 + 0.65);
+      // chuyển cảnh light sang 07 (0,7 s, hai cảnh chồng nhau): chữ cảnh này lui trước để không đè chữ ba thẻ quyền (check 25/11)
+      tl.to("#f06-k, .f06-r, #f06-meter, .f06-plus, #f06-foot, #f06-src", { autoAlpha: 0, duration: 0.2, immediateRender: false }, D - 0.7);
+
+      window.__timelines["06-dieu-kien"] = tl;
+    })();
+  </script>
+</template>

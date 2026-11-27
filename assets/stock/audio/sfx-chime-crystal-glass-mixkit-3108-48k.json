@@ -1,0 +1,61 @@
+{
+  "file": "assets/stock/audio/sfx-chime-crystal-glass-mixkit-3108-48k.wav",
+  "kind": "sfx",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-sound-effects/chime/",
+  "download_url": "https://assets.mixkit.co/active_storage/sfx/3108/3108.wav",
+  "license_name": "Mixkit Sound Effects Free License",
+  "license_url": "https://mixkit.co/license/#sfxFree",
+  "license_note": "Mixkit Sound Effects Free License (text read at https://mixkit.co/license/ modal 'sfxFree', 29/09/2026): free for commercial and non-commercial projects incl. YouTube, educational use, broadcast; may modify; may not redistribute the item on its own or as stock/template. No attribution required.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "Crystal chime",
+  "description": "\"Crystal chime\" (Mixkit SFX #3108). Glassy, high crystal chime (2.0 s), attack at ~0.07 s, clean ring-out by ~1.2 s. Measured: 2.00 s, RMS -23.2 dBFS, -13.0 LUFS, onset 0.07 s, loudest at 0.2 s, audible to 1.17 s, brightness centroid 6046 Hz.",
+  "fit_score": 8,
+  "suggested_use": "Tagline or 'Trung tâm Đào tạo AI Chuyên sâu' label landing; glass-card highlight.",
+  "duration_s": 2.0,
+  "measurements": {
+    "duration_s": 2.0,
+    "rms_dbfs": -23.2,
+    "peak_dbfs": -3.9,
+    "integrated_lufs": -13.0,
+    "loudness_range_lu": 0.0,
+    "true_peak_dbfs": -2.6,
+    "bpm_estimate": null,
+    "bpm_confidence": null,
+    "strongest_hits": [
+      {
+        "t_s": 0.02,
+        "rel_strength": 1.0
+      },
+      {
+        "t_s": 0.28,
+        "rel_strength": 0.26
+      },
+      {
+        "t_s": 0.58,
+        "rel_strength": 0.2
+      }
+    ],
+    "brightness_centroid_hz": 6046,
+    "strongest_hits_s": [
+      0.02,
+      0.28,
+      0.58
+    ],
+    "onset_s": 0.07,
+    "loudest_10ms_at_s": 0.2,
+    "audible_end_s_minus45db": 1.17
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 2.0,
+    "size_bytes": 384118
+  },
+  "derived_from": "assets/stock/audio/sfx-chime-crystal-glass-mixkit-3108.wav",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak -2.87 dBFS; gain applied 0.0 dB"
+}

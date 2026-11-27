@@ -1,0 +1,301 @@
+{
+ "version": "v2, 25/11/2026: sửa theo workflow soát 4 góc nhìn (dữ kiện, văn phong, giữ chân người xem, rủi ro giọng đọc; research/soat_kich_ban_v1.txt): đổi móc câu, đưa ví dụ lên sớm, kết bằng câu hỏi về toàn quyền. Tên tiếng Anh theo phép đo ở cach_doc.json. v2.1 (QA bản dựng 2): B7S2 bỏ chữ \"bạn\" (whisper nghe \"xin bạn\" thành \"sinh bản\"), B7S3 thêm \"mà\" (\"bạn tin\" bị nghe \"bản tin\").",
+ "target_seconds": 57,
+ "structure": "Móc câu (một lời nhắn, ứng dụng theo dõi rác vũ trụ chạy trên máy), cách cài (Claude bản máy tính, artifact, Install as app, biểu tượng và cửa sổ riêng), ví dụ của kỹ sư Anthropic, không phải đóng gói, ký số, tạo khóa API, ứng dụng làm được gì, điều kiện dùng và hạn mức, ba mức quyền, hỏi người xem có cấp toàn quyền không",
+ "khong_dung": "Không nói 'một cú nhấp' (phải mở menu, chọn Install as app, bấm Install); không nói 'quản trị viên' bật ở Enterprise (nguồn ghi owner, tức chủ sở hữu); không nói 'đã có ở mọi gói' (đang mở dần, tổ chức HIPAA-ready và bản hybrid chưa dùng được); không gọi ứng dụng mẫu là sản phẩm chính thức của Anthropic.",
+ "beats": [
+  {
+   "id": "B1",
+   "scene": "01-hook",
+   "purpose": "Móc câu: một lời nhắn, Claude làm ứng dụng theo dõi rác vũ trụ chạy trên máy tính",
+   "sentences": [
+    {
+     "id": "B1S1",
+     "facts": [
+      "F01",
+      "F17"
+     ],
+     "chunks": [
+      {
+       "show": "Một lời nhắn,"
+      },
+      {
+       "show": "Claude làm ra ứng dụng"
+      },
+      {
+       "show": "theo dõi rác vũ trụ chạy trên máy tính."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B2",
+   "scene": "02-cai-dat",
+   "purpose": "Cách cài: Claude bản máy tính làm artifact, chọn Install as app; ứng dụng có biểu tượng, cửa sổ riêng",
+   "sentences": [
+    {
+     "id": "B2S1",
+     "facts": [
+      "F02"
+     ],
+     "chunks": [
+      {
+       "show": "Bạn bảo Claude bản máy tính"
+      },
+      {
+       "show": "làm ra một artifact,"
+      },
+      {
+       "show": "rồi chọn mục cài thành ứng dụng."
+      }
+     ]
+    },
+    {
+     "id": "B2S2",
+     "facts": [
+      "F03",
+      "F01"
+     ],
+     "chunks": [
+      {
+       "show": "Cài xong, ứng dụng có biểu tượng"
+      },
+      {
+       "show": "và cửa sổ riêng"
+      },
+      {
+       "show": "trên macOS hay Windows.",
+       "tts": "trên mác ô ét hay Windows."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B3",
+   "scene": "03-vi-du",
+   "purpose": "Ứng dụng mẫu do kỹ sư Anthropic làm thử",
+   "sentences": [
+    {
+     "id": "B3S1",
+     "facts": [
+      "F15"
+     ],
+     "chunks": [
+      {
+       "show": "Một kỹ sư Anthropic đã làm thử"
+      },
+      {
+       "show": "trình sửa ảnh, trình quản lý tệp"
+      },
+      {
+       "show": "và bản đồ cơ thể người."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B4",
+   "scene": "04-khong-dong-goi",
+   "purpose": "Không phải đóng gói, ký số, tạo khóa API; tài khoản Claude là đủ",
+   "sentences": [
+    {
+     "id": "B4S1",
+     "facts": [
+      "F04"
+     ],
+     "chunks": [
+      {
+       "show": "Bạn không phải đóng gói,"
+      },
+      {
+       "show": "ký số ứng dụng hay tạo khóa API,"
+      },
+      {
+       "show": "tài khoản Claude của bạn là đủ."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B5",
+   "scene": "05-lam-duoc-gi",
+   "purpose": "Ứng dụng làm được gì: Claude và dịch vụ đã kết nối, thông báo, thanh menu hay khay hệ thống, tự cập nhật, chia sẻ",
+   "sentences": [
+    {
+     "id": "B5S1",
+     "facts": [
+      "F05"
+     ],
+     "chunks": [
+      {
+       "show": "Ứng dụng dùng được các dịch vụ"
+      },
+      {
+       "show": "bạn đã kết nối như lịch, email."
+      }
+     ]
+    },
+    {
+     "id": "B5S2",
+     "facts": [
+      "F06"
+     ],
+     "chunks": [
+      {
+       "show": "Nếu bạn cho phép,"
+      },
+      {
+       "show": "nó gửi được thông báo,"
+      },
+      {
+       "show": "hiện trên thanh menu hay khay hệ thống."
+      }
+     ]
+    },
+    {
+     "id": "B5S3",
+     "facts": [
+      "F07"
+     ],
+     "chunks": [
+      {
+       "show": "Bạn sửa artifact"
+      },
+      {
+       "show": "thì ứng dụng tự cập nhật,"
+      },
+      {
+       "show": "muốn chia sẻ thì gửi link."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B6",
+   "scene": "06-dieu-kien",
+   "purpose": "Điều kiện dùng: bản thử nghiệm, triển khai dần cho mọi gói; làm và dùng ứng dụng đều tính vào hạn mức",
+   "sentences": [
+    {
+     "id": "B6S1",
+     "facts": [
+      "F12"
+     ],
+     "chunks": [
+      {
+       "show": "Tính năng đang ở bản thử nghiệm,"
+      },
+      {
+       "show": "triển khai dần cho mọi gói."
+      }
+     ]
+    },
+    {
+     "id": "B6S2",
+     "facts": [
+      "F13"
+     ],
+     "chunks": [
+      {
+       "show": "Hạn mức sử dụng tính cả lúc làm ứng dụng"
+      },
+      {
+       "show": "và mỗi lượt Claude làm việc cho nó."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B7",
+   "scene": "07-quyen",
+   "purpose": "Ba mức quyền; Anthropic không duyệt trước",
+   "sentences": [
+    {
+     "id": "B7S1",
+     "facts": [
+      "F08"
+     ],
+     "chunks": [
+      {
+       "show": "Mặc định, ứng dụng chỉ có quyền"
+      },
+      {
+       "show": "như khi chạy trong trình duyệt."
+      }
+     ]
+    },
+    {
+     "id": "B7S2",
+     "facts": [
+      "F08",
+      "F11"
+     ],
+     "chunks": [
+      {
+       "show": "Muốn chạy chương trình khác"
+      },
+      {
+       "show": "hay sửa, xóa tệp,"
+      },
+      {
+       "show": "nó phải xin toàn quyền."
+      }
+     ]
+    },
+    {
+     "id": "B7S3",
+     "facts": [
+      "F10"
+     ],
+     "chunks": [
+      {
+       "show": "Vì Anthropic không duyệt ứng dụng"
+      },
+      {
+       "show": "trước khi cài,"
+      },
+      {
+       "show": "chỉ nên cấp toàn quyền"
+      },
+      {
+       "show": "cho ứng dụng mà bạn tin."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "B8",
+   "scene": "08-ket",
+   "purpose": "Hỏi người xem",
+   "sentences": [
+    {
+     "id": "B8S1",
+     "facts": [],
+     "chunks": [
+      {
+       "show": "Bạn có cấp toàn quyền"
+      },
+      {
+       "show": "cho ứng dụng mình làm không?"
+      }
+     ]
+    },
+    {
+     "id": "B8S2",
+     "facts": [],
+     "chunks": [
+      {
+       "show": "Bình luận cho trung tâm biết nhé."
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

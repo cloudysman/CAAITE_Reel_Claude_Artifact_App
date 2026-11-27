@@ -1,0 +1,23 @@
+{
+ "plan": "src_build/audio_plan.json",
+ "music_source_lufs": -10.7,
+ "loudnorm": {
+  "input_i": "-15.90",
+  "input_tp": "-3.75",
+  "input_lra": "1.40",
+  "input_thresh": "-26.39",
+  "output_i": "-13.95",
+  "output_tp": "-1.80",
+  "output_lra": "1.40",
+  "output_thresh": "-24.44",
+  "normalization_type": "linear",
+  "target_offset": "-0.05"
+ },
+ "ebur128": {
+  "integrated_lufs": -14.0,
+  "lra_lu": 1.7,
+  "true_peak_dbtp": -1.8
+ },
+ "duration_s": 59.372,
+ "sfx_count": 35
+}

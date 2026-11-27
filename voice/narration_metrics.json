@@ -1,0 +1,771 @@
+{
+ "tong": {
+  "thoi_luong": 56.97,
+  "lufs_truoc": -15.8,
+  "lufs_sau": -16.01,
+  "dinh_dbfs": -1.01,
+  "toc_do_tb": 5.19,
+  "toc_do_cv": 0.007,
+  "toc_do_min_max": [
+   5.13,
+   5.23
+  ],
+  "cau_dat": "15/15",
+  "tu_anh_dung": "13/13",
+  "cer_max": 0.0,
+  "khe_max_trong_cau": 0.381,
+  "khe_max_trong_cau_sau": 0.401,
+  "can_bang_cau_db": [
+   -0.41,
+   0.8,
+   -0.24,
+   0.64,
+   2.16,
+   -0.21,
+   0.16,
+   0.35,
+   0.57,
+   -1.3,
+   -0.1,
+   0.0,
+   -0.61,
+   -0.11,
+   0.65
+  ],
+  "giong_tb": 0.796,
+  "khe_dau_phay_min": 0.0,
+  "khe_dau_hai_cham_min": null,
+  "toc_do_doan_trung_vi": 5.36,
+  "lech_cum_max": 0.308
+ },
+ "cau": [
+  {
+   "id": "B1S1",
+   "tep": "B1S1_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.17,
+   "rut_nghi": [
+    [
+     ",",
+     0.01,
+     0.2
+    ]
+   ],
+   "toc_do_goc": 5.1,
+   "co_gian": 1.02,
+   "khe_max": 0.14,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "nghe_en": "Claude",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    }
+   ],
+   "giong": 0.836,
+   "giay": 3.59,
+   "nghe": "Một lời nhắn, Claude làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính.",
+   "toc_do_cum": [
+    6.62,
+    5.29,
+    6.02
+   ],
+   "khe_dau_cau": [
+    [
+     "nhan",
+     ",",
+     0.19
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     3,
+     5.04
+    ],
+    [
+     14,
+     5.53
+    ]
+   ],
+   "khe_max_sau": 0.325
+  },
+  {
+   "id": "B2S1",
+   "tep": "B2S1_s133.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.23,
+   "rut_nghi": [],
+   "toc_do_goc": 5.82,
+   "co_gian": 0.936,
+   "khe_max": 0.341,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "nghe_en": "Claude",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    },
+    {
+     "tu": "artifact",
+     "nghe_en": "artifact",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    }
+   ],
+   "giong": 0.833,
+   "giay": 4.14,
+   "nghe": "Bạn bảo cloud bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng.",
+   "toc_do_cum": [
+    5.38,
+    5.71,
+    5.1
+   ],
+   "khe_dau_cau": [
+    [
+     "artifact",
+     ",",
+     0.37
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     10,
+     4.73
+    ],
+    [
+     7,
+     5.65
+    ]
+   ],
+   "khe_max_sau": 0.365
+  },
+  {
+   "id": "B2S2",
+   "tep": "B2S2_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.15,
+   "rut_nghi": [
+    [
+     ",",
+     0.01,
+     0.2
+    ]
+   ],
+   "toc_do_goc": 5.28,
+   "co_gian": 0.985,
+   "khe_max": 0.12,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Windows",
+     "nghe_en": "Windows",
+     "dung_en": true,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.787,
+   "giay": 3.78,
+   "nghe": "Cài xong ứng dụng có biểu tượng và cửa sổ riêng trên macOS hay Windows.",
+   "toc_do_cum": [
+    4.61,
+    5.03,
+    6.24
+   ],
+   "khe_dau_cau": [
+    [
+     "xong",
+     ",",
+     0.19
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     2,
+     4.6
+    ],
+    [
+     15,
+     5.07
+    ]
+   ],
+   "khe_max_sau": 0.294
+  },
+  {
+   "id": "B3S1",
+   "tep": "B3S1_s1311.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.22,
+   "rut_nghi": [],
+   "toc_do_goc": 5.47,
+   "co_gian": 0.951,
+   "khe_max": 0.381,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Anthropic",
+     "nghe_en": "Anthropics",
+     "dung_en": false,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.816,
+   "giay": 4.76,
+   "nghe": "Một kỹ sư anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người.",
+   "toc_do_cum": [
+    6.01,
+    3.9,
+    5.92
+   ],
+   "khe_dau_cau": [
+    [
+     "anh",
+     ",",
+     0.315
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     10,
+     4.42
+    ],
+    [
+     10,
+     5.32
+    ]
+   ],
+   "khe_max_sau": 0.401
+  },
+  {
+   "id": "B4S1",
+   "tep": "B4S1_s44.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.13,
+   "rut_nghi": [
+    [
+     ",",
+     0.145,
+     0.2
+    ]
+   ],
+   "toc_do_goc": 5.13,
+   "co_gian": 1.014,
+   "khe_max": 0.361,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "API",
+     "nghe_en": "API",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    },
+    {
+     "tu": "Claude",
+     "nghe_en": "Claude",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    }
+   ],
+   "giong": 0.821,
+   "giay": 4.91,
+   "nghe": "Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API, tài khoản Cloud của bạn là đủ.",
+   "toc_do_cum": [
+    5.66,
+    5.6,
+    5.81
+   ],
+   "khe_dau_cau": [
+    [
+     "goi",
+     ",",
+     0.2
+    ],
+    [
+     "ai",
+     ",",
+     0.32
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     5,
+     5.03
+    ],
+    [
+     10,
+     5.42
+    ],
+    [
+     7,
+     5.36
+    ]
+   ],
+   "khe_max_sau": 0.361
+  },
+  {
+   "id": "B5S1",
+   "tep": "B5S1_s922.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.23,
+   "rut_nghi": [
+    [
+     ",",
+     0.11,
+     0.2
+    ]
+   ],
+   "toc_do_goc": 5.03,
+   "co_gian": 1.034,
+   "khe_max": 0.1,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "email",
+     "nghe_en": "Email",
+     "dung_en": true,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.799,
+   "giay": 2.99,
+   "nghe": "Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch email.",
+   "toc_do_cum": [
+    6.21,
+    5.24
+   ],
+   "khe_dau_cau": [
+    [
+     "lich",
+     ",",
+     0.185
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     13,
+     5.86
+    ],
+    [
+     1,
+     2.78
+    ]
+   ],
+   "khe_max_sau": 0.185
+  },
+  {
+   "id": "B5S2",
+   "tep": "B5S2_s1122.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.18,
+   "rut_nghi": [],
+   "toc_do_goc": 4.91,
+   "co_gian": 1.059,
+   "khe_max": 0.261,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "menu",
+     "nghe_en": "menu",
+     "dung_en": true,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.823,
+   "giay": 3.62,
+   "nghe": "Nếu bạn cho phép, nó gửi được thông báo hiện trên thanh menu hay khay hệ thống.",
+   "toc_do_cum": [
+    6.8,
+    6.77,
+    5.86
+   ],
+   "khe_dau_cau": [
+    [
+     "phep",
+     ",",
+     0.16
+    ],
+    [
+     "bao",
+     ",",
+     0.19
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     4,
+     6.61
+    ],
+    [
+     5,
+     5.71
+    ],
+    [
+     8,
+     5.16
+    ]
+   ],
+   "khe_max_sau": 0.246
+  },
+  {
+   "id": "B5S3",
+   "tep": "B5S3_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.22,
+   "rut_nghi": [],
+   "toc_do_goc": 5.7,
+   "co_gian": 0.912,
+   "khe_max": 0.281,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "artifact",
+     "nghe_en": "Artifact",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    },
+    {
+     "tu": "link",
+     "nghe_en": "Link",
+     "dung_en": true,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.813,
+   "giay": 3.67,
+   "nghe": "Bạn sửa Artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link.",
+   "toc_do_cum": [
+    5.54,
+    6.36,
+    4.79
+   ],
+   "khe_dau_cau": [
+    [
+     "nhat",
+     ",",
+     0.335
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     9,
+     5.03
+    ],
+    [
+     6,
+     4.62
+    ]
+   ],
+   "khe_max_sau": 0.308
+  },
+  {
+   "id": "B6S1",
+   "tep": "B6S1_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.19,
+   "rut_nghi": [],
+   "toc_do_goc": 5.19,
+   "co_gian": 1.002,
+   "khe_max": 0.221,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [],
+   "giong": 0.786,
+   "giay": 2.78,
+   "nghe": "Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói.",
+   "toc_do_cum": [
+    6.12,
+    5.24
+   ],
+   "khe_dau_cau": [
+    [
+     "nghiem",
+     ",",
+     0.235
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     7,
+     6.39
+    ],
+    [
+     6,
+     4.84
+    ]
+   ],
+   "khe_max_sau": 0.221
+  },
+  {
+   "id": "B6S2",
+   "tep": "B6S2_s511.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.22,
+   "rut_nghi": [],
+   "toc_do_goc": 5.55,
+   "co_gian": 0.969,
+   "khe_max": 0.1,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "nghe_en": "Claude",
+     "dung_en": true,
+     "dung_vi": false,
+     "dung": true
+    }
+   ],
+   "giong": 0.767,
+   "giay": 3.61,
+   "nghe": "Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt cloud làm việc cho nó.",
+   "toc_do_cum": [
+    5.68,
+    5.94
+   ],
+   "khe_dau_cau": [],
+   "toc_do_doan": [
+    [
+     18,
+     5.25
+    ]
+   ],
+   "khe_max_sau": 0.103
+  },
+  {
+   "id": "B7S1",
+   "tep": "B7S1_s22.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.23,
+   "rut_nghi": [
+    [
+     ",",
+     0.065,
+     0.2
+    ]
+   ],
+   "toc_do_goc": 4.9,
+   "co_gian": 1.014,
+   "khe_max": 0.1,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [],
+   "giong": 0.743,
+   "giay": 2.71,
+   "nghe": "Mặc định ứng dụng chỉ có quyền như khi chạy trong trình duyệt.",
+   "toc_do_cum": [
+    5.22,
+    5.61
+   ],
+   "khe_dau_cau": [
+    [
+     "dinh",
+     ",",
+     0.175
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     2,
+     6.06
+    ],
+    [
+     11,
+     5.73
+    ]
+   ],
+   "khe_max_sau": 0.192
+  },
+  {
+   "id": "B7S2",
+   "tep": "B7S2_s1722.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.18,
+   "rut_nghi": [
+    [
+     ",",
+     0.0,
+     "giữ: không có chỗ lặng (-33 dB)"
+    ]
+   ],
+   "toc_do_goc": 4.83,
+   "co_gian": 1.077,
+   "khe_max": 0.201,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [],
+   "giong": 0.806,
+   "giay": 2.81,
+   "nghe": "Muốn chạy chương trình khác hay sửa, xóa tệp, nó phải xin toàn quyền.",
+   "toc_do_cum": [
+    6.24,
+    5.36,
+    6.23
+   ],
+   "khe_dau_cau": [
+    [
+     "sua",
+     ",",
+     0.0
+    ],
+    [
+     "tep",
+     ",",
+     0.155
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     7,
+     5.86
+    ],
+    [
+     2,
+     5.19
+    ],
+    [
+     5,
+     5.62
+    ]
+   ],
+   "khe_max_sau": 0.187
+  },
+  {
+   "id": "B7S3",
+   "tep": "B7S3_s1711.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.15,
+   "rut_nghi": [],
+   "toc_do_goc": 5.52,
+   "co_gian": 0.942,
+   "khe_max": 0.281,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [
+    {
+     "tu": "Anthropic",
+     "nghe_en": "Anthropics",
+     "dung_en": false,
+     "dung_vi": true,
+     "dung": true
+    }
+   ],
+   "giong": 0.837,
+   "giay": 4.64,
+   "nghe": "Vì Anthropic không duyệt ứng dụng trước khi cài, chỉ nên cấp toàn quyền cho ứng dụng mà bạn tin.",
+   "toc_do_cum": [
+    6.16,
+    5.42,
+    4.6,
+    6.26
+   ],
+   "khe_dau_cau": [
+    [
+     "cai",
+     ",",
+     0.25
+    ]
+   ],
+   "toc_do_doan": [
+    [
+     9,
+     4.57
+    ],
+    [
+     11,
+     5.25
+    ]
+   ],
+   "khe_max_sau": 0.297
+  },
+  {
+   "id": "B8S1",
+   "tep": "B8S1_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.14,
+   "rut_nghi": [],
+   "toc_do_goc": 5.97,
+   "co_gian": 0.929,
+   "khe_max": 0.081,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [],
+   "giong": 0.795,
+   "giay": 2.26,
+   "nghe": "Bạn có cấp toàn quyền cho ứng dụng mình làm không?",
+   "toc_do_cum": [
+    5.49,
+    5.77
+   ],
+   "khe_dau_cau": [],
+   "toc_do_doan": [
+    [
+     11,
+     5.57
+    ]
+   ],
+   "khe_max_sau": 0.086
+  },
+  {
+   "id": "B8S2",
+   "tep": "B8S2_s11.wav",
+   "dat": true,
+   "cer": 0.0,
+   "toc_do": 5.21,
+   "rut_nghi": [],
+   "toc_do_goc": 5.38,
+   "co_gian": 0.967,
+   "khe_max": 0.061,
+   "ngat_sai": [],
+   "lang_la": [],
+   "tu_anh": [],
+   "giong": 0.675,
+   "giay": 1.49,
+   "nghe": "Bình luận cho trung tâm biết nhé!",
+   "toc_do_cum": [
+    6.09
+   ],
+   "khe_dau_cau": [],
+   "toc_do_doan": [
+    [
+     7,
+     5.71
+    ]
+   ],
+   "khe_max_sau": 0.063
+  }
+ ]
+}

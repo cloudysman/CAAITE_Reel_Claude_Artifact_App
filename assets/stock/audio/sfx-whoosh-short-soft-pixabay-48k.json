@@ -1,0 +1,56 @@
+{
+  "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+  "kind": "sfx",
+  "source_site": "Pixabay (via the HyperFrames bundled SFX library)",
+  "page_url": "https://github.com/heygen-com/hyperframes/blob/main/skills/media-use/audio/assets/sfx/CREDITS.md",
+  "download_url": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/media-use/audio/assets/sfx/whoosh-short.mp3",
+  "license_name": "Pixabay Content License",
+  "license_url": "https://pixabay.com/service/license-summary/",
+  "license_note": "Pixabay Content License as stated in the HyperFrames bundled-SFX CREDITS.md (commercial and non-commercial use, modification, no attribution required). pixabay.com itself answered curl with a Cloudflare challenge, so the individual Pixabay item pages and authors could not be looked up; upstream does not list them.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "whoosh-short (HyperFrames bundle)",
+  "description": "\"whoosh-short (HyperFrames bundle)\" (Pixabay sound bundled with HyperFrames). Very short soft whoosh (0.57 s). Identical file to the bundle's whoosh.mp3, so only one copy kept. Measured: 0.57 s, RMS -16.2 dBFS, -15.2 LUFS, onset 0.07 s, loudest at 0.16 s, audible to 0.37 s, brightness centroid 1247 Hz.",
+  "fit_score": 7,
+  "suggested_use": "Quick accents: thumbnail/card slides, small light streaks.",
+  "duration_s": 0.575,
+  "measurements": {
+    "duration_s": 0.575,
+    "rms_dbfs": -16.2,
+    "peak_dbfs": 0.7,
+    "integrated_lufs": -15.2,
+    "loudness_range_lu": 0.0,
+    "true_peak_dbfs": -2.0,
+    "bpm_estimate": null,
+    "bpm_confidence": null,
+    "strongest_hits": [
+      {
+        "t_s": 0.09,
+        "rel_strength": 1.0
+      },
+      {
+        "t_s": 0.35,
+        "rel_strength": 0.01
+      }
+    ],
+    "brightness_centroid_hz": 1247,
+    "strongest_hits_s": [
+      0.09,
+      0.35
+    ],
+    "onset_s": 0.07,
+    "loudest_10ms_at_s": 0.16,
+    "audible_end_s_minus45db": 0.37
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 0.575,
+    "size_bytes": 110418
+  },
+  "derived_from": "assets/stock/audio/sfx-whoosh-short-soft-pixabay.mp3",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak -2.05 dBFS; gain applied 0.0 dB"
+}

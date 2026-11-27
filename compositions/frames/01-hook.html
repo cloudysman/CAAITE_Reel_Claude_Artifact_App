@@ -1,0 +1,125 @@
+<template>
+  <style>
+    @font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Lexend", sans-serif; --hy: #5154f5; --hy-ink: #2f33c9; --mint: #a4e9ec;
+            --ink: #12143a; --claude: #d97757; --claude-hi: #ffc3a8; --claude-ink: #a3401f; --warn: #b4530a; }
+    #root[data-theme="light"] { --fg: #12143a; --fg-soft: rgba(18, 20, 58, 0.78); --accent: #2f55d4; color: var(--fg); }
+    #root[data-theme="brand"], #root[data-theme="dark"], #root[data-theme="pixel"] { --fg: #ffffff; --fg-soft: rgba(255, 255, 255, 0.94); --accent: #a4e9ec; color: var(--fg); }
+    #root .k-bg { position: absolute; inset: 0; overflow: hidden; }
+    #root .k-bg-grad { position: absolute; inset: 0; background: linear-gradient(160deg, #5154f5 0%, #4878eb 50%, #3ca7de 100%); }
+    #root .k-bg-paper { position: absolute; inset: 0; background: #f9f9ff; }
+    #root .k-bg-dark { position: absolute; inset: 0; background:
+        radial-gradient(900px 760px at 12% 8%, rgba(81, 84, 245, 0.42), rgba(81, 84, 245, 0) 70%),
+        radial-gradient(900px 800px at 92% 92%, rgba(217, 119, 87, 0.34), rgba(217, 119, 87, 0) 70%), #0b0d26; }
+    #root .k-bg-pixel { position: absolute; left: 0; top: 0; width: 3562px; height: 1920px; }
+    #root .k-bg-plate { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+    #root .k-bg-arc { mix-blend-mode: soft-light; opacity: 0.22; }
+    #root .k-bg-silk { opacity: 0.55; }
+    #root .k-bg-grain { position: absolute; inset: 0; background: url("assets/brand/grain-512.png") repeat; background-size: 512px 512px; mix-blend-mode: soft-light; opacity: 0.05; }
+    #root .k-shade { position: absolute; left: 0; width: 1080px; pointer-events: none; }
+    #root .k-shade-top { top: 0; height: 620px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.55) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-shade-bot { top: 1060px; height: 860px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.5) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-hdr { position: absolute; left: 72px; right: 72px; top: 150px; height: 48px; display: flex; align-items: center; gap: 18px; }
+    #root .k-hdr-label { font-size: 22px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-soft); white-space: nowrap; }
+    #root .k-hdr-pill { font-size: 22px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 16px 5px; border-radius: 999px; border: 2px solid var(--accent); color: var(--accent); white-space: nowrap; }
+    #root[data-theme="brand"] .k-hdr-pill, #root[data-theme="dark"] .k-hdr-pill, #root[data-theme="pixel"] .k-hdr-pill { color: #ffffff; border-color: rgba(255, 255, 255, 0.8); background: rgba(18, 20, 58, 0.28); }
+    #root[data-theme="pixel"] .k-hdr-label, #root[data-theme="dark"] .k-hdr-label { color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+    #root .k-src { position: absolute; left: 72px; top: 1182px; font-size: 22px; font-weight: 500; letter-spacing: 0.04em; color: var(--fg-soft); white-space: nowrap; }
+    #root[data-theme="brand"] .k-src, #root[data-theme="dark"] .k-src, #root[data-theme="pixel"] .k-src { color: #ffffff; background: rgba(12, 13, 40, 0.62); padding: 5px 14px 6px; border-radius: 999px; }
+    #root .k-src.k-cr { left: auto; right: 72px; top: 1132px; font-size: 20px; }
+    #root[data-theme="brand"] .k-glass, #root[data-theme="dark"] .k-glass, #root[data-theme="pixel"] .k-glass { background: rgba(22, 25, 80, 0.62); border: 2px solid rgba(255, 255, 255, 0.4); border-radius: 32px; box-shadow: 0 30px 60px rgba(8, 9, 30, 0.3); }
+    #root[data-theme="light"] .k-glass { background: rgba(255, 255, 255, 0.95); border: 2px solid #dee0fd; border-radius: 32px; box-shadow: 0 30px 60px rgba(81, 84, 245, 0.14); }
+    #root .k-kicker { position: absolute; left: 72px; top: 246px; font-size: 32px; font-weight: 500; letter-spacing: 0.02em; color: var(--accent); white-space: nowrap; }
+    #root[data-theme="light"] .k-kicker { color: #1e2a8a; }
+    #root .k-chip { display: inline-flex; align-items: center; gap: 14px; padding: 12px 28px; border-radius: 999px; font-size: 34px; font-weight: 500; white-space: nowrap; }
+    #root[data-theme="light"] .k-chip { background: #ffffff; border: 2px solid #dee0fd; color: var(--fg); }
+    #root[data-theme="brand"] .k-chip, #root[data-theme="dark"] .k-chip, #root[data-theme="pixel"] .k-chip { background: rgba(22, 25, 80, 0.72); border: 2px solid rgba(255, 255, 255, 0.55); color: #ffffff; }
+    #root .k-tag { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 24px 12px; border-radius: 999px; background: #ffffff; color: var(--ink);
+                   font-size: 32px; font-weight: 600; white-space: nowrap; box-shadow: 0 14px 30px rgba(8, 9, 30, 0.35); }
+    #root .k-ring { position: absolute; border: 6px solid var(--mint); border-radius: 22px; box-shadow: 0 0 26px rgba(164, 233, 236, 0.95), inset 0 0 16px rgba(164, 233, 236, 0.45); }
+    #root .k-win { position: absolute; border-radius: 24px; overflow: hidden; background: #0f1024; box-shadow: 0 40px 80px rgba(8, 9, 30, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.16); }
+    #root .k-win-bar { position: absolute; left: 0; top: 0; right: 0; height: 52px; background: rgba(248, 248, 252, 0.97); display: flex; align-items: center; gap: 10px; padding: 0 20px;
+                       font-size: 28px; font-weight: 600; color: #12143a; white-space: nowrap; }
+    #root .k-dot { width: 15px; height: 15px; border-radius: 50%; flex: none; }
+    #root .k-win img, #root .k-win video { position: absolute; left: 0; display: block; object-fit: cover; }
+    #root .k-paper { position: absolute; background: #ffffff; border-radius: 26px; overflow: hidden; box-shadow: 0 24px 48px rgba(18, 20, 58, 0.22); }
+    #root .k-paper img { position: absolute; left: 0; top: 0; display: block; }
+    #root .k-hl { position: absolute; border-radius: 8px; background: rgba(255, 196, 90, 0.62); mix-blend-mode: multiply; transform-origin: 0% 50%; }
+    #root .k-hl.k-hl-1 { background: rgba(110, 220, 226, 0.6); }
+
+
+    #root .f01-vw { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; }
+    #root .f01-v { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+    #root #f01-wb { opacity: 0; }
+    #root #f01-sb { top: 1300px; height: 620px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.97) 0%, rgba(8, 9, 30, 0.95) 75%, rgba(8, 9, 30, 0) 100%); }
+    #root #f01-st { height: 720px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.92) 0%, rgba(8, 9, 30, 0.85) 60%, rgba(8, 9, 30, 0) 100%); }
+    #root #f01-vb { transform: translateY(-150px) scale(1.2); transform-origin: 50% 50%; }
+    #root #f01-title { position: absolute; left: 72px; top: 262px; width: 936px; font-size: 80px; font-weight: 700; line-height: 92px; letter-spacing: -0.02em; color: #ffffff;
+                       text-shadow: 0 6px 30px rgba(0, 0, 0, 0.55); }
+    #root #f01-title .l2 { color: var(--claude-hi); white-space: nowrap; }
+    #root #f01-msg { position: absolute; left: 72px; top: 496px; max-width: 860px; box-sizing: border-box; padding: 18px 28px 20px; border-radius: 28px 28px 28px 8px;
+                     background: rgba(255, 255, 255, 0.95); color: var(--ink); font-size: 32px; font-weight: 500; line-height: 42px; box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35); }
+    #root #f01-msg .ca { display: inline-block; width: 3px; height: 34px; margin-left: 4px; background: var(--claude); vertical-align: -6px; }
+    #root #f01-x { position: absolute; left: 72px; top: 1068px; padding: 14px 28px 15px; font-size: 30px; font-weight: 500; }
+    #root #f01-x b { font-weight: 700; color: var(--claude-hi); }
+    #root #f01-ring { position: absolute; left: 505px; top: 776px; width: 600px; height: 600px; opacity: 0; }
+    #root #f01-new { position: absolute; left: 330px; top: 1046px; }
+    #root #f01-flash { position: absolute; inset: 0; background: radial-gradient(circle at 75% 56%, rgba(255, 255, 255, 0.95), rgba(255, 214, 196, 0.55) 35%, rgba(255, 255, 255, 0) 70%); opacity: 0; mix-blend-mode: screen; }
+
+  </style>
+
+  <div id="root" data-composition-id="01-hook" data-theme="dark" data-width="1080" data-height="1920" data-duration="4.395" data-fill-d>
+    <div id="f01-bg" class="k-bg clip" data-start="0" data-duration="4.395" data-fill-d data-track-index="0"><div class="k-bg-dark" id="f01-plate"></div><div class="k-bg-grain"></div></div>
+
+    <div class="f01-vw" id="f01-wa"><video id="f01-va" class="f01-v" src="assets/stock/video/claude-demo-globe-v.mp4" data-start="0.000" data-duration="2.752" data-media-start="0.000" data-playback-rate="0.563227" data-track-index="1" muted playsinline></video></div>
+    <div class="f01-vw" id="f01-wb"><video id="f01-vb" class="f01-v" src="assets/stock/video/claude-demo-dock-v.mp4" data-start="2.452" data-duration="1.930" data-media-start="1.450" data-hf-media-start-basis="local" data-track-index="2" muted playsinline></video></div>
+    <div class="k-shade k-shade-top" id="f01-st"></div><div class="k-shade k-shade-bot" id="f01-sb"></div>
+
+    <div id="f01-title" data-layout-allow-overlap>Artifact của Claude<br><span class="l2">giờ cài thành ứng dụng</span></div>
+    <div id="f01-msg" data-layout-allow-overlap><span id="f01-mt">Build me</span><span class="ca"></span></div>
+    <div class="k-chip" id="f01-x" data-layout-allow-overlap><span>Bài của @ClaudeDevs: <b>3,9 triệu</b> lượt xem sau 7 giờ</span></div>
+    <div id="f01-flash" data-layout-allow-overlap></div>
+    <img id="f01-ring" src="assets/derived/iris-ring-1000.png" alt="" data-layout-allow-overlap data-layout-allow-overflow />
+    <div class="k-tag" id="f01-new" data-layout-allow-overlap>Ứng dụng vừa cài</div>
+    <div class="k-src" id="f01-src" data-layout-allow-overlap>Video: @ClaudeDevs (Anthropic) trên X</div>
+
+    <div class="k-hdr" id="f01-hdr"><span class="k-hdr-label" data-layout-allow-overlap>Trung tâm Đào tạo AI Chuyên sâu</span><span class="k-hdr-pill" data-layout-allow-overlap>Tin AI</span></div>
+  </div>
+
+  <script>
+    (function () {
+      var CUE = /*CUE*/{"D": 4.395, "S": {"B1S1": {"t0": 0.2, "t1": 3.795, "c": [0.324, 1.101, 2.065], "e": [0.777, 2.046, 3.56], "w": [0.324, 0.462, 0.62, 1.101, 1.396, 1.593, 1.75, 1.888, 2.065, 2.203, 2.36, 2.517, 2.655, 2.852, 2.989, 3.206, 3.363]}}}/*END_CUE*/;
+      var D = CUE.D;
+      var S1 = CUE.S["B1S1"];
+      function wt(S, i, n) { return S.w && S.w[i] != null ? S.w[i] : S.t0 + (S.t1 - S.t0) * i / n; }
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo("#f01-plate", { x: 0, y: -16 }, { x: -16, y: 16, duration: D, ease: "none" }, 0);
+
+      var tCut = 2.452, tPop = Math.max(wt(S1, 13, 17), tCut + 0.3);
+      var MSG = "Build me an app that tracks every piece of space junk in orbit.";
+      tl.fromTo("#f01-wa", { scale: 1.0 }, { scale: 1.1, duration: tCut - 0.13, ease: "none" }, 0);
+      tl.fromTo("#f01-title", { y: 0 }, { y: -8, duration: D, ease: "none" }, 0);
+      // "Một lời nhắn": lời nhắn gốc trong video demo hiện như đang gõ
+      var go = { n: 0 };
+      tl.fromTo(go, { n: 8 }, { n: MSG.length, duration: Math.max(0.5, wt(S1, 3, 17) - 0.15), ease: "none", onUpdate: function () {
+        var el = document.querySelector("#f01-mt"); if (el) el.textContent = MSG.slice(0, Math.round(go.n));
+      } }, 0.06);
+      tl.fromTo("#f01-msg .ca", { opacity: 1 }, { opacity: 0, duration: 0.22, ease: "steps(1)", repeat: 9, yoyo: true }, 0);
+      tl.fromTo("#f01-x, #f01-src", { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.32, ease: "back.out(1.6)" }, 0.3);
+      // trước chữ "chạy": phóng xuyên qua quả địa cầu sang cảnh máy vừa cài ứng dụng
+      tl.to("#f01-wa", { scale: 1.5, autoAlpha: 0, filter: "blur(10px)", duration: 0.3, ease: "power2.in", immediateRender: false }, tCut - 0.12);
+      tl.fromTo("#f01-wb", { autoAlpha: 0, scale: 1.18 }, { autoAlpha: 1, scale: 1, duration: 0.42, ease: "power3.out" }, tCut);
+      tl.to("#f01-msg, #f01-x", { autoAlpha: 0, y: -12, duration: 0.2, ease: "power2.in", immediateRender: false }, tCut - 0.05);
+      // "chạy": biểu tượng hiện, vòng sáng loang (cùng lúc nhạc vào nhịp)
+      tl.fromTo("#f01-ring", { opacity: 0.9, scale: 0.15 }, { opacity: 0, scale: 1.25, duration: 0.85, ease: "power2.out", immediateRender: false }, tPop - 0.04);
+      tl.fromTo("#f01-flash", { opacity: 0 }, { opacity: 0.85, duration: 0.07, ease: "power2.out", immediateRender: false }, tPop - 0.03);
+      tl.to("#f01-flash", { opacity: 0, duration: 0.35, ease: "power2.in", immediateRender: false }, tPop + 0.05);
+      tl.fromTo("#f01-wb", { y: 0 }, { y: -10, duration: 0.08, ease: "power2.out", yoyo: true, repeat: 1, immediateRender: false }, tPop);
+      tl.fromTo("#f01-new", { autoAlpha: 0, x: -20, scale: 0.8 }, { autoAlpha: 1, x: 0, scale: 1, duration: 0.36, ease: "back.out(1.8)" }, tPop + 0.12);
+      // lúc chuyển cảnh phóng sang 02: ẩn hàng tiêu đề và dòng nguồn của cảnh này để không in đúp với cảnh 02 (QA bản dựng 2)
+      tl.to("#f01-hdr, #f01-src, #f01-new", { autoAlpha: 0, duration: 0.12, immediateRender: false }, D - 0.45);
+
+      window.__timelines["01-hook"] = tl;
+    })();
+  </script>
+</template>

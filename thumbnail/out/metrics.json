@@ -1,0 +1,1245 @@
+{
+ "v1": {
+  "variant": "v1",
+  "texts": [
+   {
+    "key": "hdr-label",
+    "text": "Trung tâm Đào tạo AI Chuyên sâu",
+    "size": 28,
+    "box": [
+     72,
+     189,
+     715,
+     224
+    ],
+    "contrast_worst": 18.11,
+    "contrast_median": 18.15,
+    "need": 3.0
+   },
+   {
+    "key": "hdr-pill",
+    "text": "Tin AI",
+    "size": 26,
+    "box": [
+     755,
+     190,
+     859,
+     223
+    ],
+    "contrast_worst": 19.54,
+    "contrast_median": 19.58,
+    "need": 3.0
+   },
+   {
+    "key": "kicker",
+    "text": "Tính năng mới của Claude",
+    "size": 38,
+    "box": [
+     72,
+     428,
+     588,
+     476
+    ],
+    "contrast_worst": 11.56,
+    "contrast_median": 18.93,
+    "need": 3.0
+   },
+   {
+    "key": "wm",
+    "text": "CAAITE",
+    "size": 24,
+    "box": [
+     878,
+     433,
+     988,
+     463
+    ],
+    "contrast_worst": 18.89,
+    "contrast_median": 18.89,
+    "need": 3.0
+   },
+   {
+    "key": "title",
+    "text": "Artifact",
+    "size": 200,
+    "box": [
+     64,
+     495,
+     804,
+     745
+    ],
+    "contrast_worst": 7.66,
+    "contrast_median": 19.0,
+    "need": 3.0
+   },
+   {
+    "key": "title-b",
+    "text": "thành ứng dụng",
+    "size": 107,
+    "box": [
+     64,
+     676,
+     907,
+     810
+    ],
+    "contrast_worst": 3.82,
+    "contrast_median": 11.39,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "Cài lên máy chạy",
+    "size": 44,
+    "box": [
+     114,
+     942,
+     500,
+     997
+    ],
+    "contrast_worst": 9.16,
+    "contrast_median": 15.52,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "macOS, Windows",
+    "size": 44,
+    "box": [
+     500,
+     942,
+     886,
+     997
+    ],
+    "contrast_worst": 6.58,
+    "contrast_median": 11.74,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "Bản thử nghiệm, Anthropic công bố 24/11/2026",
+    "size": 28,
+    "box": [
+     114,
+     1015,
+     767,
+     1050
+    ],
+    "contrast_worst": 9.21,
+    "contrast_median": 16.37,
+    "need": 3.0
+   },
+   {
+    "key": "p-row",
+    "text": "Cài lên máy chạy",
+    "size": 44,
+    "box": [
+     114,
+     942,
+     500,
+     997
+    ],
+    "contrast_worst": 9.16,
+    "contrast_median": 15.52,
+    "need": 3.0
+   },
+   {
+    "key": "p-row",
+    "text": "macOS, Windows",
+    "size": 44,
+    "box": [
+     500,
+     942,
+     886,
+     997
+    ],
+    "contrast_worst": 6.58,
+    "contrast_median": 11.74,
+    "need": 3.0
+   },
+   {
+    "key": "p-note",
+    "text": "Bản thử nghiệm, Anthropic công bố 24/11/2026",
+    "size": 28,
+    "box": [
+     114,
+     1015,
+     767,
+     1050
+    ],
+    "contrast_worst": 9.21,
+    "contrast_median": 16.37,
+    "need": 3.0
+   }
+  ],
+  "problems": [],
+  "ink": {
+   "hdr-label": [
+    73,
+    192,
+    710,
+    224
+   ],
+   "hdr-pill": [
+    756,
+    198,
+    856,
+    216
+   ],
+   "kicker": [
+    73,
+    435,
+    587,
+    475
+   ],
+   "wm": [
+    879,
+    440,
+    985,
+    457
+   ],
+   "title": [
+    63,
+    535,
+    805,
+    697
+   ],
+   "title-b": [
+    66,
+    691,
+    956,
+    808
+   ],
+   "pcard": [
+    116,
+    951,
+    886,
+    1050
+   ],
+   "p-row": [
+    116,
+    951,
+    886,
+    996
+   ],
+   "p-note": [
+    116,
+    1017,
+    767,
+    1050
+   ]
+  },
+  "warnings": [
+   "chữ nằm dưới lớp phủ 'viên Mới của YouTube': hdr-label 73,192,710,224",
+   "chữ nằm dưới lớp phủ 'nút ba chấm YouTube': hdr-pill 756,198,856,216"
+  ],
+  "card_box_y": [
+   900,
+   1081.4
+  ],
+  "safe": {
+   "khung_2x3_youtube": {
+    "hdr-label": "trong",
+    "hdr-pill": "trong",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong"
+   },
+   "khung_3x4_tiktok": {
+    "hdr-label": "ngoài",
+    "hdr-pill": "ngoài",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong"
+   },
+   "dai_chu_chinh_y420_1280": {
+    "hdr-label": "ngoài",
+    "hdr-pill": "ngoài",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong"
+   },
+   "duoi_lop_phu": [
+    "hdr-label / viên Mới của YouTube",
+    "hdr-pill / nút ba chấm YouTube"
+   ]
+  },
+  "fonts_not_loaded": [],
+  "fonts_used": [
+   "Lexend 100 900 loaded"
+  ],
+  "metrics": [
+   {
+    "key": "hdr-label",
+    "text": "Trung tâm Đào tạo AI Chuyên sâu",
+    "x": 72,
+    "y": 189.5,
+    "w": 643.8125,
+    "h": 35,
+    "box": [
+     72,
+     189.5,
+     643.8125,
+     35
+    ],
+    "fontSize": 28,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Trung tâm Đào tạo AI Chuyên sâu",
+      "x": 72,
+      "y": 189.5,
+      "w": 643.8125,
+      "h": 35,
+      "color": "rgba(255, 255, 255, 0.96)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "hdr-pill",
+    "text": "Tin AI",
+    "x": 755.8125,
+    "y": 190,
+    "w": 103.359375,
+    "h": 33,
+    "box": [
+     735.8125,
+     182,
+     143.359375,
+     50
+    ],
+    "fontSize": 26,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Tin AI",
+      "x": 755.8125,
+      "y": 190,
+      "w": 103.359375,
+      "h": 33,
+      "color": "rgb(255, 255, 255)",
+      "size": 26
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "kicker",
+    "text": "Tính năng mới của Claude",
+    "x": 72,
+    "y": 428,
+    "w": 516.625,
+    "h": 48,
+    "box": [
+     72,
+     428,
+     516.625,
+     48
+    ],
+    "fontSize": 38,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Tính năng mới của Claude",
+      "x": 72,
+      "y": 428,
+      "w": 516.625,
+      "h": 48,
+      "color": "rgb(255, 255, 255)",
+      "size": 38
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "wm",
+    "text": "CAAITE",
+    "x": 878.5625,
+    "y": 433,
+    "w": 110.3125,
+    "h": 30,
+    "box": [
+     801.25,
+     420,
+     206.75,
+     56
+    ],
+    "fontSize": 16,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "CAAITE",
+      "x": 878.5625,
+      "y": 433,
+      "w": 110.3125,
+      "h": 30,
+      "color": "rgb(255, 255, 255)",
+      "size": 24
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "title",
+    "text": "Artifact",
+    "x": 64,
+    "y": 495,
+    "w": 740.203125,
+    "h": 250,
+    "box": [
+     64,
+     520,
+     740.203125,
+     200
+    ],
+    "fontSize": 200,
+    "fit": "200",
+    "glyphs": [
+     {
+      "text": "Artifact",
+      "x": 64,
+      "y": 495,
+      "w": 740.203125,
+      "h": 250,
+      "color": "rgb(255, 255, 255)",
+      "size": 200
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "title-b",
+    "text": "thành ứng dụng",
+    "x": 64,
+    "y": 676,
+    "w": 892.8125,
+    "h": 134,
+    "box": [
+     64,
+     690,
+     843.59375,
+     107
+    ],
+    "fontSize": 107,
+    "fit": "107",
+    "glyphs": [
+     {
+      "text": "thành ứng dụng",
+      "x": 64,
+      "y": 676,
+      "w": 843.59375,
+      "h": 134,
+      "color": "rgb(255, 195, 168)",
+      "size": 107
+     }
+    ],
+    "extras": [
+     [
+      918.296875,
+      690,
+      956.8125,
+      729.15625
+     ]
+    ]
+   },
+   {
+    "key": "pcard",
+    "text": "Cài lên máy chạy macOS, Windows\n      Bản thử nghiệm, Anthropic công bố 24/11/2026",
+    "x": 114,
+    "y": 942,
+    "w": 772.171875,
+    "h": 108,
+    "box": [
+     72,
+     900,
+     936,
+     181.390625
+    ],
+    "fontSize": 16,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Cài lên máy chạy ",
+      "x": 114,
+      "y": 942,
+      "w": 386.5,
+      "h": 55,
+      "color": "rgb(255, 255, 255)",
+      "size": 44
+     },
+     {
+      "text": "macOS, Windows",
+      "x": 500.5,
+      "y": 942,
+      "w": 385.671875,
+      "h": 55,
+      "color": "rgb(164, 233, 236)",
+      "size": 44
+     },
+     {
+      "text": "Bản thử nghiệm, Anthropic công bố 24/11/2026",
+      "x": 114,
+      "y": 1015,
+      "w": 653.890625,
+      "h": 35,
+      "color": "rgb(255, 255, 255)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "p-row",
+    "text": "Cài lên máy chạy macOS, Windows",
+    "x": 114,
+    "y": 942,
+    "w": 772.171875,
+    "h": 55,
+    "box": [
+     114,
+     942,
+     852,
+     55
+    ],
+    "fontSize": 44,
+    "fit": "44",
+    "glyphs": [
+     {
+      "text": "Cài lên máy chạy ",
+      "x": 114,
+      "y": 942,
+      "w": 386.5,
+      "h": 55,
+      "color": "rgb(255, 255, 255)",
+      "size": 44
+     },
+     {
+      "text": "macOS, Windows",
+      "x": 500.5,
+      "y": 942,
+      "w": 385.671875,
+      "h": 55,
+      "color": "rgb(164, 233, 236)",
+      "size": 44
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "p-note",
+    "text": "Bản thử nghiệm, Anthropic công bố 24/11/2026",
+    "x": 114,
+    "y": 1015,
+    "w": 653.890625,
+    "h": 35,
+    "box": [
+     114,
+     1015,
+     852,
+     36.390625
+    ],
+    "fontSize": 28,
+    "fit": "28",
+    "glyphs": [
+     {
+      "text": "Bản thử nghiệm, Anthropic công bố 24/11/2026",
+      "x": 114,
+      "y": 1015,
+      "w": 653.890625,
+      "h": 35,
+      "color": "rgb(255, 255, 255)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   }
+  ],
+  "jpg": {
+   "quality": 93,
+   "bytes": 377624
+  }
+ },
+ "v2": {
+  "variant": "v2",
+  "texts": [
+   {
+    "key": "hdr-label",
+    "text": "Trung tâm Đào tạo AI Chuyên sâu",
+    "size": 28,
+    "box": [
+     72,
+     189,
+     715,
+     224
+    ],
+    "contrast_worst": 14.22,
+    "contrast_median": 14.4,
+    "need": 3.0
+   },
+   {
+    "key": "hdr-pill",
+    "text": "Tin AI",
+    "size": 26,
+    "box": [
+     755,
+     190,
+     859,
+     223
+    ],
+    "contrast_worst": 15.84,
+    "contrast_median": 16.02,
+    "need": 3.0
+   },
+   {
+    "key": "kicker",
+    "text": "Tính năng mới của Claude",
+    "size": 38,
+    "box": [
+     72,
+     428,
+     588,
+     476
+    ],
+    "contrast_worst": 11.49,
+    "contrast_median": 12.88,
+    "need": 3.0
+   },
+   {
+    "key": "wm",
+    "text": "CAAITE",
+    "size": 24,
+    "box": [
+     878,
+     433,
+     988,
+     463
+    ],
+    "contrast_worst": 13.93,
+    "contrast_median": 16.17,
+    "need": 3.0
+   },
+   {
+    "key": "title",
+    "text": "Một lời nhắn",
+    "size": 146,
+    "box": [
+     64,
+     501,
+     959,
+     684
+    ],
+    "contrast_worst": 6.47,
+    "contrast_median": 10.44,
+    "need": 3.0
+   },
+   {
+    "key": "title-b",
+    "text": "thành ứng dụng",
+    "size": 107,
+    "box": [
+     64,
+     676,
+     907,
+     810
+    ],
+    "contrast_worst": 3.58,
+    "contrast_median": 5.25,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "Claude làm, bạn",
+    "size": 44,
+    "box": [
+     114,
+     942,
+     479,
+     997
+    ],
+    "contrast_worst": 8.11,
+    "contrast_median": 10.48,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "cài lên máy tính",
+    "size": 44,
+    "box": [
+     479,
+     942,
+     839,
+     997
+    ],
+    "contrast_worst": 7.02,
+    "contrast_median": 13.04,
+    "need": 3.0
+   },
+   {
+    "key": "pcard",
+    "text": "Ảnh: bài công bố của Anthropic, 24/11/2026",
+    "size": 28,
+    "box": [
+     114,
+     1015,
+     719,
+     1050
+    ],
+    "contrast_worst": 7.88,
+    "contrast_median": 10.72,
+    "need": 3.0
+   },
+   {
+    "key": "p-row",
+    "text": "Claude làm, bạn",
+    "size": 44,
+    "box": [
+     114,
+     942,
+     479,
+     997
+    ],
+    "contrast_worst": 8.11,
+    "contrast_median": 10.48,
+    "need": 3.0
+   },
+   {
+    "key": "p-row",
+    "text": "cài lên máy tính",
+    "size": 44,
+    "box": [
+     479,
+     942,
+     839,
+     997
+    ],
+    "contrast_worst": 7.02,
+    "contrast_median": 13.04,
+    "need": 3.0
+   },
+   {
+    "key": "p-note",
+    "text": "Ảnh: bài công bố của Anthropic, 24/11/2026",
+    "size": 28,
+    "box": [
+     114,
+     1015,
+     719,
+     1050
+    ],
+    "contrast_worst": 7.88,
+    "contrast_median": 10.72,
+    "need": 3.0
+   },
+   {
+    "key": "p-note-2",
+    "text": "Bài công bố trên X:",
+    "size": 30,
+    "box": [
+     86,
+     1140,
+     376,
+     1178
+    ],
+    "contrast_worst": 13.55,
+    "contrast_median": 13.73,
+    "need": 3.0
+   },
+   {
+    "key": "p-note-2",
+    "text": "3,9 triệu",
+    "size": 30,
+    "box": [
+     376,
+     1140,
+     502,
+     1178
+    ],
+    "contrast_worst": 8.89,
+    "contrast_median": 9.96,
+    "need": 3.0
+   },
+   {
+    "key": "p-note-2",
+    "text": "lượt xem sau 7 giờ",
+    "size": 30,
+    "box": [
+     502,
+     1140,
+     780,
+     1178
+    ],
+    "contrast_worst": 16.99,
+    "contrast_median": 17.1,
+    "need": 3.0
+   }
+  ],
+  "problems": [],
+  "ink": {
+   "hdr-label": [
+    73,
+    192,
+    710,
+    224
+   ],
+   "hdr-pill": [
+    756,
+    198,
+    856,
+    216
+   ],
+   "kicker": [
+    73,
+    435,
+    587,
+    475
+   ],
+   "wm": [
+    879,
+    440,
+    985,
+    457
+   ],
+   "title": [
+    76,
+    504,
+    954,
+    680
+   ],
+   "title-b": [
+    66,
+    691,
+    955,
+    808
+   ],
+   "pcard": [
+    114,
+    951,
+    837,
+    1050
+   ],
+   "p-row": [
+    116,
+    951,
+    837,
+    996
+   ],
+   "p-note": [
+    114,
+    1016,
+    719,
+    1050
+   ],
+   "p-note-2": [
+    88,
+    1142,
+    780,
+    1177
+   ]
+  },
+  "warnings": [
+   "chữ nằm dưới lớp phủ 'viên Mới của YouTube': hdr-label 73,192,710,224",
+   "chữ nằm dưới lớp phủ 'nút ba chấm YouTube': hdr-pill 756,198,856,216"
+  ],
+  "card_box_y": [
+   900,
+   1081.4
+  ],
+  "safe": {
+   "khung_2x3_youtube": {
+    "hdr-label": "trong",
+    "hdr-pill": "trong",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong",
+    "p-note-2": "trong"
+   },
+   "khung_3x4_tiktok": {
+    "hdr-label": "ngoài",
+    "hdr-pill": "ngoài",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong",
+    "p-note-2": "trong"
+   },
+   "dai_chu_chinh_y420_1280": {
+    "hdr-label": "ngoài",
+    "hdr-pill": "ngoài",
+    "kicker": "trong",
+    "wm": "trong",
+    "title": "trong",
+    "title-b": "trong",
+    "pcard": "trong",
+    "p-row": "trong",
+    "p-note": "trong",
+    "p-note-2": "trong"
+   },
+   "duoi_lop_phu": [
+    "hdr-label / viên Mới của YouTube",
+    "hdr-pill / nút ba chấm YouTube"
+   ]
+  },
+  "fonts_not_loaded": [],
+  "fonts_used": [
+   "Lexend 100 900 loaded"
+  ],
+  "metrics": [
+   {
+    "key": "hdr-label",
+    "text": "Trung tâm Đào tạo AI Chuyên sâu",
+    "x": 72,
+    "y": 189.5,
+    "w": 643.8125,
+    "h": 35,
+    "box": [
+     72,
+     189.5,
+     643.8125,
+     35
+    ],
+    "fontSize": 28,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Trung tâm Đào tạo AI Chuyên sâu",
+      "x": 72,
+      "y": 189.5,
+      "w": 643.8125,
+      "h": 35,
+      "color": "rgba(255, 255, 255, 0.96)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "hdr-pill",
+    "text": "Tin AI",
+    "x": 755.8125,
+    "y": 190,
+    "w": 103.359375,
+    "h": 33,
+    "box": [
+     735.8125,
+     182,
+     143.359375,
+     50
+    ],
+    "fontSize": 26,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Tin AI",
+      "x": 755.8125,
+      "y": 190,
+      "w": 103.359375,
+      "h": 33,
+      "color": "rgb(255, 255, 255)",
+      "size": 26
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "kicker",
+    "text": "Tính năng mới của Claude",
+    "x": 72,
+    "y": 428,
+    "w": 516.625,
+    "h": 48,
+    "box": [
+     72,
+     428,
+     516.625,
+     48
+    ],
+    "fontSize": 38,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Tính năng mới của Claude",
+      "x": 72,
+      "y": 428,
+      "w": 516.625,
+      "h": 48,
+      "color": "rgb(255, 255, 255)",
+      "size": 38
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "wm",
+    "text": "CAAITE",
+    "x": 878.5625,
+    "y": 433,
+    "w": 110.3125,
+    "h": 30,
+    "box": [
+     801.25,
+     420,
+     206.75,
+     56
+    ],
+    "fontSize": 16,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "CAAITE",
+      "x": 878.5625,
+      "y": 433,
+      "w": 110.3125,
+      "h": 30,
+      "color": "rgb(255, 255, 255)",
+      "size": 24
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "title",
+    "text": "Một lời nhắn",
+    "x": 64,
+    "y": 501,
+    "w": 895.71875,
+    "h": 183,
+    "box": [
+     64,
+     520,
+     895.71875,
+     146
+    ],
+    "fontSize": 146,
+    "fit": "146",
+    "glyphs": [
+     {
+      "text": "Một lời nhắn",
+      "x": 64,
+      "y": 501,
+      "w": 895.71875,
+      "h": 183,
+      "color": "rgb(255, 255, 255)",
+      "size": 146
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "title-b",
+    "text": "thành ứng dụng",
+    "x": 64,
+    "y": 676,
+    "w": 892.8125,
+    "h": 134,
+    "box": [
+     64,
+     690,
+     843.59375,
+     107
+    ],
+    "fontSize": 107,
+    "fit": "107",
+    "glyphs": [
+     {
+      "text": "thành ứng dụng",
+      "x": 64,
+      "y": 676,
+      "w": 843.59375,
+      "h": 134,
+      "color": "rgb(255, 195, 168)",
+      "size": 107
+     }
+    ],
+    "extras": [
+     [
+      918.296875,
+      690,
+      956.8125,
+      729.15625
+     ]
+    ]
+   },
+   {
+    "key": "pcard",
+    "text": "Claude làm, bạn cài lên máy tính\n      Ảnh: bài công bố của Anthropic, 24/11/2026",
+    "x": 114,
+    "y": 942,
+    "w": 725.578125,
+    "h": 108,
+    "box": [
+     72,
+     900,
+     936,
+     181.390625
+    ],
+    "fontSize": 16,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Claude làm, bạn ",
+      "x": 114,
+      "y": 942,
+      "w": 365.46875,
+      "h": 55,
+      "color": "rgb(255, 255, 255)",
+      "size": 44
+     },
+     {
+      "text": "cài lên máy tính",
+      "x": 479.46875,
+      "y": 942,
+      "w": 360.109375,
+      "h": 55,
+      "color": "rgb(164, 233, 236)",
+      "size": 44
+     },
+     {
+      "text": "Ảnh: bài công bố của Anthropic, 24/11/2026",
+      "x": 114,
+      "y": 1015,
+      "w": 605.875,
+      "h": 35,
+      "color": "rgb(255, 255, 255)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "p-row",
+    "text": "Claude làm, bạn cài lên máy tính",
+    "x": 114,
+    "y": 942,
+    "w": 725.578125,
+    "h": 55,
+    "box": [
+     114,
+     942,
+     852,
+     55
+    ],
+    "fontSize": 44,
+    "fit": "44",
+    "glyphs": [
+     {
+      "text": "Claude làm, bạn ",
+      "x": 114,
+      "y": 942,
+      "w": 365.46875,
+      "h": 55,
+      "color": "rgb(255, 255, 255)",
+      "size": 44
+     },
+     {
+      "text": "cài lên máy tính",
+      "x": 479.46875,
+      "y": 942,
+      "w": 360.109375,
+      "h": 55,
+      "color": "rgb(164, 233, 236)",
+      "size": 44
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "p-note",
+    "text": "Ảnh: bài công bố của Anthropic, 24/11/2026",
+    "x": 114,
+    "y": 1015,
+    "w": 605.875,
+    "h": 35,
+    "box": [
+     114,
+     1015,
+     852,
+     36.390625
+    ],
+    "fontSize": 28,
+    "fit": "28",
+    "glyphs": [
+     {
+      "text": "Ảnh: bài công bố của Anthropic, 24/11/2026",
+      "x": 114,
+      "y": 1015,
+      "w": 605.875,
+      "h": 35,
+      "color": "rgb(255, 255, 255)",
+      "size": 28
+     }
+    ],
+    "extras": []
+   },
+   {
+    "key": "p-note-2",
+    "text": "Bài công bố trên X: 3,9 triệu lượt xem sau 7 giờ",
+    "x": 86,
+    "y": 1140,
+    "w": 694.875,
+    "h": 38,
+    "box": [
+     72,
+     1128,
+     734.875,
+     63
+    ],
+    "fontSize": 30,
+    "fit": null,
+    "glyphs": [
+     {
+      "text": "Bài công bố trên X: ",
+      "x": 86,
+      "y": 1140,
+      "w": 290.921875,
+      "h": 38,
+      "color": "rgb(255, 255, 255)",
+      "size": 30
+     },
+     {
+      "text": "3,9 triệu",
+      "x": 376.921875,
+      "y": 1140,
+      "w": 125.25,
+      "h": 38,
+      "color": "rgb(255, 195, 168)",
+      "size": 30
+     },
+     {
+      "text": " lượt xem sau 7 giờ",
+      "x": 502.171875,
+      "y": 1140,
+      "w": 278.703125,
+      "h": 38,
+      "color": "rgb(255, 255, 255)",
+      "size": 30
+     }
+    ],
+    "extras": []
+   }
+  ],
+  "jpg": {
+   "quality": 93,
+   "bytes": 318459
+  }
+ }
+}

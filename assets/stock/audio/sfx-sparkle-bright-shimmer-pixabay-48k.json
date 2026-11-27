@@ -1,0 +1,61 @@
+{
+  "file": "assets/stock/audio/sfx-sparkle-bright-shimmer-pixabay-48k.wav",
+  "kind": "sfx",
+  "source_site": "Pixabay (via the HyperFrames bundled SFX library)",
+  "page_url": "https://github.com/heygen-com/hyperframes/blob/main/skills/media-use/audio/assets/sfx/CREDITS.md",
+  "download_url": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/media-use/audio/assets/sfx/sparkle.mp3",
+  "license_name": "Pixabay Content License",
+  "license_url": "https://pixabay.com/service/license-summary/",
+  "license_note": "Pixabay Content License as stated in the HyperFrames bundled-SFX CREDITS.md (commercial and non-commercial use, modification, no attribution required). pixabay.com itself answered curl with a Cloudflare challenge, so the individual Pixabay item pages and authors could not be looked up; upstream does not list them.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "sparkle (HyperFrames bundle)",
+  "description": "\"sparkle (HyperFrames bundle)\" (Pixabay sound bundled with HyperFrames). Bright sparkle/shimmer (1.8 s), immediate attack, glittery decay. Measured: 1.80 s, RMS -15.5 dBFS, -11.1 LUFS, onset 0.02 s, loudest at 0.09 s, audible to 1.78 s, brightness centroid 5103 Hz.",
+  "fit_score": 8,
+  "suggested_use": "The four-point star of the logo flashing; any 'shine' highlight.",
+  "duration_s": 1.802,
+  "measurements": {
+    "duration_s": 1.802,
+    "rms_dbfs": -15.5,
+    "peak_dbfs": 3.3,
+    "integrated_lufs": -11.1,
+    "loudness_range_lu": 0.0,
+    "true_peak_dbfs": 0.1,
+    "bpm_estimate": null,
+    "bpm_confidence": null,
+    "strongest_hits": [
+      {
+        "t_s": 0.02,
+        "rel_strength": 1.0
+      },
+      {
+        "t_s": 0.28,
+        "rel_strength": 0.51
+      },
+      {
+        "t_s": 0.77,
+        "rel_strength": 0.19
+      }
+    ],
+    "brightness_centroid_hz": 5103,
+    "strongest_hits_s": [
+      0.02,
+      0.28,
+      0.77
+    ],
+    "onset_s": 0.02,
+    "loudest_10ms_at_s": 0.09,
+    "audible_end_s_minus45db": 1.78
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 1.802,
+    "size_bytes": 346150
+  },
+  "derived_from": "assets/stock/audio/sfx-sparkle-bright-shimmer-pixabay.mp3",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak 0.11 dBFS; gain applied -0.41 dB"
+}

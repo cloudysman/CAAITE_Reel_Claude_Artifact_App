@@ -1,0 +1,88 @@
+<template>
+  <style>
+    @font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Lexend", sans-serif; --hy: #5154f5; --hy-ink: #2f33c9; --mint: #a4e9ec;
+            --ink: #12143a; --claude: #d97757; --claude-hi: #ffc3a8; --claude-ink: #a3401f; --warn: #b4530a; }
+    #root[data-theme="light"] { --fg: #12143a; --fg-soft: rgba(18, 20, 58, 0.78); --accent: #2f55d4; color: var(--fg); }
+    #root[data-theme="brand"], #root[data-theme="dark"], #root[data-theme="pixel"] { --fg: #ffffff; --fg-soft: rgba(255, 255, 255, 0.94); --accent: #a4e9ec; color: var(--fg); }
+    #root .k-bg { position: absolute; inset: 0; overflow: hidden; }
+    #root .k-bg-grad { position: absolute; inset: 0; background: linear-gradient(160deg, #5154f5 0%, #4878eb 50%, #3ca7de 100%); }
+    #root .k-bg-paper { position: absolute; inset: 0; background: #f9f9ff; }
+    #root .k-bg-dark { position: absolute; inset: 0; background:
+        radial-gradient(900px 760px at 12% 8%, rgba(81, 84, 245, 0.42), rgba(81, 84, 245, 0) 70%),
+        radial-gradient(900px 800px at 92% 92%, rgba(217, 119, 87, 0.34), rgba(217, 119, 87, 0) 70%), #0b0d26; }
+    #root .k-bg-pixel { position: absolute; left: 0; top: 0; width: 3562px; height: 1920px; }
+    #root .k-bg-plate { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+    #root .k-bg-arc { mix-blend-mode: soft-light; opacity: 0.22; }
+    #root .k-bg-silk { opacity: 0.55; }
+    #root .k-bg-grain { position: absolute; inset: 0; background: url("assets/brand/grain-512.png") repeat; background-size: 512px 512px; mix-blend-mode: soft-light; opacity: 0.05; }
+    #root .k-shade { position: absolute; left: 0; width: 1080px; pointer-events: none; }
+    #root .k-shade-top { top: 0; height: 620px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.55) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-shade-bot { top: 1060px; height: 860px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.5) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-hdr { position: absolute; left: 72px; right: 72px; top: 150px; height: 48px; display: flex; align-items: center; gap: 18px; }
+    #root .k-hdr-label { font-size: 22px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-soft); white-space: nowrap; }
+    #root .k-hdr-pill { font-size: 22px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 16px 5px; border-radius: 999px; border: 2px solid var(--accent); color: var(--accent); white-space: nowrap; }
+    #root[data-theme="brand"] .k-hdr-pill, #root[data-theme="dark"] .k-hdr-pill, #root[data-theme="pixel"] .k-hdr-pill { color: #ffffff; border-color: rgba(255, 255, 255, 0.8); background: rgba(18, 20, 58, 0.28); }
+    #root[data-theme="pixel"] .k-hdr-label, #root[data-theme="dark"] .k-hdr-label { color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+    #root .k-src { position: absolute; left: 72px; top: 1182px; font-size: 22px; font-weight: 500; letter-spacing: 0.04em; color: var(--fg-soft); white-space: nowrap; }
+    #root[data-theme="brand"] .k-src, #root[data-theme="dark"] .k-src, #root[data-theme="pixel"] .k-src { color: #ffffff; background: rgba(12, 13, 40, 0.62); padding: 5px 14px 6px; border-radius: 999px; }
+    #root .k-src.k-cr { left: auto; right: 72px; top: 1132px; font-size: 20px; }
+    #root[data-theme="brand"] .k-glass, #root[data-theme="dark"] .k-glass, #root[data-theme="pixel"] .k-glass { background: rgba(22, 25, 80, 0.62); border: 2px solid rgba(255, 255, 255, 0.4); border-radius: 32px; box-shadow: 0 30px 60px rgba(8, 9, 30, 0.3); }
+    #root[data-theme="light"] .k-glass { background: rgba(255, 255, 255, 0.95); border: 2px solid #dee0fd; border-radius: 32px; box-shadow: 0 30px 60px rgba(81, 84, 245, 0.14); }
+    #root .k-kicker { position: absolute; left: 72px; top: 246px; font-size: 32px; font-weight: 500; letter-spacing: 0.02em; color: var(--accent); white-space: nowrap; }
+    #root[data-theme="light"] .k-kicker { color: #1e2a8a; }
+    #root .k-chip { display: inline-flex; align-items: center; gap: 14px; padding: 12px 28px; border-radius: 999px; font-size: 34px; font-weight: 500; white-space: nowrap; }
+    #root[data-theme="light"] .k-chip { background: #ffffff; border: 2px solid #dee0fd; color: var(--fg); }
+    #root[data-theme="brand"] .k-chip, #root[data-theme="dark"] .k-chip, #root[data-theme="pixel"] .k-chip { background: rgba(22, 25, 80, 0.72); border: 2px solid rgba(255, 255, 255, 0.55); color: #ffffff; }
+    #root .k-tag { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 24px 12px; border-radius: 999px; background: #ffffff; color: var(--ink);
+                   font-size: 32px; font-weight: 600; white-space: nowrap; box-shadow: 0 14px 30px rgba(8, 9, 30, 0.35); }
+    #root .k-ring { position: absolute; border: 6px solid var(--mint); border-radius: 22px; box-shadow: 0 0 26px rgba(164, 233, 236, 0.95), inset 0 0 16px rgba(164, 233, 236, 0.45); }
+    #root .k-win { position: absolute; border-radius: 24px; overflow: hidden; background: #0f1024; box-shadow: 0 40px 80px rgba(8, 9, 30, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.16); }
+    #root .k-win-bar { position: absolute; left: 0; top: 0; right: 0; height: 52px; background: rgba(248, 248, 252, 0.97); display: flex; align-items: center; gap: 10px; padding: 0 20px;
+                       font-size: 28px; font-weight: 600; color: #12143a; white-space: nowrap; }
+    #root .k-dot { width: 15px; height: 15px; border-radius: 50%; flex: none; }
+    #root .k-win img, #root .k-win video { position: absolute; left: 0; display: block; object-fit: cover; }
+    #root .k-paper { position: absolute; background: #ffffff; border-radius: 26px; overflow: hidden; box-shadow: 0 24px 48px rgba(18, 20, 58, 0.22); }
+    #root .k-paper img { position: absolute; left: 0; top: 0; display: block; }
+    #root .k-hl { position: absolute; border-radius: 8px; background: rgba(255, 196, 90, 0.62); mix-blend-mode: multiply; transform-origin: 0% 50%; }
+    #root .k-hl.k-hl-1 { background: rgba(110, 220, 226, 0.6); }
+
+
+    #root .f03-w { width: 700px; height: 490px; }
+    #root #f03-note { position: absolute; left: 72px; top: 1080px; width: 858px; box-sizing: border-box; padding: 14px 26px 16px; font-size: 28px; font-weight: 500; line-height: 38px;
+                      background: rgba(14, 16, 52, 0.94); }
+    #root #f03-q { position: absolute; left: 72px; top: 214px; opacity: 0; }
+
+  </style>
+
+  <div id="root" data-composition-id="03-vi-du" data-theme="pixel" data-width="1080" data-height="1920" data-duration="5.613" data-fill-d>
+    <div id="f03-bg" class="k-bg clip" data-start="0" data-duration="5.613" data-fill-d data-track-index="0"><img id="f03-plate" class="k-bg-pixel" src="assets/web/felix/man_hinh.jpg" alt="" /><div class="k-bg-grain"></div></div>
+
+
+    <div class="k-shade k-shade-top"></div><div class="k-shade k-shade-bot"></div>
+    <div class="k-win f03-w" id="f03-w1" style="left:40px;top:296px;transform:rotate(-2.5deg);"><div class="k-win-bar"><span class="k-dot" style="background:#ff5f57"></span><span class="k-dot" style="background:#febc2e"></span><span class="k-dot" style="background:#28c840"></span><span>Linnet · sửa ảnh nhiều lớp</span></div><img src="assets/web/felix/anh/linnet_1.jpg" alt="" style="top:52px;width:700px;height:438px;" /></div><div class="k-win f03-w" id="f03-w2" style="left:338px;top:446px;transform:rotate(2.0deg);"><div class="k-win-bar"><span class="k-dot" style="background:#ff5f57"></span><span class="k-dot" style="background:#febc2e"></span><span class="k-dot" style="background:#28c840"></span><span>Phosphor · quản lý tệp</span></div><img src="assets/web/felix/anh/phosphor_1.jpg" alt="" style="top:52px;width:700px;height:438px;" /></div><div class="k-win f03-w" id="f03-w3" style="left:112px;top:596px;transform:rotate(-1.2deg);"><div class="k-win-bar"><span class="k-dot" style="background:#ff5f57"></span><span class="k-dot" style="background:#febc2e"></span><span class="k-dot" style="background:#28c840"></span><span>Marrow · bản đồ cơ thể người</span></div><img src="assets/web/felix/anh/marrow_1.jpg" alt="" style="top:52px;width:700px;height:438px;" /></div>
+    <div class="k-tag" id="f03-q" data-layout-allow-overlap>Felix viết: bạn không cần biết lập trình</div>
+    <div class="k-glass" id="f03-note" data-layout-allow-overlap>Ứng dụng mẫu trên trang của Felix, kỹ sư Anthropic; trang ghi rõ đây không phải sản phẩm chính thức.</div>
+
+    <div class="k-hdr" id="f03-hdr"><span class="k-hdr-label" data-layout-allow-overlap>Trung tâm Đào tạo AI Chuyên sâu</span><span class="k-hdr-pill" data-layout-allow-overlap>Tin AI</span></div>
+  </div>
+
+  <script>
+    (function () {
+      var CUE = /*CUE*/{"D": 5.613, "S": {"B3S1": {"t0": 0.2, "t1": 4.963, "c": [0.336, 1.939, 3.817], "e": [1.834, 3.732, 4.83], "w": [0.336, 0.504, 0.695, 0.863, 1.412, 1.559, 1.75, 1.939, 2.192, 2.446, 2.994, 3.226, 3.395, 3.564, 3.817, 3.944, 4.112, 4.281, 4.408, 4.576]}}}/*END_CUE*/;
+      var D = CUE.D;
+      var S1 = CUE.S["B3S1"];
+      function wt(S, i, n) { return S.w && S.w[i] != null ? S.w[i] : S.t0 + (S.t1 - S.t0) * i / n; }
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo("#f03-plate", { x: -120 }, { x: -640, duration: D, ease: "none" }, 0);
+
+      tl.fromTo("#f03-w1", { autoAlpha: 0, scale: 0.4, y: 120 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.42, ease: "back.out(1.5)" }, wt(S1, 8, 20) - 0.12);
+      tl.fromTo("#f03-w2", { autoAlpha: 0, scale: 0.4, y: 120 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.42, ease: "back.out(1.5)" }, wt(S1, 11, 20) - 0.12);
+      tl.fromTo("#f03-w3", { autoAlpha: 0, scale: 0.4, y: 120 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.42, ease: "back.out(1.5)" }, wt(S1, 15, 20) - 0.12);
+      tl.fromTo("#f03-note", { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.32, ease: "power2.out" }, 0.3);
+      tl.fromTo("#f03-q", { autoAlpha: 0, scale: 0.85 }, { autoAlpha: 1, scale: 1, duration: 0.35, ease: "back.out(1.8)" }, 0.3);
+
+      window.__timelines["03-vi-du"] = tl;
+    })();
+  </script>
+</template>

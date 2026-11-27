@@ -1,0 +1,24 @@
+{
+  "file": "assets/stock/audio/music-close-up-michael-ramir-mixkit-1167-48k.wav",
+  "kind": "music",
+  "source_site": "Mixkit",
+  "page_url": "https://mixkit.co/free-stock-music/tag/technology/",
+  "download_url": "https://assets.mixkit.co/music/1167/1167.mp3",
+  "license_name": "Mixkit Stock Music Free License",
+  "license_url": "https://mixkit.co/license/#musicFree",
+  "license_note": "Mixkit Stock Music Free License (đọc lại 11/10/2026, research/media/pages/licenses/mixkit_license_modal_musicFree.txt): dùng được cho dự án thương mại và phi thương mại; được phép: video YouTube, bài đăng mạng xã hội, quảng cáo trực tuyến, mục đích giáo dục, podcast; không được: đăng ký Content ID, phát lại riêng bản nhạc. Không bắt buộc ghi công.",
+  "attribution_required": false,
+  "author": "Michael Ramir C.",
+  "title": "Close Up",
+  "description": "\"Close Up\" của Michael Ramir C. (Mixkit #1167; thẻ: Corporate Music, Rhythmic Underscore, Positive, Futuristic, Bass, Drums, Technology, Industry). Chọn ngày 11/10/2026 trong 5 bản ứng viên vì năng lượng đều ngay từ giây 0 (cửa sổ 58 s đều nhất bắt đầu ở 0 s, lệch chuẩn 2,0 dB) và năng lượng dải giọng nói 1-4 kHz thấp nhất (2,1%), nên ít lấn lời đọc. Chưa nghe bằng tai.",
+  "measurements": {
+    "tool": "src_build/audio/phan_tich_nhac.py (librosa 0.11.0 + pyloudnorm, chạy trên server); số đo đầy đủ: src_build/audio/phan_tich_nhac.json",
+    "duration_s": 95.1,
+    "bpm_estimate": 104.17,
+    "beat_interval_std_s": 0.0063,
+    "first_beats_s": [0.096, 0.661, 1.237, 1.813, 2.379, 2.955, 3.52, 4.096],
+    "integrated_lufs": -16.02,
+    "energy_note": "0-36 s đều (-16 đến -20 dB RMS mỗi giây); 37-69 s có nhiều chỗ hẫng ngắn (38, 40, 47, 56, 58, 63 s, xuống -22 đến -27 dB); 70-91 s đều và dày; nhạc tắt tự nhiên ở khoảng 92 s.",
+    "voice_band_1_4khz_ratio": 0.0211
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "file": "assets/stock/audio/sfx-whoosh-cinematic-long-swell-pixabay-48k.wav",
+  "kind": "sfx",
+  "source_site": "Pixabay (via the HyperFrames bundled SFX library)",
+  "page_url": "https://github.com/heygen-com/hyperframes/blob/main/skills/media-use/audio/assets/sfx/CREDITS.md",
+  "download_url": "https://raw.githubusercontent.com/heygen-com/hyperframes/main/skills/media-use/audio/assets/sfx/whoosh-cinematic.mp3",
+  "license_name": "Pixabay Content License",
+  "license_url": "https://pixabay.com/service/license-summary/",
+  "license_note": "Pixabay Content License as stated in the HyperFrames bundled-SFX CREDITS.md (commercial and non-commercial use, modification, no attribution required). pixabay.com itself answered curl with a Cloudflare challenge, so the individual Pixabay item pages and authors could not be looked up; upstream does not list them.",
+  "attribution_required": false,
+  "author": "not stated",
+  "title": "whoosh-cinematic (HyperFrames bundle)",
+  "description": "\"whoosh-cinematic (HyperFrames bundle)\" (Pixabay sound bundled with HyperFrames). Long cinematic air whoosh (5.5 s): starts ~1.5 s, swells to a broad peak at ~2.5 s, fades by ~4.5 s. Measured: 5.54 s, RMS -14.9 dBFS, -14.1 LUFS, onset 1.55 s, loudest at 2.55 s, audible to 4.49 s, brightness centroid 1869 Hz.",
+  "fit_score": 8,
+  "suggested_use": "Big camera move or the sweep of the gradient field across frame; start it ~2.5 s before the moment it should crest.",
+  "duration_s": 5.544,
+  "measurements": {
+    "duration_s": 5.544,
+    "rms_dbfs": -14.9,
+    "peak_dbfs": 2.7,
+    "integrated_lufs": -14.1,
+    "loudness_range_lu": 0.8,
+    "true_peak_dbfs": 0.2,
+    "bpm_estimate": 94.3,
+    "bpm_confidence": 0.12,
+    "strongest_hits": [
+      {
+        "t_s": 0.07,
+        "rel_strength": 0.14
+      },
+      {
+        "t_s": 2.39,
+        "rel_strength": 1.0
+      },
+      {
+        "t_s": 3.53,
+        "rel_strength": 0.14
+      }
+    ],
+    "brightness_centroid_hz": 1869,
+    "strongest_hits_s": [
+      0.07,
+      2.39,
+      3.53
+    ],
+    "onset_s": 1.55,
+    "loudest_10ms_at_s": 2.55,
+    "audible_end_s_minus45db": 4.49
+  },
+  "fetched": "2026-09-29",
+  "judged_by": "title/tags on the source page plus measured spectrogram and loudness envelope (not auditioned by ear)",
+  "format": {
+    "codec": "pcm_s16le",
+    "sample_rate": 48000,
+    "channels": 2,
+    "duration_s": 5.544,
+    "size_bytes": 1064526
+  },
+  "derived_from": "assets/stock/audio/sfx-whoosh-cinematic-long-swell-pixabay.mp3",
+  "conversion": "ffmpeg soxr resample to 48 kHz, 2 ch, pcm_s16le; source decoded peak 0.16 dBFS; gain applied -0.46 dB"
+}

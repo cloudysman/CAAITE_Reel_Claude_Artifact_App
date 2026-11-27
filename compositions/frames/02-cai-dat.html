@@ -1,0 +1,170 @@
+<template>
+  <style>
+    @font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+    #root { position: absolute; inset: 0; overflow: hidden; font-family: "Lexend", sans-serif; --hy: #5154f5; --hy-ink: #2f33c9; --mint: #a4e9ec;
+            --ink: #12143a; --claude: #d97757; --claude-hi: #ffc3a8; --claude-ink: #a3401f; --warn: #b4530a; }
+    #root[data-theme="light"] { --fg: #12143a; --fg-soft: rgba(18, 20, 58, 0.78); --accent: #2f55d4; color: var(--fg); }
+    #root[data-theme="brand"], #root[data-theme="dark"], #root[data-theme="pixel"] { --fg: #ffffff; --fg-soft: rgba(255, 255, 255, 0.94); --accent: #a4e9ec; color: var(--fg); }
+    #root .k-bg { position: absolute; inset: 0; overflow: hidden; }
+    #root .k-bg-grad { position: absolute; inset: 0; background: linear-gradient(160deg, #5154f5 0%, #4878eb 50%, #3ca7de 100%); }
+    #root .k-bg-paper { position: absolute; inset: 0; background: #f9f9ff; }
+    #root .k-bg-dark { position: absolute; inset: 0; background:
+        radial-gradient(900px 760px at 12% 8%, rgba(81, 84, 245, 0.42), rgba(81, 84, 245, 0) 70%),
+        radial-gradient(900px 800px at 92% 92%, rgba(217, 119, 87, 0.34), rgba(217, 119, 87, 0) 70%), #0b0d26; }
+    #root .k-bg-pixel { position: absolute; left: 0; top: 0; width: 3562px; height: 1920px; }
+    #root .k-bg-plate { position: absolute; left: -54px; top: -96px; width: 1188px; height: 2112px; object-fit: cover; }
+    #root .k-bg-arc { mix-blend-mode: soft-light; opacity: 0.22; }
+    #root .k-bg-silk { opacity: 0.55; }
+    #root .k-bg-grain { position: absolute; inset: 0; background: url("assets/brand/grain-512.png") repeat; background-size: 512px 512px; mix-blend-mode: soft-light; opacity: 0.05; }
+    #root .k-shade { position: absolute; left: 0; width: 1080px; pointer-events: none; }
+    #root .k-shade-top { top: 0; height: 620px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.55) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-shade-bot { top: 1060px; height: 860px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.86) 0%, rgba(8, 9, 30, 0.5) 55%, rgba(8, 9, 30, 0) 100%); }
+    #root .k-hdr { position: absolute; left: 72px; right: 72px; top: 150px; height: 48px; display: flex; align-items: center; gap: 18px; }
+    #root .k-hdr-label { font-size: 22px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--fg-soft); white-space: nowrap; }
+    #root .k-hdr-pill { font-size: 22px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 16px 5px; border-radius: 999px; border: 2px solid var(--accent); color: var(--accent); white-space: nowrap; }
+    #root[data-theme="brand"] .k-hdr-pill, #root[data-theme="dark"] .k-hdr-pill, #root[data-theme="pixel"] .k-hdr-pill { color: #ffffff; border-color: rgba(255, 255, 255, 0.8); background: rgba(18, 20, 58, 0.28); }
+    #root[data-theme="pixel"] .k-hdr-label, #root[data-theme="dark"] .k-hdr-label { color: #ffffff; text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6); }
+    #root .k-src { position: absolute; left: 72px; top: 1182px; font-size: 22px; font-weight: 500; letter-spacing: 0.04em; color: var(--fg-soft); white-space: nowrap; }
+    #root[data-theme="brand"] .k-src, #root[data-theme="dark"] .k-src, #root[data-theme="pixel"] .k-src { color: #ffffff; background: rgba(12, 13, 40, 0.62); padding: 5px 14px 6px; border-radius: 999px; }
+    #root .k-src.k-cr { left: auto; right: 72px; top: 1132px; font-size: 20px; }
+    #root[data-theme="brand"] .k-glass, #root[data-theme="dark"] .k-glass, #root[data-theme="pixel"] .k-glass { background: rgba(22, 25, 80, 0.62); border: 2px solid rgba(255, 255, 255, 0.4); border-radius: 32px; box-shadow: 0 30px 60px rgba(8, 9, 30, 0.3); }
+    #root[data-theme="light"] .k-glass { background: rgba(255, 255, 255, 0.95); border: 2px solid #dee0fd; border-radius: 32px; box-shadow: 0 30px 60px rgba(81, 84, 245, 0.14); }
+    #root .k-kicker { position: absolute; left: 72px; top: 246px; font-size: 32px; font-weight: 500; letter-spacing: 0.02em; color: var(--accent); white-space: nowrap; }
+    #root[data-theme="light"] .k-kicker { color: #1e2a8a; }
+    #root .k-chip { display: inline-flex; align-items: center; gap: 14px; padding: 12px 28px; border-radius: 999px; font-size: 34px; font-weight: 500; white-space: nowrap; }
+    #root[data-theme="light"] .k-chip { background: #ffffff; border: 2px solid #dee0fd; color: var(--fg); }
+    #root[data-theme="brand"] .k-chip, #root[data-theme="dark"] .k-chip, #root[data-theme="pixel"] .k-chip { background: rgba(22, 25, 80, 0.72); border: 2px solid rgba(255, 255, 255, 0.55); color: #ffffff; }
+    #root .k-tag { position: absolute; display: inline-flex; align-items: center; gap: 12px; padding: 10px 24px 12px; border-radius: 999px; background: #ffffff; color: var(--ink);
+                   font-size: 32px; font-weight: 600; white-space: nowrap; box-shadow: 0 14px 30px rgba(8, 9, 30, 0.35); }
+    #root .k-ring { position: absolute; border: 6px solid var(--mint); border-radius: 22px; box-shadow: 0 0 26px rgba(164, 233, 236, 0.95), inset 0 0 16px rgba(164, 233, 236, 0.45); }
+    #root .k-win { position: absolute; border-radius: 24px; overflow: hidden; background: #0f1024; box-shadow: 0 40px 80px rgba(8, 9, 30, 0.45), 0 0 0 2px rgba(255, 255, 255, 0.16); }
+    #root .k-win-bar { position: absolute; left: 0; top: 0; right: 0; height: 52px; background: rgba(248, 248, 252, 0.97); display: flex; align-items: center; gap: 10px; padding: 0 20px;
+                       font-size: 28px; font-weight: 600; color: #12143a; white-space: nowrap; }
+    #root .k-dot { width: 15px; height: 15px; border-radius: 50%; flex: none; }
+    #root .k-win img, #root .k-win video { position: absolute; left: 0; display: block; object-fit: cover; }
+    #root .k-paper { position: absolute; background: #ffffff; border-radius: 26px; overflow: hidden; box-shadow: 0 24px 48px rgba(18, 20, 58, 0.22); }
+    #root .k-paper img { position: absolute; left: 0; top: 0; display: block; }
+    #root .k-hl { position: absolute; border-radius: 8px; background: rgba(255, 196, 90, 0.62); mix-blend-mode: multiply; transform-origin: 0% 50%; }
+    #root .k-hl.k-hl-1 { background: rgba(110, 220, 226, 0.6); }
+
+
+    #root #f02-scr { left: 40px; top: 300px; width: 1000px; height: 615px; transform-origin: 50% 0%; }
+    #root .f02-scrv { top: 52px; width: 1000px; height: 563px; }
+    #root .f02-full { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; overflow: hidden; opacity: 0; }
+    #root .f02-fv { position: absolute; left: 0; top: 0; width: 1080px; height: 1920px; object-fit: cover; }
+    #root #f02-dw { left: 72px; top: 560px; width: 936px; height: 328px; opacity: 0; }
+    #root .f02-avw { position: absolute; left: 0; top: 52px; width: 1000px; height: 563px; overflow: hidden; }
+    #root .f02-avz { position: absolute; left: 0; top: 0; width: 1000px; height: 563px; transform-origin: 56% 100%; }
+    #root #f02-aw { left: 40px; top: 300px; width: 1000px; height: 615px; opacity: 0; }
+    #root .f02-av { top: 0; width: 1000px; height: 563px; }
+    #root #f02-still { opacity: 0; }
+    #root .f02-wt { position: absolute; left: 116px; top: 8px; }
+    #root #f02-wt2 { opacity: 0; }
+    #root #f02-os0 { position: absolute; left: 72px; top: 958px; opacity: 0; }
+    #root #f02-art { left: 318px; top: 350px; width: 716px; height: 562px; border-color: var(--claude-hi); box-shadow: 0 0 26px rgba(255, 195, 168, 0.9); opacity: 0; }
+    #root #f02-artl { left: 72px; top: 1050px; opacity: 0; max-width: 936px; white-space: normal; line-height: 42px; border-radius: 28px; z-index: 6; }
+    #root #f02-row { left: 217px; top: 819px; width: 731px; height: 102px; opacity: 0; }
+    #root #f02-rowl { left: 230px; top: 1100px; opacity: 0; }
+    #root #f02-ins { left: 851px; top: 790px; width: 133px; height: 73px; opacity: 0; }
+    #root #f02-insl { left: auto; right: 72px; top: 908px; opacity: 0; }
+    #root #f02-t1 { left: 72px; top: 958px; opacity: 0; }
+    #root #f02-t2 { left: 400px; top: 958px; opacity: 0; }
+    #root .f02-os { position: absolute; top: 1146px; opacity: 0; }
+    #root #f02-os1 { left: 72px; }
+    #root #f02-os2 { left: 290px; }
+    #root #f02-t3 { left: 72px; top: 1052px; opacity: 0; font-size: 28px; }
+    #root #f02-src { left: auto; right: 72px; top: 240px; font-size: 20px; }
+    #root #f02-wm .k-shade-top { height: 420px; background: linear-gradient(180deg, rgba(8, 9, 30, 0.96) 0%, rgba(8, 9, 30, 0.94) 50%, rgba(8, 9, 30, 0) 100%); }
+    #root #f02-wm .k-shade-bot { top: 1150px; height: 770px; background: linear-gradient(0deg, rgba(8, 9, 30, 0.95) 0%, rgba(8, 9, 30, 0.9) 50%, rgba(8, 9, 30, 0) 100%); }
+    #root #f02-dock { left: 573px; top: 819px; width: 86px; height: 87px; border-radius: 20px; opacity: 0; }
+
+  </style>
+
+  <div id="root" data-composition-id="02-cai-dat" data-theme="dark" data-width="1080" data-height="1920" data-duration="10.072" data-fill-d>
+    <div id="f02-bg" class="k-bg clip" data-start="0" data-duration="10.072" data-fill-d data-track-index="0"><div class="k-bg-dark" id="f02-plate"></div><div class="k-bg-grain"></div></div>
+
+    <div class="k-win" id="f02-scr"><div class="k-win-bar"><span class="k-dot" style="background:#ff5f57"></span><span class="k-dot" style="background:#febc2e"></span><span class="k-dot" style="background:#28c840"></span><span>Claude, video demo</span></div>
+      <video id="f02-v0" class="f02-scrv" src="assets/stock/video/claude-demo-1080p.mp4" data-start="0.000" data-duration="3.088" data-media-start="0.050" data-track-index="1" muted playsinline></video>
+    </div>
+    <div class="f02-full" id="f02-wm"><video id="f02-vm" class="f02-fv" src="assets/stock/video/claude-demo-menu-v.mp4" data-start="2.788" data-duration="1.904" data-media-start="1.741" data-playback-rate="0.55" data-hf-media-start-basis="local" data-track-index="2" muted playsinline></video>
+      <img class="f02-fv" id="f02-still" src="assets/web/claude/menu_giu.jpg" alt="" />
+      <div class="k-ring" id="f02-row" data-layout-allow-overlap></div><div class="k-shade k-shade-top"></div><div class="k-shade k-shade-bot"></div></div>
+    <div class="k-paper" id="f02-dw" data-layout-allow-overlap><img src="assets/web/claude/hop_thoai_cai.png" alt="" style="width:936px;height:328px;" /></div>
+    <div class="k-win" id="f02-aw"><div class="k-win-bar"><span class="k-dot" style="background:#ff5f57"></span><span class="k-dot" style="background:#febc2e"></span><span class="k-dot" style="background:#28c840"></span><span class="f02-wt" id="f02-wt1">Ứng dụng Debris Space Tracker vừa cài</span><span class="f02-wt" id="f02-wt2">Các ứng dụng mẫu khác trong video demo</span></div>
+      <div class="f02-avw"><div class="f02-avz" id="f02-vaw"><video id="f02-va" class="f02-av" src="assets/stock/video/claude-demo-1080p.mp4" data-start="5.542" data-duration="4.530" data-media-start="8.750" data-hf-media-start-basis="local" data-track-index="4" muted playsinline></video></div></div>
+    </div>
+
+    <div class="k-chip" id="f02-os0" data-layout-allow-overlap>Cần cập nhật Claude lên bản mới</div>
+    <div class="k-ring" id="f02-art" data-layout-allow-overlap></div>
+    <div class="k-tag" id="f02-artl" data-layout-allow-overlap>Artifact: trang tương tác Claude tạo ra,<br>như biểu đồ hay trang web</div>
+    <div class="k-tag" id="f02-rowl" data-layout-allow-overlap>Mục Install as app (Beta)</div>
+    <div class="k-ring" id="f02-ins" data-layout-allow-overlap></div>
+    <div class="k-ring" id="f02-dock" data-layout-allow-overlap></div>
+    <div class="k-tag" id="f02-insl" data-layout-allow-overlap>Bấm Install để cài</div>
+    <div class="k-tag" id="f02-t1" data-layout-allow-overlap>Biểu tượng riêng</div>
+    <div class="k-tag" id="f02-t2" data-layout-allow-overlap>Cửa sổ riêng</div>
+    <div class="k-chip f02-os" id="f02-os1" data-layout-allow-overlap>macOS</div>
+    <div class="k-chip f02-os" id="f02-os2" data-layout-allow-overlap>Windows</div>
+    <div class="k-tag" id="f02-t3" data-layout-allow-overlap>Không còn mở bên trong Claude</div>
+    <div class="k-src" id="f02-src" data-layout-allow-overlap>Video: @ClaudeDevs (Anthropic) trên X</div>
+
+    <div class="k-hdr" id="f02-hdr"><span class="k-hdr-label" data-layout-allow-overlap>Trung tâm Đào tạo AI Chuyên sâu</span><span class="k-hdr-pill" data-layout-allow-overlap>Tin AI</span></div>
+  </div>
+
+  <script>
+    (function () {
+      var CUE = /*CUE*/{"D": 10.072, "S": {"B2S1": {"t0": 0.2, "t1": 4.342, "c": [0.355, 1.471, 2.888], "e": [1.471, 2.522, 4.26], "w": [0.355, 0.506, 0.678, 0.957, 1.128, 1.279, 1.471, 1.643, 1.815, 1.986, 2.888, 3.145, 3.337, 3.531, 3.724, 3.916, 4.067]}, "B2S2": {"t0": 5.542, "t1": 9.322, "c": [5.672, 7.27, 8.126], "e": [7.189, 8.065, 9.247], "w": [5.672, 5.834, 6.353, 6.476, 6.659, 6.761, 6.944, 7.27, 7.433, 7.617, 7.82, 8.126, 8.289, 8.472, 8.575, 8.717, 8.86]}}}/*END_CUE*/;
+      var D = CUE.D;
+      var S1 = CUE.S["B2S1"];
+      var S2 = CUE.S["B2S2"];
+      function wt(S, i, n) { return S.w && S.w[i] != null ? S.w[i] : S.t0 + (S.t1 - S.t0) * i / n; }
+      var tl = gsap.timeline({ paused: true });
+      tl.fromTo("#f02-plate", { x: 0, y: -16 }, { x: -16, y: 16, duration: D, ease: "none" }, 0);
+
+      var tMenu = 2.788, tDlg = 4.392, tApp = 5.542, tWin = Math.max(wt(S2, 16, 17), tApp + 1.0);
+      tl.fromTo("#f02-src", { autoAlpha: 0 }, { autoAlpha: 1, duration: 0.3 }, 0.1);
+      tl.fromTo("#f02-scr", { autoAlpha: 0, rotationX: 18, y: 40, transformPerspective: 1600 }, { autoAlpha: 1, rotationX: 0, y: 0, transformPerspective: 1600, duration: 0.6, ease: "power3.out" }, 0.0);
+      tl.fromTo("#f02-os0", { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, wt(S1, 3, 17));
+      // "một artifact": khung quanh artifact trong video, nhãn giải nghĩa
+      var tArt = wt(S1, 9, 17);
+      tl.fromTo("#f02-art", { autoAlpha: 0, scale: 1.08 }, { autoAlpha: 1, scale: 1, duration: 0.3, ease: "power2.out" }, tArt - 0.05);
+      tl.fromTo("#f02-artl", { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, tArt + 0.05);
+      // "rồi chọn mục cài thành ứng dụng": menu thật của artifact, tô mục Install as app
+      tl.to("#f02-scr, #f02-art, #f02-os0, #f02-src", { autoAlpha: 0, duration: 0.2, immediateRender: false }, tMenu);
+      // nhãn giải nghĩa artifact ở lại trên cảnh menu (dời lên dải tối đầu khung) cho đủ thời gian đọc
+      tl.to("#f02-artl", { y: -812, duration: 0.3, ease: "power2.inOut", immediateRender: false }, tMenu);
+      tl.fromTo("#f02-wm", { autoAlpha: 0, scale: 1.12 }, { autoAlpha: 1, scale: 1, duration: 0.35, ease: "power3.out" }, tMenu);
+      // giữ khung menu đúng lúc con trỏ thật nằm trên mục Install as app (khung 3,5 s của demo) cho tới khi hộp thoại hiện
+      tl.set("#f02-still", { opacity: 1 }, wt(S1, 13, 17) - 0.02);
+      tl.fromTo("#f02-row", { autoAlpha: 0, scale: 1.15 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, wt(S1, 13, 17) - 0.12);
+      tl.fromTo("#f02-rowl", { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, wt(S1, 11, 17) - 0.05);
+      // bấm mục này: hộp thoại cài đặt, rồi bấm Install (trong khoảng lặng trước B2S2)
+      tl.to("#f02-wm, #f02-rowl, #f02-artl", { autoAlpha: 0, duration: 0.2, immediateRender: false }, tDlg);
+      tl.fromTo("#f02-dw", { autoAlpha: 0, y: 40, scale: 0.94 }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.4, ease: "power3.out" }, tDlg);
+      tl.to("#f02-src", { autoAlpha: 1, duration: 0.25, immediateRender: false }, tDlg + 0.1);
+      tl.fromTo("#f02-ins", { autoAlpha: 0, scale: 1.3 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, tDlg + 0.1);
+      tl.fromTo("#f02-insl", { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: 0.28, ease: "back.out(1.6)" }, tDlg + 0.15);
+      // bấm Install: cùng tiếng click (B2S2 - 0,45 s)
+      tl.fromTo("#f02-ins", { scale: 1 }, { scale: 0.9, duration: 0.08, ease: "power2.in", yoyo: true, repeat: 1, immediateRender: false }, tApp - 0.2);
+      // B2S2: ứng dụng đã cài, biểu tượng ở Dock, cửa sổ riêng; hai hệ điều hành; rồi các ứng dụng mẫu khác lướt nhanh
+      tl.to("#f02-dw, #f02-ins, #f02-insl", { autoAlpha: 0, y: -20, duration: 0.22, ease: "power2.in", immediateRender: false }, tApp);
+      // "ứng dụng có biểu tượng": phóng vào Dock (biểu tượng quả địa cầu mới), lùi ra ở "cửa sổ"
+      tl.to("#f02-vaw", { scale: 2.4, duration: 0.45, ease: "power3.inOut", immediateRender: false }, wt(S2, 2, 17));
+      tl.fromTo("#f02-dock", { autoAlpha: 0, scale: 1.3 }, { autoAlpha: 1, scale: 1, duration: 0.25, ease: "back.out(2)" }, wt(S2, 5, 17));
+      tl.to("#f02-dock", { autoAlpha: 0, duration: 0.15, immediateRender: false }, wt(S2, 8, 17) - 0.1);
+      tl.to("#f02-vaw", { scale: 1, duration: 0.45, ease: "power3.inOut", immediateRender: false }, wt(S2, 8, 17) - 0.1);
+      // video demo chuyển sang các ứng dụng mẫu khác ở khoảng 10,6 s của demo: đổi chữ trên thanh cửa sổ
+      var tSw = 7.392;
+      tl.to("#f02-wt1", { opacity: 0, duration: 0.2, immediateRender: false }, tSw);
+      tl.to("#f02-wt2", { opacity: 1, duration: 0.2, immediateRender: false }, tSw + 0.05);
+      tl.fromTo("#f02-aw", { autoAlpha: 0, scale: 0.92 }, { autoAlpha: 1, scale: 1, duration: 0.4, ease: "back.out(1.3)" }, tApp + 0.05);
+      tl.fromTo("#f02-t1", { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, wt(S2, 5, 17));
+      tl.fromTo("#f02-t2", { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: 0.3, ease: "back.out(1.6)" }, wt(S2, 8, 17));
+      tl.fromTo("#f02-os1", { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, wt(S2, 12, 17));
+      tl.fromTo("#f02-os2", { autoAlpha: 0, scale: 0.7 }, { autoAlpha: 1, scale: 1, duration: 0.3, ease: "back.out(2)" }, tWin);
+      tl.fromTo("#f02-t3", { autoAlpha: 0, x: -20 }, { autoAlpha: 1, x: 0, duration: 0.3, ease: "back.out(1.6)" }, wt(S2, 10, 17));
+
+      window.__timelines["02-cai-dat"] = tl;
+    })();
+  </script>
+</template>

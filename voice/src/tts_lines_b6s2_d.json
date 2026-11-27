@@ -1,0 +1,76 @@
+{
+ "mau": {
+  "ma": "A",
+  "text": "Và các công ty như Google đang đưa phỏng vấn trực tiếp quay trở lại, vì AI đang che ranh giới giữa kỹ năng thật và output được trợ giúp."
+ },
+ "quy_ve": [
+  [
+   "(?<![a-z])ây pi ai(?![a-z])",
+   "api"
+  ],
+  [
+   "(?<![a-z])cloud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])claud(?![a-z])",
+   "claude"
+  ],
+  [
+   "(?<![a-z])mác ô ét(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])mac os(?![a-z])",
+   "macos"
+  ],
+  [
+   "(?<![a-z])khoá(?![a-z])",
+   "khóa"
+  ],
+  [
+   "(?<![a-z])kí(?![a-z])",
+   "ký"
+  ],
+  [
+   "(?<![a-z])lí(?![a-z])",
+   "lý"
+  ]
+ ],
+ "regex_vi": {
+  "Anthropic": "anthropic",
+  "Windows": "windows",
+  "email": "email",
+  "menu": "menu",
+  "link": "link"
+ },
+ "cau": [
+  {
+   "id": "B6S2",
+   "beat": "B6",
+   "show": "Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt Claude làm việc cho nó.",
+   "tts": "Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt Claud làm việc cho nó.",
+   "chunks": [
+    {
+     "show": "Hạn mức sử dụng tính cả lúc làm ứng dụng",
+     "tts": "Hạn mức sử dụng tính cả lúc làm ứng dụng",
+     "am_tiet": 9
+    },
+    {
+     "show": "và mỗi lượt Claude làm việc cho nó.",
+     "tts": "và mỗi lượt Claud làm việc cho nó.",
+     "am_tiet": 8
+    }
+   ],
+   "am_tiet": 17,
+   "tu_anh": [
+    {
+     "tu": "Claude",
+     "tu_tu": 13,
+     "den_tu": 13,
+     "regex_en": "\\bclaude?s?\\b|\\bclod\\b"
+    }
+   ]
+  }
+ ]
+}

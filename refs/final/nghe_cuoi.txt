@@ -1,0 +1,15 @@
+# Whisper nghe tệp cuối CAAITE-reel-Claude-artifact-app.mp4 (bản dựng 5, bản đăng, 25/11/2026)
+
+## Cả bài (nghe_cuoi.py, whisper large-v3 CPU, không gợi ý)
+whisper: Một lời nhắn, Cloud làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính. Bạn bảo Cloud bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng. Cài xong, ứng dụng có biểu tượng và cửa sổ riêng trên macOS hay Windows. Một kỹ sư Anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người. Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API, tài khoản Cloud của bạn là đủ. Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch, email. Nếu bạn cho phép, nó gửi được thông báo, hiện trên thanh menu hay khai hệ thống Bạn sửa artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói H ...
+(dòng in trên server bị cắt ở 900 byte; CER: 0.0024 tính trên toàn bộ chữ whisper nghe, so với lời đọc sau chuẩn hóa)
+
+## Nghe từng cảnh (nghe_doan.py, whisper large-v3, không gợi ý)
+01-hook (0.0-4.4 s): Một lời nhắn, Claude làm ra ứng dụng theo dõi giác vũ trụ chạy trên máy tính.
+02-cai-dat (3.9-14.0 s): Bạn bảo cloud bản máy tính làm ra một artifact, rồi chọn mục cài thành ứng dụng. Cài xong, ứng dụng có biểu tượng và cửa sổ riêng trên macOS hay Windows. Một ký...
+03-vi-du (13.4-19.0 s): Một kỹ sư Anthropic đã làm thử trình sửa ảnh, trình quản lý tệp và bản đồ cơ thể người.
+04-khong-dong-goi (18.5-24.5 s): Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API, tài khoản Cloud của bạn là đủ.
+05-lam-duoc-gi (23.8-35.4 s): Ứng dụng dùng được các dịch vụ bạn đã kết nối như lịch, email. Nếu bạn cho phép, nó gửi được thông báo hiện trên thanh menu hay khay hệ thống. Bạn sửa Artifact thì ứng dụng tự cập nhật, muốn chia sẻ thì gửi link.
+06-dieu-kien (34.9-42.6 s): Tính năng đang ở bản thử nghiệm, triển khai dần cho mọi gói Hạn mức sử dụng tính cả lúc làm ứng dụng và mỗi lượt cloud làm việc cho nó Mặc định
+07-quyen (41.9-53.8 s): Mặc định ứng dụng chỉ có quyền như khi chạy trong trình duyệt Muốn chạy chương trình khác hay sửa, xóa tệp, nó phải xin toàn quyền Vì Anthropic không duyệt ứng dụng trước khi cài Chỉ nên cấp toàn quyền cho ứng dụng mà bạn tin Bạn có cấp toàn quyền cho ứng dụng
+08-ket (53.0-59.4 s): Bạn có cấp toàn quyền cho ứng dụng mình làm không? Bình luận cho Trung tâm biết nhé!

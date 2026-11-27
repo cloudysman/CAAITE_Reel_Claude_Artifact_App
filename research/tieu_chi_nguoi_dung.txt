@@ -1,0 +1,15 @@
+Tiêu chí người dùng đặt cho mọi chữ trong sản phẩm (dán lại nguyên ý, 25/11/2026):
+1. Chất lượng tốt nhất; kiểm tra tỉ mỉ từng chữ.
+2. Đúng trọng tâm, không dài dòng lan man.
+3. Chi tiết, cụ thể, dễ hiểu nhất có thể.
+4. Chỉ viết hoa chữ đầu câu (sau dấu chấm) và tên phương pháp, tên riêng; không viết hoa chữ đầu linh tinh, thừa thãi.
+5. Dùng một thuật ngữ từ đầu đến cuối cho một khái niệm, không dùng nhiều thuật ngữ cùng nghĩa.
+6. Văn phong học thuật, nhưng giản dị; không phô trương, không phóng đại.
+7. Tuyệt đối không bôi đậm tùy tiện.
+8. Trình bày đẹp mắt với người xem.
+9. Các đoạn, câu, chữ liên kết chặt chẽ.
+10. Nội dung các đoạn không trùng lặp.
+11. Đầy đủ thông tin mà sản phẩm muốn truyền tải.
+12. Số liệu, thông tin, dữ liệu trung thực và chính xác.
+Thêm: rà humanizer và trang "Signs of AI writing"; không dùng gạch ngang dài, ngoặc kép cong.
+Thêm cho video: muốn "wow" nhất, hút người xem TikTok và YouTube nhất; móc câu 3 giây đầu, dưới 60 giây, có lời mời bình luận cuối video, không hẹn lịch chiếu.

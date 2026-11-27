@@ -1,0 +1,43 @@
+<!doctype html>
+<!--
+  Watermark CAAITE suốt video (người dùng dặn 05/10/2026: gắn logo trung tâm để chống bị lấy video).
+  TỆP SINH TỰ ĐỘNG bởi src_build/build_index.py. Viên tối mờ góc trên phải, cùng hàng nhãn trung tâm của các cảnh,
+  nên đọc được trên cả nền lụa sáng lẫn nền gradient.
+  Dấu thứ hai (QA 05/10): dòng chữ nhỏ "CAAITE · ptitai.org" ngay dưới vùng phụ đề, giữa khung. Cắt mép trên hay
+  phóng to 10% để bỏ góc trên phải vẫn còn dấu này; muốn xóa phải che cả vùng phụ đề.
+-->
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>watermark</title>
+  </head>
+  <body>
+    <template>
+      <style>
+        @font-face { font-family: "Lexend"; src: url("assets/fonts/Lexend-Variable.ttf") format("truetype"); font-weight: 100 900; font-display: block; }
+        #wm-root { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+        #wm-pill { position: absolute; right: 72px; top: 146px; height: 56px; display: flex; align-items: center; gap: 12px;
+          padding: 0 20px 0 16px; border-radius: 999px; background: rgba(18, 20, 58, 0.58); border: 2px solid rgba(255, 255, 255, 0.5); }
+        #wm-pill img { display: block; height: 34px; width: auto; }
+        #wm-text { font-family: "Lexend", sans-serif; font-size: 24px; font-weight: 600; letter-spacing: 0.12em; margin-right: -0.12em; color: #ffffff; }
+        /* dấu thứ hai: canh giữa khung như viên phụ đề, ngay dưới đáy viên phụ đề hai dòng (1446) */
+        #wm-mark2 { position: absolute; left: 0; width: 1080px; top: 1478px; display: flex; justify-content: center; }
+        #wm-mark2 span { font-family: "Lexend", sans-serif; font-size: 20px; font-weight: 600; letter-spacing: 0.14em; margin-right: -0.14em;
+          text-transform: uppercase; color: #ffffff; padding: 6px 18px 7px; border-radius: 999px; background: rgba(18, 20, 58, 0.7); }
+      </style>
+      <div id="wm-root" data-composition-id="watermark" data-width="1080" data-height="1920" data-duration="59.372">
+        <div id="wm-pill"><img src="assets/brand/caaite-logo-white.svg" alt="CAAITE" /><span id="wm-text">CAAITE</span></div>
+        <div id="wm-mark2"><span>CAAITE · ptitai.org</span></div>
+      </div>
+      <script>
+        (function () {
+          var tl = gsap.timeline({ paused: true });
+          tl.fromTo("#wm-pill", { opacity: 0.94 }, { opacity: 0.94, duration: 59.372, ease: "none" }, 0);
+          tl.fromTo("#wm-mark2", { opacity: 0.85 }, { opacity: 0.85, duration: 57.072, ease: "none" }, 0);
+          tl.to("#wm-mark2", { opacity: 0, duration: 0.3, ease: "power1.out" }, 57.072);
+          window.__timelines["watermark"] = tl;
+        })();
+      </script>
+    </template>
+  </body>
+</html>

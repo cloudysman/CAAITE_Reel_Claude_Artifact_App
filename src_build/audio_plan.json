@@ -1,0 +1,261 @@
+{
+ "duration": 59.372,
+ "narration": "voice/narration.wav",
+ "narration_offset": 0.2,
+ "music_dips": [
+  {
+   "t": 8.567,
+   "dur": 1.0,
+   "db": -14.0,
+   "why": "nhạc lùi khi hộp thoại cài đặt hiện, khớp khoảng nghỉ trước B2S2"
+  }
+ ],
+ "music": "assets/stock/audio/music-pop-track-03-lily-j-mixkit-729-48k.wav",
+ "music_start": 1.598,
+ "music_bed_lufs": -24.0,
+ "duck_db": -8.0,
+ "music_fade_in": 0.05,
+ "music_fade_out": 2.0,
+ "sfx": [
+  {
+   "t": 0.0,
+   "file": "assets/audio/ambience-room-tone.wav",
+   "gain_db": -10.0,
+   "trim": null,
+   "why": "01-hook: tiếng nền phòng"
+  },
+  {
+   "t": 0.05,
+   "file": "assets/stock/audio/sfx-typing-laptop-keyboard-mixkit-2531-48k.wav",
+   "gain_db": -30.0,
+   "trim": 0.9,
+   "why": "01-hook: lời nhắn hiện như đang gõ",
+   "fade_out": 0.25
+  },
+  {
+   "t": 2.322,
+   "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "01-hook: phóng xuyên qua quả địa cầu sang cảnh máy vừa cài ứng dụng (đỉnh tệp 0,16 s rơi giữa cú phóng; QA 25/11: tệp whoosh dài có đỉnh ở 1,06 s nên bản trước kêu muộn, đè chữ 'máy tính')"
+  },
+  {
+   "t": 2.832,
+   "file": "assets/stock/audio/sfx-pop-whoosh-light-mixkit-3005-48k.wav",
+   "gain_db": -16.0,
+   "trim": null,
+   "why": "01-hook: biểu tượng ứng dụng hiện ra (chữ 'chạy'), cùng lúc nhạc vào nhịp"
+  },
+  {
+   "t": 2.852,
+   "file": "assets/stock/audio/sfx-ui-software-start-mixkit-2574-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "01-hook: lớp nền cho tiếng biểu tượng hiện"
+  },
+  {
+   "t": 3.085,
+   "file": "assets/stock/audio/sfx-whoosh-fast-cinematic-transition-mixkit-1492-48k.wav",
+   "gain_db": -23.0,
+   "why": "chuyển cảnh zoom vào 02-cai-dat"
+  },
+  {
+   "t": 7.426,
+   "file": "assets/stock/audio/sfx-click-interface-tone-mixkit-2568-48k.wav",
+   "gain_db": -18.0,
+   "trim": null,
+   "why": "02-cai-dat: chọn mục Install as app"
+  },
+  {
+   "t": 9.417,
+   "file": "assets/stock/audio/sfx-click-select-mixkit-1109-48k.wav",
+   "gain_db": -20.0,
+   "trim": null,
+   "why": "02-cai-dat: bấm nút Install trong hộp thoại"
+  },
+  {
+   "t": 9.617,
+   "file": "assets/stock/audio/sfx-pop-hard-click-mixkit-2364-48k.wav",
+   "gain_db": -24.0,
+   "trim": null,
+   "why": "02-cai-dat: ứng dụng mở trong cửa sổ riêng"
+  },
+  {
+   "t": 13.367,
+   "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+   "gain_db": -22.0,
+   "why": "chuyển cảnh expand vào 03-vi-du"
+  },
+  {
+   "t": 15.489,
+   "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "03-vi-du: cửa sổ Linnet"
+  },
+  {
+   "t": 16.523,
+   "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "03-vi-du: cửa sổ Phosphor"
+  },
+  {
+   "t": 17.241,
+   "file": "assets/stock/audio/sfx-8bit-coin-mixkit-2069-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "03-vi-du: cửa sổ Marrow (cùng tiếng coin như hai cửa sổ trước; tiếng unlock cũ chìm dưới giọng)"
+  },
+  {
+   "t": 18.47,
+   "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+   "gain_db": -21.0,
+   "why": "chuyển cảnh push vào 04-khong-dong-goi"
+  },
+  {
+   "t": 19.353,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "04-khong-dong-goi: gạch dòng đóng gói"
+  },
+  {
+   "t": 20.03,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "04-khong-dong-goi: gạch dòng ký số"
+  },
+  {
+   "t": 20.933,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "04-khong-dong-goi: gạch dòng khóa API"
+  },
+  {
+   "t": 22.177,
+   "file": "assets/stock/audio/sfx-correct-tone-mixkit-2870-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "04-khong-dong-goi: thẻ tài khoản Claude là đủ"
+  },
+  {
+   "t": 22.713,
+   "file": "assets/stock/audio/sfx-sweep-magic-shimmer-transition-mixkit-2638-48k.wav",
+   "gain_db": -20.0,
+   "why": "chuyển cảnh light vào 05-lam-duoc-gi"
+  },
+  {
+   "t": 26.24,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -28.0,
+   "trim": null,
+   "why": "05-lam-duoc-gi: viên Lịch"
+  },
+  {
+   "t": 26.58,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -28.0,
+   "trim": null,
+   "why": "05-lam-duoc-gi: viên Email"
+  },
+  {
+   "t": 28.296,
+   "file": "assets/stock/audio/sfx-notify-message-pop-mixkit-2354-48k.wav",
+   "gain_db": -22.0,
+   "trim": null,
+   "why": "05-lam-duoc-gi: thông báo"
+  },
+  {
+   "t": 34.284,
+   "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "05-lam-duoc-gi: gửi link"
+  },
+  {
+   "t": 34.863,
+   "file": "assets/stock/audio/sfx-whoosh-short-soft-pixabay-48k.wav",
+   "gain_db": -21.0,
+   "why": "chuyển cảnh push vào 06-dieu-kien"
+  },
+  {
+   "t": 40.657,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "06-dieu-kien: lượt dùng Claude thứ nhất"
+  },
+  {
+   "t": 40.834,
+   "file": "assets/stock/audio/sfx-sweep-magic-shimmer-transition-mixkit-2638-48k.wav",
+   "gain_db": -20.0,
+   "why": "chuyển cảnh light vào 07-quyen"
+  },
+  {
+   "t": 40.977,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "06-dieu-kien: lượt thứ hai"
+  },
+  {
+   "t": 41.297,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "06-dieu-kien: lượt thứ ba"
+  },
+  {
+   "t": 46.917,
+   "file": "assets/stock/audio/sfx-impact-big-cinematic-boom-mixkit-788-48k.wav",
+   "gain_db": -30.0,
+   "trim": null,
+   "why": "07-quyen: con dấu Anthropic không duyệt (tệp im 0,94 s đầu, tiếng nổ ở 2,18 s; lệch -2,03 s để nổ đúng lúc dấu chạm, chữ + 0,15 s)"
+  },
+  {
+   "t": 47.326,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "07-quyen: mức toàn quyền sáng lên"
+  },
+  {
+   "t": 49.057,
+   "file": "assets/stock/audio/sfx-pop-hard-click-mixkit-2364-48k.wav",
+   "gain_db": -18.0,
+   "trim": null,
+   "why": "07-quyen: con dấu chạm: tiếng dải trung cho loa điện thoại (tiếng nổ trầm chìm dưới giọng, soát bản dựng 3)"
+  },
+  {
+   "t": 50.724,
+   "file": "assets/stock/audio/sfx-whoosh-cinematic-long-swell-pixabay-48k.wav",
+   "gain_db": -23.0,
+   "why": "chuyển cảnh blur vào 08-ket"
+  },
+  {
+   "t": 55.079,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "08-ket: hai lựa chọn Có, Không"
+  },
+  {
+   "t": 55.823,
+   "file": "assets/stock/audio/sfx-ui-tick-technology-select-mixkit-3124-48k.wav",
+   "gain_db": -26.0,
+   "trim": null,
+   "why": "08-ket: viên Bình luận"
+  },
+  {
+   "t": 58.226,
+   "file": "assets/stock/audio/sfx-sparkle-bright-shimmer-pixabay-48k.wav",
+   "gain_db": -27.0,
+   "trim": null,
+   "why": "08-ket: ngôi sao logo lóe (hết câu cuối + 1,1 s)"
+  }
+ ],
+ "out": "assets/audio/reel-mix.wav"
+}

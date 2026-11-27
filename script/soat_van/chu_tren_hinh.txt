@@ -1,0 +1,214 @@
+== compositions/frames/01-hook.html (7 khối)
+  Artifact của Claude
+  giờ cài thành ứng dụng
+  Build me
+  Bài của @ClaudeDevs: 3,9 triệu lượt xem sau 7 giờ
+  Ứng dụng vừa cài
+  Video: @ClaudeDevs (Anthropic) trên X
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/02-cai-dat.html (14 khối)
+  Claude, video demo
+  Ứng dụng Debris Space Tracker vừa càiCác ứng dụng mẫu khác trong video demo
+  Cần cập nhật Claude lên bản mới
+  Artifact: trang tương tác Claude tạo ra,
+  như biểu đồ hay trang web
+  Mục Install as app (Beta)
+  Bấm Install để cài
+  Biểu tượng riêng
+  Cửa sổ riêng
+  macOS
+  Windows
+  Không còn mở bên trong Claude
+  Video: @ClaudeDevs (Anthropic) trên X
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/03-vi-du.html (6 khối)
+  Linnet · sửa ảnh nhiều lớp
+  Phosphor · quản lý tệp
+  Marrow · bản đồ cơ thể người
+  Felix viết: bạn không cần biết lập trình
+  Ứng dụng mẫu trên trang của Felix, kỹ sư Anthropic; trang ghi rõ đây không phải sản phẩm chính thức.
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/04-khong-dong-goi.html (7 khối)
+  Bạn không phải làm
+  Đóng gói ứng dụngpackaging
+  Ký số ứng dụngcode signing
+  Tạo khóa APIAPI key
+  Dùng tài khoản Claude của bạnKhông cần đăng nhập riêng
+  Nguồn: claude.com, 24/11/2026; @ClaudeDevs trên X
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/05-lam-duoc-gi.html (13 khối)
+  Ứng dụng đã cài làm được gì
+  Sift, ứng dụng mẫuVitals, ứng dụng mẫuFelix's Demo Apps
+  Sift dùng Claude để sắp xếp tệp theo quy tắc thư mục
+  Vitals theo dõi hiệu năng máy
+  Felix chia sẻ các ứng dụng mẫu bằng một link
+  Claude
+  Lịch
+  Email
+  Thông báo
+  Thanh menu (macOS) · khay hệ thống (Windows)
+  claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ
+  Ảnh: ứng dụng mẫu trên trang của Felix, kỹ sư Anthropic
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/06-dieu-kien.html (14 khối)
+  Ai dùng được
+  Bản thử nghiệm trong Claude bản máy tính
+  Mọi gói: đang triển khai dần
+  Team: bật sẵn, riêng toàn quyền máy tính bị tắt
+  Enterprise: chờ chủ sở hữu tổ chức bật
+  Trừ tổ chức HIPAA-ready và bản triển khai hybrid
+  Hạn mức sử dụng của gói
+  +1
+  +1
+  +1
+  Cần có mạng và đăng nhập Claude để mở ứng dụng.
+  Không cài được Claude Docs, Slides, Sheets.
+  Nguồn: claude.com, 24/11/2026; @ClaudeDevs trên X
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/07-quyen.html (11 khối)
+  Ba mức quyền
+  1Mặc địnhChỉ làm được như khi chạy trong trình duyệt
+  2Quyền ứng dụngThông báo, phím tắt toàn hệ thống, cửa sổ luôn ở trên
+  3Toàn quyền máy tínhChạy chương trình; đọc, sửa, xóa tệp, không hỏi từng lần
+  Tern · dòng lệnh
+  Phosphor · quản lý tệp
+  Anthropic không duyệt trước
+  Toàn quyền: chỉ cho ứng dụng do bạn hoặc tổ chức của bạn làm
+  Sau mỗi lần cập nhật, Claude hỏi lại quyền
+  Nguồn: claude.com, 24/11/2026; ảnh: ứng dụng mẫu của Felix
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/frames/08-ket.html (12 khối)
+  Bạn có cấp toàn quyền cho ứng dụng mình làm không?
+  Có
+  Không
+  Bình luận
+  Theo dõi
+  CAAITE
+  Trung tâm Đào tạo AI Chuyên sâu
+  Khoa Trí tuệ nhân tạo · PTIT
+  Websiteptitai.org
+  Emailaicenter@ptit.edu.vn
+  Fanpagefacebook.com/CAAITE
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+== compositions/watermark.html (2 khối)
+  CAAITE
+  CAAITE · ptitai.org
+== compositions/captions.html (37 khối)
+  Một lời nhắn,Claude làm ra ứng dụng
+  theo dõi rác vũ trụ chạy trên máy tính.
+  Bạn bảo
+  Claude bản máy tính
+  làm ra một artifact,
+  rồi chọn mục
+  cài thành ứng dụng.
+  Cài xong,
+  ứng dụng có biểu tượng
+  và cửa sổ riêng
+  trên macOS hay Windows.
+  Một kỹ sư Anthropic đã làm thử
+  trình sửa ảnh, trình quản lý tệp
+  và bản đồ cơ thể người.
+  Ứng dụng dùng được
+  các dịch vụ
+  bạn đã kết nối
+  như lịch, email.
+  Nếu bạn cho phép,
+  nó gửi được thông báo,
+  hiện trên thanh menu
+  hay khay hệ thống.
+  Bạn sửa artifact
+  thì ứng dụng tự cập nhật,
+  muốn chia sẻ thì gửi link.
+  Hạn mức sử dụng
+  tính cả lúc làm ứng dụng
+  và mỗi lượt Claude làm việc cho nó.
+  Muốn chạy chương trình khác
+  hay sửa, xóa tệp,
+  nó phải xin toàn quyền.
+  Vì Anthropic
+  không duyệt ứng dụng
+  trước khi cài,chỉ nên cấp toàn quyền
+  cho ứng dụng mà bạn tin.
+  Bình luận
+  cho trung tâm biết nhé.
+== thumbnail/thumb.html (13 khối)
+  Ảnh bìa Claude Install as app
+  Trung tâm Đào tạo AI Chuyên sâuTin AI
+  Tính năng mới của Claude
+  CAAITE
+  Artifact
+  thành ứng dụng%%STAR%%
+  Cài lên máy chạy macOS, Windows
+  Bản thử nghiệm, Anthropic công bố 24/11/2026
+  Một lời nhắn
+  thành ứng dụng%%STAR%%
+  Claude làm, bạn cài lên máy tính
+  Ảnh: bài công bố của Anthropic, 24/11/2026
+  Bài công bố trên X: 3,9 triệu lượt xem sau 7 giờ
+== DANG_BAI_tieu_de_mo_ta.txt
+  Tiêu đề, mô tả và thẻ để đăng reel "Claude: cài artifact thành ứng dụng trên máy tính" (bản 2, 25/11/2026)
+  Tiêu đề (YouTube Shorts, chọn một; dưới 100 ký tự)
+  1. Claude cho cài artifact thành ứng dụng trên macOS, Windows: cách làm và ba mức quyền
+  2. Một lời nhắn, Claude làm ứng dụng theo dõi rác vũ trụ chạy trên máy tính
+  3. Install as app của Claude: ai dùng được, tính vào hạn mức thế nào
+  Ảnh bìa (thư mục thumbnail)
+  - TikTok: luôn dùng CAAITE-Claude-artifact-app-anh-bia.jpg ("Artifact / thành ứng dụng", nền quả địa cầu).
+  - YouTube, tiêu đề 1 hoặc 3: dùng CAAITE-Claude-artifact-app-anh-bia-ban-phu.jpg ("Một lời nhắn / thành ứng dụng"), để ảnh không lặp tiêu đề.
+  - YouTube, tiêu đề 2: dùng CAAITE-Claude-artifact-app-anh-bia.jpg.
+  Cách tải ảnh bìa lên
+  - TikTok: tải trước khi bấm Đăng. Trên máy tính: TikTok Studio > Tải lên > Chỉnh sửa ảnh bìa > Tải ảnh bìa lên. Nếu công cụ hiện khung cắt 3:4 thì để khung ở giữa.
+  - YouTube: chỉ làm được trong YouTube Studio trên máy tính (Nội dung > tab Shorts > biểu tượng bút chì > Hình thu nhỏ > Tải tệp lên > Lưu), và chỉ với kênh thuộc Chương trình Đối tác YouTube có tài khoản đã xác minh.
+  - Nếu YouTube không có nút Tải tệp lên: trong ứng dụng YouTube trên điện thoại, chọn khung hình ở giây 1,5 (tiêu đề "Artifact của Claude giờ cài thành ứng dụng" và lời nhắn trên nền quả địa cầu). Không chọn khung đang chuyển cảnh.
+  Mô tả (YouTube, dán nguyên phần dưới đây; TikTok dùng bản ngắn trong DANG_BAI/1-TikTok.txt)
+  Ngày 24/11/2026, Anthropic cho thử nghiệm tính năng Install as app: artifact do Claude tạo ra cài được thành ứng dụng trên máy tính chạy macOS hoặc Windows.
+  Cách làm:
+  - Trong Claude bản máy tính (cập nhật bản mới), bảo Claude làm một artifact, tức trang tương tác như biểu đồ hay trang web, rồi chọn Install as app và bấm Install.
+  - Ứng dụng có biểu tượng và cửa sổ riêng, không còn mở bên trong Claude. Bạn không phải đóng gói, ký số ứng dụng hay tạo khóa API; ứng dụng dùng tài khoản Claude của bạn, không cần đăng nhập riêng.
+  Ứng dụng làm được gì:
+  - Dùng Claude và các dịch vụ bạn đã kết nối (connector), ví dụ lịch và email.
+  - Nếu bạn cho phép: gửi thông báo, hiện trên thanh menu (macOS) hoặc khay hệ thống (Windows).
+  - Bạn sửa artifact thì ứng dụng tự cập nhật; muốn chia sẻ thì gửi link cho người khác.
+  Ba mức quyền:
+  1. Mặc định: ứng dụng chỉ làm được những việc như khi chạy trong trình duyệt.
+  2. Quyền ứng dụng: thông báo, phím tắt toàn hệ thống, cửa sổ luôn ở trên các cửa sổ khác.
+  3. Toàn quyền máy tính: chạy chương trình; đọc, sửa, xóa tệp mà không hỏi từng lần. Toàn quyền chỉ cấp được cho ứng dụng do bạn làm, hoặc với gói Team, Enterprise, do người trong tổ chức làm. Sau mỗi lần cập nhật, kể cả khi chính bạn sửa, Claude hỏi lại quyền.
+  Anthropic không duyệt ứng dụng trước khi bạn cài, nên chỉ cấp toàn quyền cho ứng dụng bạn tin.
+  Điều kiện dùng:
+  - Bản thử nghiệm, đang triển khai dần cho mọi gói. Gói Team: bật sẵn, riêng toàn quyền máy tính bị tắt. Gói Enterprise: chờ chủ sở hữu tổ chức bật. Tổ chức HIPAA-ready và bản triển khai hybrid không dùng được.
+  - Cần có mạng và đăng nhập Claude để mở ứng dụng. Không cài được Claude Docs, Slides, Sheets.
+  - Lúc làm ứng dụng và mỗi lượt Claude làm việc cho ứng dụng đều tính vào hạn mức sử dụng của gói.
+  Các ứng dụng mẫu trong video (Linnet sửa ảnh, Phosphor quản lý tệp, Marrow bản đồ cơ thể người, Sift sắp xếp tệp, Vitals theo dõi hiệu năng máy, Tern dòng lệnh) do Felix, kỹ sư Anthropic, làm thử và đăng trên trang demo; trang ghi rõ đây không phải sản phẩm chính thức của Anthropic.
+  Bạn có cấp toàn quyền cho ứng dụng mình làm không? Bình luận cho trung tâm biết nhé.
+  Nguồn: Anthropic, "Turn artifacts into Mac and Windows apps" (claude.com/resources/articles/install-as-app, 24/11/2026); bài và video của @ClaudeDevs trên X (25/11/2026); trang "Felix's Demo Apps" (claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ). Bản tin gốc: EZAI.
+  Hình và video minh họa: Anthropic (@ClaudeDevs); ứng dụng mẫu trên trang của Felix.
+  Nhạc: "Pop Track 03" của Lily J (Mixkit).
+  Giọng đọc được tạo bằng AI.
+  Trung tâm Đào tạo AI Chuyên sâu (CAAITE), Khoa Trí tuệ nhân tạo, PTIT
+  Website: ptitai.org
+  Email: aicenter@ptit.edu.vn
+  Fanpage: facebook.com/CAAITE
+  #Claude #Anthropic #TinAI #AI #CAAITE
+  Thẻ (YouTube, dán vào ô "Thẻ")
+  Claude, Anthropic, Claude artifacts, Install as app, Claude Desktop, ứng dụng máy tính, macOS, Windows, quyền ứng dụng, tin AI, CAAITE, PTIT
+== DANG_BAI/1-TikTok.txt
+  ĐĂNG TIKTOK: reel Claude cài artifact thành ứng dụng trên máy tính
+  Tệp cần tải lên (cùng thư mục này)
+  - Video: CAAITE-reel-Claude-artifact-app.mp4
+  - Ảnh bìa: anh-bia-TikTok.jpg
+  Tiêu đề (chỉ dùng nếu ứng dụng có ô "Tiêu đề"; không có thì bỏ qua)
+  Một lời nhắn, Claude làm ứng dụng chạy trên máy tính
+  Mô tả (dán nguyên phần giữa hai dòng gạch)
+  ----------------------------------------
+  Một lời nhắn, Claude làm ra ứng dụng theo dõi rác vũ trụ chạy trên máy tính. Tính năng Install as app cài artifact thành ứng dụng có biểu tượng và cửa sổ riêng trên macOS, Windows. Anthropic công bố bản thử nghiệm ngày 24/11/2026, đang triển khai dần. Bạn không phải đóng gói, ký số hay tạo khóa API. Ứng dụng dùng được Claude và các dịch vụ bạn đã kết nối, gửi được thông báo nếu bạn cho phép. Anthropic không duyệt ứng dụng trước khi cài, nên chỉ cấp toàn quyền cho ứng dụng bạn tin.
+  Bạn có cấp toàn quyền cho ứng dụng mình làm không? Bình luận cho trung tâm biết nhé.
+  Nguồn: Anthropic (claude.com, 24/11/2026), bài và video của @ClaudeDevs trên X, trang demo của Felix, kỹ sư Anthropic (claude.ai/artifact/9j53nCVcrSdZyCHtxUZkWJ). Bản tin gốc: EZAI. Giọng đọc được tạo bằng AI.
+  Trung tâm Đào tạo AI Chuyên sâu (CAAITE), Khoa Trí tuệ nhân tạo, PTIT · ptitai.org
+  #Claude #Anthropic #TinAI #AI #CAAITE
+  ----------------------------------------
+  Các bước (TikTok Studio trên máy tính; trên điện thoại các mục tương tự)
+  1. TikTok Studio > Tải lên > chọn CAAITE-reel-Claude-artifact-app.mp4.
+  2. Ô Mô tả: dán phần mô tả ở trên.
+  3. Ảnh bìa: Chỉnh sửa ảnh bìa > Tải ảnh bìa lên > chọn anh-bia-TikTok.jpg. Nếu công cụ hiện khung cắt 3:4 thì để khung ở giữa.
+  4. Cài đặt khác: bật nhãn "Nội dung do AI tạo" (giọng đọc là giọng nhân bản bằng AI); Ai có thể xem: Mọi người; cho phép bình luận.
+  5. Bấm Đăng.
+  Lưu ý trước khi đăng: giọng mẫu thuộc kênh "AI News - Tin tức AI" (@ainius.net), cần xin phép chủ giọng trước khi đăng công khai. Video dùng đoạn ngắn video demo của @ClaudeDevs (Anthropic) và ảnh chụp trang demo của Felix để đưa tin, đã ghi nguồn trên hình và trong mô tả.
